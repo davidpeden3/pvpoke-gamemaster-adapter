@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using PvPoke.FileManagement.PokemonGo;
 
 namespace PvPoke
 {
@@ -7,30 +8,25 @@ namespace PvPoke
     {
         public static async Task Main(string[] args)
         {
-            GameMasterFile gameMasterFile;
+            PokemonGoGameMasterFileManager.GameMasterFile gameMasterFile;
 
-            if (!GameMasterFileManager.FileExists())
+            if (!PokemonGoGameMasterFileManager.FileExists())
             {
-                gameMasterFile = await GameMasterFileManager.FetchAndSaveFileAsync();
+                gameMasterFile = await PokemonGoGameMasterFileManager.FetchAndSaveFileAsync();
             }
             else
             {
-                long latestGameMasterVersion = await GameMasterFileManager.FetchLatestVersionAsync();
+                long latestGameMasterVersion = await PokemonGoGameMasterFileManager.FetchLatestVersionAsync();
 
-                gameMasterFile = await GameMasterFileManager.OpenFileAsync();
+                gameMasterFile = await PokemonGoGameMasterFileManager.OpenFileAsync();
 
                 if (gameMasterFile.TimeStampMs != latestGameMasterVersion)
                 {
-                    gameMasterFile = await GameMasterFileManager.FetchAndSaveFileAsync();
+                    gameMasterFile = await PokemonGoGameMasterFileManager.FetchAndSaveFileAsync();
                 }
             }
 
             Console.WriteLine(gameMasterFile.TimeStampMs);
         }
-    }
-
-    public class GameMasterFile
-    {
-        public long TimeStampMs { get; set; }
     }
 }

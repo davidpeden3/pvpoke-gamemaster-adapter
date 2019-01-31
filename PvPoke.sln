@@ -5,6 +5,12 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PvPoke", "Source\PvPoke\PvPoke.csproj", "{C0B71A2B-0CE5-46EE-843F-A228C2B81F4C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{DE41F505-0648-4BFE-8136-D855AB5AE352}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{D69AB1B0-E11F-40B8-B13A-E94692A4023C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PvPoke.UnitTest", "Test\PvPoke.UnitTest\PvPoke.UnitTest.csproj", "{6CA461FB-E4FF-49B2-B736-B8A939D68E3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +21,17 @@ Global
 		{C0B71A2B-0CE5-46EE-843F-A228C2B81F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0B71A2B-0CE5-46EE-843F-A228C2B81F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0B71A2B-0CE5-46EE-843F-A228C2B81F4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CA461FB-E4FF-49B2-B736-B8A939D68E3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CA461FB-E4FF-49B2-B736-B8A939D68E3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CA461FB-E4FF-49B2-B736-B8A939D68E3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CA461FB-E4FF-49B2-B736-B8A939D68E3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C0B71A2B-0CE5-46EE-843F-A228C2B81F4C} = {DE41F505-0648-4BFE-8136-D855AB5AE352}
+		{6CA461FB-E4FF-49B2-B736-B8A939D68E3A} = {D69AB1B0-E11F-40B8-B13A-E94692A4023C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D10FE536-7E87-435F-8FA2-59DCE6542F03}
