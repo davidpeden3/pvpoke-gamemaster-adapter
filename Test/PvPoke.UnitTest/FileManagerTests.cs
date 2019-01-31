@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using PvPoke.FileManagement.PokemonGo;
 using PvPoke.FileManagement.PvPoke;
 using Xunit;
 using Xunit.Abstractions;
@@ -19,6 +20,18 @@ namespace PvPoke.UnitTest
         {
             var json = await PvPokeGameMasterFileManager.ReadFileAsync();
             var file = PvPokeGameMasterFileManager.LoadFile(json);
+            string serializedFile = file.ToJson();
+            _output.WriteLine(serializedFile);
+            Assert.Equal(json, serializedFile);
+        }
+
+        //[Fact(Skip = "Assert that we can round trip the raw json")]
+        [Fact]
+        public async Task RoundTripPokemonGoJson()
+        {
+            //await PokemonGoGameMasterFileManager.FetchAndSaveFileAsync();
+            var json = await PokemonGoGameMasterFileManager.ReadFileAsync();
+            var file = PokemonGoGameMasterFileManager.LoadFile(json);
             string serializedFile = file.ToJson();
             _output.WriteLine(serializedFile);
             Assert.Equal(json, serializedFile);

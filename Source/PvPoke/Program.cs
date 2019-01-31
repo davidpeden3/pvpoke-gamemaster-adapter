@@ -18,7 +18,8 @@ namespace PvPoke
             {
                 long latestGameMasterVersion = await PokemonGoGameMasterFileManager.FetchLatestVersionAsync();
 
-                gameMasterFile = await PokemonGoGameMasterFileManager.OpenFileAsync();
+                string json = await PokemonGoGameMasterFileManager.ReadFileAsync();
+                gameMasterFile = PokemonGoGameMasterFileManager.LoadFile(json);
 
                 if (gameMasterFile.TimeStampMs != latestGameMasterVersion)
                 {
