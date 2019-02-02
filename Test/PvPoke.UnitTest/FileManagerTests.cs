@@ -49,10 +49,10 @@ namespace PvPoke.UnitTest
 			dynamic gameMaster = JsonConvert.DeserializeObject<dynamic>(json);
 
 			var optionsJson = await FileManager.ReadFileAsync(Path.Combine(AppContext.BaseDirectory, "Data", "options.json"));
-			var options = FileManager.LoadFile<PvPokeGameMasterFileManager.GameMasterFile.OptionsProperty>(optionsJson);
+			var options = FileManager.LoadFile<dynamic>(optionsJson);
 
 			var cupsJson = await FileManager.ReadFileAsync(Path.Combine(AppContext.BaseDirectory, "Data", "cups.json"));
-			var cups = FileManager.LoadFile<PvPokeGameMasterFileManager.GameMasterFile.CupsProperty>(cupsJson);
+			var cups = FileManager.LoadFile<dynamic>(cupsJson);
 
 			var gameMasterFile = new PvPokeGameMasterFileManager.GameMasterFile
 			{

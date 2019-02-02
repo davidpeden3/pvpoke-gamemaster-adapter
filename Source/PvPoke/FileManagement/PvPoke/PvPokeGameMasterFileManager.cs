@@ -43,42 +43,10 @@ namespace PvPoke.FileManagement.PvPoke
                 NullValueHandling = NullValueHandling.Ignore
             };
 
-            public OptionsProperty Options { get; set; }
-            public CupsProperty Cups { get; set; }
+            public dynamic Options { get; set; }
+            public dynamic Cups { get; set; }
             public IEnumerable<PokemonProperty> Pokemon { get; set; }
             public IEnumerable<MovesProperty> Moves { get; set; }
-
-            public class OptionsProperty
-            {
-                public int PartySize = 3;
-            }
-
-            public class CupsProperty
-            {
-                public IEnumerable<string> All { get; set; }
-
-                public IEnumerable<string> Boulder
-                {
-                    get
-                    {
-                        yield return "rock";
-                        yield return "steel";
-                        yield return "fighting";
-                        yield return "ground";
-                    }
-                }
-
-                public IEnumerable<string> Twilight
-                {
-                    get
-                    {
-                        yield return "dark";
-                        yield return "poison";
-                        yield return "fairy";
-                        yield return "ghost";
-                    }
-                }
-            }
 
             public class PokemonProperty
             {
