@@ -86,10 +86,10 @@ namespace PvPoke.FileManagement.PvPoke
                 public string SpeciesName { get; set; }
                 public string SpeciesId { get; set; }
                 public BaseStatsProperty BaseStats { get; set; }
-                public IEnumerable<string> Types { get; set; }
-                public IEnumerable<string> FastMoves { get; set; }
-                public IEnumerable<string> ChargedMoves { get; set; }
-                public IEnumerable<string> LegacyMoves { get; set; }
+                public List<string> Types { get; set; }
+                public List<string> FastMoves { get; set; }
+                public List<string> ChargedMoves { get; set; }
+                public List<string> LegacyMoves { get; set; }
 
                 public class BaseStatsProperty
                 {
