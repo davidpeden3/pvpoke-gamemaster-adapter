@@ -128,7 +128,9 @@
     {
       "speciesId": "spearow",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "TWISTER"
+      ]
     },
     {
       "speciesId": "fearow",
@@ -140,7 +142,9 @@
     {
       "speciesId": "ekans",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "GUNK_SHOT"
+      ]
     },
     {
       "speciesId": "arbok",
@@ -149,8 +153,13 @@
     },
     {
       "speciesId": "pikachu",
-      "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyFastMoves": [
+        "PRESENT"
+      ],
+      "legacyChargeMoves": [
+        "SURF",
+        "THUNDER"
+      ]
     },
     {
       "speciesId": "raichu",
@@ -169,7 +178,9 @@
     {
       "speciesId": "sandshrew",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "ROCK_TOMB"
+      ]
     },
     {
       "speciesId": "sandslash",
@@ -248,7 +259,10 @@
     {
       "speciesId": "jigglypuff",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "PLAY_ROUGH",
+        "BODY_SLAM"
+      ]
     },
     {
       "speciesId": "wigglytuff",
@@ -258,7 +272,9 @@
     {
       "speciesId": "zubat",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "SLUDGE_BOMB"
+      ]
     },
     {
       "speciesId": "golbat",
@@ -310,7 +326,9 @@
     },
     {
       "speciesId": "diglett",
-      "legacyFastMoves": [],
+      "legacyFastMoves": [
+        "MUD_SHOT"
+      ],
       "legacyChargeMoves": []
     },
     {
@@ -328,7 +346,9 @@
     {
       "speciesId": "meowth",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "BODY_SLAM"
+      ]
     },
     {
       "speciesId": "persian",
@@ -416,18 +436,23 @@
       "speciesId": "alakazam",
       "legacyFastMoves": [],
       "legacyChargeMoves": [
+        "DAZZLING_GLEAM",
         "PSYCHIC"
       ]
     },
     {
       "speciesId": "machop",
-      "legacyFastMoves": [],
+      "legacyFastMoves": [
+        "LOW_KICK"
+      ],
       "legacyChargeMoves": []
     },
     {
       "speciesId": "machoke",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "CROSS_CHOP"
+      ]
     },
     {
       "speciesId": "machamp",
@@ -509,7 +534,9 @@
     },
     {
       "speciesId": "rapidash",
-      "legacyFastMoves": [],
+      "legacyFastMoves": [
+        "EMBER"
+      ],
       "legacyChargeMoves": []
     },
     {
@@ -546,17 +573,25 @@
     {
       "speciesId": "doduo",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "SWIFT"
+      ]
     },
     {
       "speciesId": "dodrio",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "AIR_CUTTER"
+      ]
     },
     {
       "speciesId": "seel",
-      "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyFastMoves": [
+        "WATER_GUN"
+      ],
+      "legacyChargeMoves": [
+        "AQUA_JET"
+      ]
     },
     {
       "speciesId": "dewgong",
@@ -564,6 +599,7 @@
         "ICE_SHARD"
       ],
       "legacyChargeMoves": [
+        "AQUA_JET",
         "ICY_WIND"
       ]
     },
@@ -576,7 +612,9 @@
     },
     {
       "speciesId": "grimer_alolan",
-      "legacyFastMoves": [],
+      "legacyFastMoves": [
+        "ACID"
+      ],
       "legacyChargeMoves": []
     },
     {
@@ -607,8 +645,12 @@
     },
     {
       "speciesId": "gastly",
-      "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyFastMoves": [
+        "SUCKER_PUNCH"
+      ],
+      "legacyChargeMoves": [
+        "OMINOUS_WIND"
+      ]
     },
     {
       "speciesId": "haunter",
@@ -667,7 +709,9 @@
     {
       "speciesId": "voltorb",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "SIGNAL_BEAM"
+      ]
     },
     {
       "speciesId": "electrode",
@@ -733,7 +777,9 @@
     },
     {
       "speciesId": "koffing",
-      "legacyFastMoves": [],
+      "legacyFastMoves": [
+        "ACID"
+      ],
       "legacyChargeMoves": []
     },
     {
@@ -800,12 +846,15 @@
         "POISON_JAB"
       ],
       "legacyChargeMoves": [
+        "ICY_WIND",
         "DRILL_RUN"
       ]
     },
     {
       "speciesId": "staryu",
-      "legacyFastMoves": [],
+      "legacyFastMoves": [
+        "QUICK_ATTACK"
+      ],
       "legacyChargeMoves": []
     },
     {
@@ -894,7 +943,10 @@
     {
       "speciesId": "eevee",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "BODY_SLAM",
+        "LAST_RESORT"
+      ]
     },
     {
       "speciesId": "vaporeon",
@@ -935,6 +987,7 @@
       "speciesId": "omanyte",
       "legacyFastMoves": [],
       "legacyChargeMoves": [
+        "ROCK_TOMB",
         "BRINE"
       ]
     },
@@ -1282,7 +1335,9 @@
     {
       "speciesId": "umbreon",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "LAST_RESORT"
+      ]
     },
     {
       "speciesId": "murkrow",
@@ -1421,7 +1476,10 @@
     },
     {
       "speciesId": "delibird",
-      "legacyFastMoves": [],
+      "legacyFastMoves": [
+        "ICE_SHARD",
+        "QUICK_ATTACK"
+      ],
       "legacyChargeMoves": []
     },
     {

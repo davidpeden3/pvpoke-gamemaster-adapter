@@ -68,11 +68,24 @@ namespace PvPoke.UnitTest
 		[Fact]
 		public async Task CreateLegacyMovesConfiguration()
 		{
-			var json = await PvPokeGameMasterFileManager.ReadFileAsync();
-			var gameMaster = JsonConvert.DeserializeObject<PvPokeGameMasterFileManager.GameMasterFile>(json);
+			var json = await PokemonGoGameMasterFileManager.ReadFileAsync();
+			dynamic gameMaster = JsonConvert.DeserializeObject<dynamic>(json);
+			var regex = new Regex(@"^COMBAT_V\d+_MOVE_");
+			var templates = ((IEnumerable<dynamic>)gameMaster.itemTemplates).Where(t => regex.IsMatch((string)t.templateId));
+
+			var moves = new Dictionary<string, bool>();
+
+			foreach (dynamic template in templates)
+			{
+				string moveId = (string)template.combatMove.uniqueId;
+				moves.Add(moveId.Replace("_FAST", String.Empty), moveId.EndsWith("_FAST"));
+			}
+
+			var pvpokeJson = await PvPokeGameMasterFileManager.ReadFileAsync();
+			var pvpokeGameMaster = JsonConvert.DeserializeObject<PvPokeGameMasterFileManager.GameMasterFile>(pvpokeJson);
 			var legacyMoveCollection = new LegacyMoveCollection();
 
-			foreach (var pokemon in gameMaster.Pokemon)
+			foreach (var pokemon in pvpokeGameMaster.Pokemon)
 			{
 				var pokemonWithLegacyMoves = new LegacyMoveCollection.PokemonWithLegacyMoves {SpeciesId = pokemon.SpeciesId};
 
@@ -80,12 +93,11 @@ namespace PvPoke.UnitTest
 				{
 					foreach (string legacyMove in pokemon.LegacyMoves)
 					{
-						if (pokemon.FastMoves.Any(f => f == legacyMove))
+						if (legacyMove.StartsWith("HIDDEN_POWER_") || moves[legacyMove])
 						{
 							pokemonWithLegacyMoves.LegacyFastMoves.Add(legacyMove);
 						}
-
-						if (pokemon.ChargedMoves.Any(c => c == legacyMove))
+						else
 						{
 							pokemonWithLegacyMoves.LegacyChargeMoves.Add(legacyMove);
 						}
