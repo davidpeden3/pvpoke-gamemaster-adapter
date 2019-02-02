@@ -150,6 +150,15 @@ namespace PvPoke.UnitTest
 				targetPokemon.LegacyMoves.AddRange(pokemonWithLegacyMoves.LegacyFastMoves.Concat(pokemonWithLegacyMoves.LegacyChargeMoves));
 			}
 
+			IEnumerable<IGrouping<int, PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty>> multiformPokemon = pokemon.Values.GroupBy(p => p.Dex).Where(g => g.Count() > 1);
+
+			var genericEntries = multiformPokemon.Select(g => g.First());
+
+			foreach (PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty genericEntry in genericEntries)
+			{
+				pokemon.Remove(genericEntry.SpeciesId);
+			}
+
 			return pokemon.Values;
 		}
 
