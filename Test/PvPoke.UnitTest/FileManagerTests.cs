@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -47,8 +48,16 @@ namespace PvPoke.UnitTest
             var json = await PokemonGoGameMasterFileManager.ReadFileAsync();
             dynamic gameMaster = JsonConvert.DeserializeObject<dynamic>(json);
 
+            var optionsJson = await FileManager.ReadFileAsync(Path.Combine(AppContext.BaseDirectory, "Data", "options.json"));
+            var options = FileManager.LoadFile<PvPokeGameMasterFileManager.GameMasterFile.OptionsProperty>(optionsJson);
+
+            var cupsJson = await FileManager.ReadFileAsync(Path.Combine(AppContext.BaseDirectory, "Data", "cups.json"));
+            var cups = FileManager.LoadFile<PvPokeGameMasterFileManager.GameMasterFile.CupsProperty>(cupsJson);
+
             var gameMasterFile = new PvPokeGameMasterFileManager.GameMasterFile
             {
+                Options = options,
+                Cups = cups,
                 Pokemon = GameMasterFileAdapter.AdaptPokemon(gameMaster),
                 Moves = GameMasterFileAdapter.AdaptMoves(gameMaster)
             };

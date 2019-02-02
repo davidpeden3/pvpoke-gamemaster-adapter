@@ -1,0 +1,17 @@
+{
+  "cups": {
+    "all": [],
+    "boulder": [
+      "rock",
+      "steel",
+      "fighting",
+      "ground"
+    ],
+    "twilight": [
+      "dark",
+      "poison",
+      "fairy",
+      "ghost"
+    ]
+  }
+}
