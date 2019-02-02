@@ -116,7 +116,7 @@ namespace PvPoke.UnitTest
 				var pokemonProperty = new PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty
 				{
 					Dex = Convert.ToInt32(((string)template.templateId).Substring(1, 4)),
-					SpeciesName = speciesId.ToUpperFirstCharacter(),
+					SpeciesName = GenerateSpeciesName(speciesId),
 					SpeciesId = speciesId,
 					BaseStats = new PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty.BaseStatsProperty
 					{
@@ -157,9 +157,11 @@ namespace PvPoke.UnitTest
 		{
 			string form = (string)template.pokemonSettings.form;
 
-			if (!String.IsNullOrEmpty(form) && form.EndsWith("ALOLA"))
+			switch (form)
 			{
-				form += "N";
+				case string f when f.EndsWith("ALOLA"):
+					form += "N";
+					break;
 			}
 
 			string speciesId = form ?? (string)template.pokemonSettings.pokemonId;
@@ -184,6 +186,18 @@ namespace PvPoke.UnitTest
 			}
 
 			return speciesId.ToLower();
+		}
+
+		private static string GenerateSpeciesName(string speciesId)
+		{
+			var parts = speciesId.Split('_').Select(part => part.ToUpperFirstCharacter()).ToArray();
+
+			if (parts.Length == 1)
+			{
+				return parts[0];
+			}
+
+			return $"{parts[0]} ({parts[1]})";
 		}
 
 		private static string FormatType(string input)
