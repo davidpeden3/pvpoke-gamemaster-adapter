@@ -107,8 +107,7 @@ namespace PvPoke.FileManagement.PvPoke
                 public int Power { get; set; }
                 public int Energy { get; set; }
                 public int EnergyGain { get; set; }
-                public int DamageWindow { get; set; }
-                public int Cooldown { get; set; }
+                public int? Cooldown { get; set; }
             }
 
             public string ToJson()

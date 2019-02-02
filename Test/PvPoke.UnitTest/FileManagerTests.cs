@@ -95,15 +95,15 @@ namespace PvPoke.UnitTest
         {
             //var regex = new Regex(@"^COMBAT_V\d+_MOVE_");
             var regex = new Regex(@"^COMBAT_V0250_MOVE_VOLT_SWITCH_FAST");
+            //var regex = new Regex(@"^COMBAT_V0296_MOVE_FRENZY_PLANT");
             var templates = ((IEnumerable<dynamic>)gameMaster.itemTemplates).Where(t => regex.IsMatch((string)t.templateId));
 
             foreach (dynamic template in templates)
             {
                 string pvpTemplateId = template.templateId;
-                string pveTemplateId = pvpTemplateId.Substring("COMBAT_".Length);
                 string moveId = ((string)template.combatMove.uniqueId).Replace("_FAST", String.Empty);
                 int energyDelta = template.combatMove.energyDelta;
-                dynamic pveMove = ((IEnumerable<dynamic>)gameMaster.itemTemplates).Single(t => t.templateId == pveTemplateId);
+                int? durationMoves = Int32.TryParse((string)template.combatMove.durationTurns, out int i) ? i : (int?)null;
 
                 yield return new PvPokeGameMasterFileManager.GameMasterFile.MovesProperty
                 {
@@ -113,8 +113,7 @@ namespace PvPoke.UnitTest
                     Power = template.combatMove.power,
                     Energy = energyDelta < 0 ? Math.Abs(energyDelta) : 0,
                     EnergyGain = energyDelta > 0 ? energyDelta : 0,
-                    DamageWindow = pveMove.moveSettings.damageWindowStartMs,
-                    Cooldown = 0
+                    Cooldown = (durationMoves + 1) * 500 * 2 // the additional * 2 is because of a bug in pvpoke where it expects the duration to be twice as long as it should be -- this operand can be removed if/when that bug is fixed
                 };
 
                 break;
