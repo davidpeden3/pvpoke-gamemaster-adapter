@@ -38,15 +38,15 @@ namespace PvPoke.UnitTest
 
 			foreach (var pokemonProperty in file.Pokemon)
 			{
-				pokemonProperty.FastMoves = pokemonProperty.FastMoves.Select(m => m).OrderBy(m => m).ToList();
-				pokemonProperty.ChargedMoves = pokemonProperty.ChargedMoves.Select(m => m).OrderBy(m => m).ToList();
+				pokemonProperty.FastMoves = pokemonProperty.FastMoves.OrderBy(m => m).ToList();
+				pokemonProperty.ChargedMoves = pokemonProperty.ChargedMoves.OrderBy(m => m).ToList();
 				if (pokemonProperty.LegacyMoves != null)
 				{
-					pokemonProperty.LegacyMoves = pokemonProperty.LegacyMoves.Select(m => m).OrderBy(m => m).ToList();
+					pokemonProperty.LegacyMoves = pokemonProperty.LegacyMoves.OrderBy(m => m).ToList();
 				}
 			}
 
-			file.Moves = file.Moves.Select(m => m).OrderBy(m => m.Name);
+			file.Moves = file.Moves.OrderBy(m => m.Name);
 
 			string serializedFile = file.ToJson();
 			_output.WriteLine(serializedFile);
@@ -190,10 +190,10 @@ namespace PvPoke.UnitTest
 				var targetPokemon = pokemon[pokemonWithLegacyMoves.SpeciesId];
 
 				targetPokemon.FastMoves.AddRange(pokemonWithLegacyMoves.LegacyFastMoves);
-				targetPokemon.FastMoves = targetPokemon.FastMoves.Select(m => m).OrderBy(m => m).ToList();
+				targetPokemon.FastMoves = targetPokemon.FastMoves.OrderBy(m => m).ToList();
 
 				targetPokemon.ChargedMoves.AddRange(pokemonWithLegacyMoves.LegacyChargeMoves);
-				targetPokemon.ChargedMoves = targetPokemon.ChargedMoves.Select(m => m).OrderBy(m => m).ToList();
+				targetPokemon.ChargedMoves = targetPokemon.ChargedMoves.OrderBy(m => m).ToList();
 
 				targetPokemon.LegacyMoves.AddRange(pokemonWithLegacyMoves.LegacyFastMoves.Concat(pokemonWithLegacyMoves.LegacyChargeMoves).Distinct().OrderBy(m => m));
 			}
@@ -344,7 +344,28 @@ namespace PvPoke.UnitTest
 				});
 			}
 
-			return moves.Select(m => m).OrderBy(m => m.Name);
+			var genericHiddenPower = moves.Single(m => m.MoveId == "HIDDEN_POWER");
+			moves.AddRange(GenerateHiddenPowerMoves(genericHiddenPower));
+			moves.Remove(genericHiddenPower);
+
+			return moves.OrderBy(m => m.Name);
+		}
+
+		private static IEnumerable<PvPokeGameMasterFileManager.GameMasterFile.MovesProperty> GenerateHiddenPowerMoves(PvPokeGameMasterFileManager.GameMasterFile.MovesProperty genericHiddenPower)
+		{
+			foreach (string hiddenPower in _hiddenPowers)
+			{
+				yield return new PvPokeGameMasterFileManager.GameMasterFile.MovesProperty
+				{
+					MoveId = hiddenPower,
+					Name = GenerateMoveName(hiddenPower),
+					Type = hiddenPower.Split('_')[2].ToLower(),
+					Power = genericHiddenPower.Power,
+					Energy = genericHiddenPower.Energy,
+					EnergyGain = genericHiddenPower.EnergyGain,
+					Cooldown = genericHiddenPower.Cooldown
+				};
+			}
 		}
 
 		private static string GenerateMoveId(string moveId)
@@ -364,6 +385,15 @@ namespace PvPoke.UnitTest
 		{
 			switch (moveId)
 			{
+				case string p when p.StartsWith("HIDDEN_POWER"):
+					string[] parts = moveId.ToLower().Split('_').Select(word => word.ToUpperFirstCharacter()).ToArray();
+					string move = $"{parts[0]} {parts[1]}";
+					if (parts.Length == 3)
+					{
+						move = $"{move} ({parts[2]})";
+					}
+
+					return move;
 				case "X_SCISSOR":
 					return "X-Scissor";
 				default:
