@@ -46,6 +46,7 @@ namespace PvPoke.UnitTest
 				}
 			}
 
+			file.Pokemon = file.Pokemon.OrderBy(p => p.Dex).ThenBy(p => p.SpeciesId);
 			file.Moves = file.Moves.OrderBy(m => m.Name);
 
 			string serializedFile = file.ToJson();
