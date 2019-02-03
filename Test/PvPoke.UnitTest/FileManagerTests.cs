@@ -137,8 +137,8 @@ namespace PvPoke.UnitTest
 						Hp = template.pokemonSettings.stats.baseStamina,
 					},
 					Types = new List<string> {FormatType((string)template.pokemonSettings.type)},
-					FastMoves = new List<string>(((IEnumerable<string>)template.pokemonSettings.quickMoves.ToObject<IEnumerable<string>>()).Select(m => m.Remove(m.Length - "_FAST".Length))),
-					ChargedMoves = new List<string>(((IEnumerable<string>)template.pokemonSettings.cinematicMoves.ToObject<IEnumerable<string>>()).Select(m => m)),
+					FastMoves = new List<string>(((IEnumerable<string>)template.pokemonSettings.quickMoves.ToObject<IEnumerable<string>>()).Select(m => m.Remove(m.Length - "_FAST".Length)).Distinct().OrderBy(m => m)),
+					ChargedMoves = new List<string>(((IEnumerable<string>)template.pokemonSettings.cinematicMoves.ToObject<IEnumerable<string>>()).Select(m => m).Distinct().OrderBy(m => m)),
 					LegacyMoves = new List<string>()
 				};
 
@@ -159,7 +159,11 @@ namespace PvPoke.UnitTest
 				var targetPokemon = pokemon[pokemonWithLegacyMoves.SpeciesId];
 				targetPokemon.FastMoves.AddRange(pokemonWithLegacyMoves.LegacyFastMoves);
 				targetPokemon.ChargedMoves.AddRange(pokemonWithLegacyMoves.LegacyChargeMoves);
-				targetPokemon.LegacyMoves.AddRange(pokemonWithLegacyMoves.LegacyFastMoves.Concat(pokemonWithLegacyMoves.LegacyChargeMoves));
+				targetPokemon.LegacyMoves.AddRange(pokemonWithLegacyMoves.LegacyFastMoves.Concat(pokemonWithLegacyMoves.LegacyChargeMoves).Distinct().OrderBy(m => m));
+				if (!targetPokemon.LegacyMoves.Any())
+				{
+					targetPokemon.LegacyMoves = null;
+				}
 			}
 
 			IEnumerable<IGrouping<int, PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty>> multiformPokemon = pokemon.Values.GroupBy(p => p.Dex).Where(g => g.Count() > 1);
