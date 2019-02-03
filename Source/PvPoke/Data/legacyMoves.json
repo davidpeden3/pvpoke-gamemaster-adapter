@@ -1033,7 +1033,9 @@
     },
     {
       "speciesId": "zapdos",
-      "legacyFastMoves": [],
+      "legacyFastMoves": [
+        "THUNDER_SHOCK"
+      ],
       "legacyChargeMoves": [
         "DISCHARGE"
       ]
