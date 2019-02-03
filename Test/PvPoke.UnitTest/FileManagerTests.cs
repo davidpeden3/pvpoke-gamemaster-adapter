@@ -277,9 +277,6 @@ namespace PvPoke.UnitTest
 				case "MR_MIME":
 					speciesId = "MR. MIME";
 					break;
-				case "HO_OH":
-					speciesId = "HO-OH";
-					break;
 			}
 
 			return speciesId.ToLower();
@@ -287,14 +284,27 @@ namespace PvPoke.UnitTest
 
 		private static string GenerateSpeciesName(string speciesId)
 		{
-			var parts = speciesId.Split('_').Select(part => part.ToUpperFirstCharacter()).ToArray();
-
-			if (parts.Length == 1)
+			switch (speciesId)
 			{
-				return parts[0];
+				case "ho_oh":
+				case "porygon_z":
+					speciesId = speciesId.Replace('_', '-');
+					break;
 			}
 
-			return $"{parts[0]} ({parts[1]})";
+			if (speciesId.IndexOf('_') >= 0)
+			{
+				var parts = speciesId.Split('_').Select(part => part.ToUpperFirstCharacter()).ToArray();
+				return $"{parts[0]} ({parts[1]})";
+			}
+
+			if (speciesId.IndexOf('-') >= 0)
+			{
+				var parts = speciesId.Split('-').Select(part => part.ToUpperFirstCharacter()).ToArray();
+				return $"{parts[0]}-{parts[1]}";
+			}
+
+			return speciesId.ToUpperFirstCharacter();
 		}
 
 		private static string FormatType(string type)
