@@ -126,6 +126,26 @@ namespace PvPoke.UnitTest
 
 	public static class GameMasterFileAdapter
 	{
+		private static readonly IEnumerable<string> _hiddenPowers = new List<string>
+		{
+			"HIDDEN_POWER_BUG",
+			"HIDDEN_POWER_DARK",
+			"HIDDEN_POWER_DRAGON",
+			"HIDDEN_POWER_ELECTRIC",
+			"HIDDEN_POWER_FIGHTING",
+			"HIDDEN_POWER_FIRE",
+			"HIDDEN_POWER_FLYING",
+			"HIDDEN_POWER_GHOST",
+			"HIDDEN_POWER_GRASS",
+			"HIDDEN_POWER_GROUND",
+			"HIDDEN_POWER_ICE",
+			"HIDDEN_POWER_POISON",
+			"HIDDEN_POWER_PSYCHIC",
+			"HIDDEN_POWER_ROCK",
+			"HIDDEN_POWER_STEEL",
+			"HIDDEN_POWER_WATER"
+		};
+
 		public static async Task<IEnumerable<PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty>> AdaptPokemonAsync(dynamic gameMaster)
 		{
 			var regex = new Regex(@"^V\d+_POKEMON_");
@@ -176,10 +196,6 @@ namespace PvPoke.UnitTest
 				targetPokemon.ChargedMoves = targetPokemon.ChargedMoves.Select(m => m).OrderBy(m => m).ToList();
 
 				targetPokemon.LegacyMoves.AddRange(pokemonWithLegacyMoves.LegacyFastMoves.Concat(pokemonWithLegacyMoves.LegacyChargeMoves).Distinct().OrderBy(m => m));
-				if (!targetPokemon.LegacyMoves.Any())
-				{
-					targetPokemon.LegacyMoves = null;
-				}
 			}
 
 			IEnumerable<IGrouping<int, PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty>> multiformPokemon = pokemon.Values.GroupBy(p => p.Dex).Where(g => g.Count() > 1);
@@ -191,7 +207,47 @@ namespace PvPoke.UnitTest
 				pokemon.Remove(genericEntry.SpeciesId);
 			}
 
+			ExpandHiddenPower(pokemon.Values);
+			PruneEmptyLegacyMoves(pokemon);
+
 			return pokemon.Values;
+		}
+
+		private static void PruneEmptyLegacyMoves(Dictionary<string, PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty> pokemon)
+		{
+			foreach (var pokemonProperty in pokemon.Values.Where(p => !p.LegacyMoves.Any()))
+			{
+				pokemonProperty.LegacyMoves = null;
+			}
+		}
+
+		private static void ExpandHiddenPower(IEnumerable<PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty> pokemon)
+		{
+			const string hiddenPower = "HIDDEN_POWER";
+
+			pokemon = pokemon.ToList();
+
+			foreach (var pokemonProperty in pokemon.Where(p => p.FastMoves.Contains(hiddenPower)))
+			{
+				pokemonProperty.FastMoves = ExpandHiddenPower(pokemonProperty.FastMoves);
+			}
+
+			foreach (var pokemonProperty in pokemon.Where(p => p.ChargedMoves.Contains(hiddenPower)))
+			{
+				pokemonProperty.ChargedMoves = ExpandHiddenPower(pokemonProperty.ChargedMoves);
+			}
+
+			foreach (var pokemonProperty in pokemon.Where(p => p.LegacyMoves.Contains(hiddenPower)))
+			{
+				pokemonProperty.LegacyMoves = ExpandHiddenPower(pokemonProperty.LegacyMoves);
+			}
+
+			List<string> ExpandHiddenPower(List<string> moves)
+			{
+				moves.Remove(hiddenPower);
+				moves.AddRange(_hiddenPowers);
+				return moves.Distinct().OrderBy(m => m).ToList();
+			}
 		}
 
 		private static string GenerateSpeciesId(dynamic template)
