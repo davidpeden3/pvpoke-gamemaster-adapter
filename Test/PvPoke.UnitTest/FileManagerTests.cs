@@ -182,6 +182,9 @@ namespace PvPoke.UnitTest
 				pokemon.Add(speciesId, pokemonProperty);
 			}
 
+			RemoveGenericFormPokemon(pokemon);
+			RenameNormalFormPokemon(pokemon);
+
 			var legacyMovesJson = await FileManager.ReadFileAsync(Path.Combine(AppContext.BaseDirectory, "Data", "legacyMoves.json"));
 			var legacyMoves = FileManager.LoadFile<LegacyMoveCollection>(legacyMovesJson);
 
@@ -198,19 +201,40 @@ namespace PvPoke.UnitTest
 				targetPokemon.LegacyMoves.AddRange(pokemonWithLegacyMoves.LegacyFastMoves.Concat(pokemonWithLegacyMoves.LegacyChargeMoves).Distinct().OrderBy(m => m));
 			}
 
-			IEnumerable<IGrouping<int, PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty>> multiformPokemon = pokemon.Values.GroupBy(p => p.Dex).Where(g => g.Count() > 1);
-
-			var genericEntries = multiformPokemon.Select(g => g.First());
-
-			foreach (PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty genericEntry in genericEntries)
-			{
-				pokemon.Remove(genericEntry.SpeciesId);
-			}
-
 			ExpandHiddenPower(pokemon.Values);
 			PruneEmptyLegacyMoves(pokemon);
 
-			return pokemon.Values;
+			return pokemon.Values.OrderBy(p => p.Dex).ThenBy(p => p.SpeciesId);
+		}
+
+		private static void RemoveGenericFormPokemon(Dictionary<string, PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty> pokemon)
+		{
+			IEnumerable<IGrouping<int, PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty>> multiformPokemon = pokemon.Values.GroupBy(p => p.Dex).Where(g => g.Count() > 1);
+
+			var genericForms = multiformPokemon.Select(g => g.First());
+
+			foreach (PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty genericForm in genericForms)
+			{
+				pokemon.Remove(genericForm.SpeciesId);
+			}
+		}
+
+		private static void RenameNormalFormPokemon(Dictionary<string, PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty> pokemon)
+		{
+			IEnumerable<IGrouping<int, PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty>> multiformPokemon = pokemon.Values.GroupBy(p => p.Dex).Where(g => g.Count() > 1);
+			IEnumerable<PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty> normalForms = multiformPokemon.SelectMany(g => g.Where(p => p.SpeciesId.EndsWith("_normal")));
+
+			foreach (PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty normalForm in normalForms)
+			{
+				string oldSpeciesId = normalForm.SpeciesId;
+				string newSpeciesId = oldSpeciesId.Replace("_normal", String.Empty);
+
+				normalForm.SpeciesId = newSpeciesId;
+				normalForm.SpeciesName = normalForm.SpeciesName.Replace(" (Normal)", String.Empty);
+				pokemon.Add(normalForm.SpeciesId, normalForm);
+
+				pokemon.Remove(oldSpeciesId);
+			}
 		}
 
 		private static void PruneEmptyLegacyMoves(Dictionary<string, PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty> pokemon)
@@ -252,16 +276,7 @@ namespace PvPoke.UnitTest
 
 		private static string GenerateSpeciesId(dynamic template)
 		{
-			string form = (string)template.pokemonSettings.form;
-
-			switch (form)
-			{
-				case string f when f.EndsWith("ALOLA"):
-					form += "N";
-					break;
-			}
-
-			string speciesId = form ?? (string)template.pokemonSettings.pokemonId;
+			string speciesId = (string)template.pokemonSettings.form ?? (string)template.pokemonSettings.pokemonId;
 
 			switch (speciesId)
 			{
@@ -276,6 +291,9 @@ namespace PvPoke.UnitTest
 					break;
 				case "MR_MIME":
 					speciesId = "MR. MIME";
+					break;
+				case string s when s.EndsWith("ALOLA"):
+					speciesId += "N";
 					break;
 			}
 
