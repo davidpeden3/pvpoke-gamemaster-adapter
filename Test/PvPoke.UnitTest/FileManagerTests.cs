@@ -174,8 +174,8 @@ namespace PvPoke.UnitTest
 						FormatType((string)template.pokemonSettings.type),
 						FormatType((string)template.pokemonSettings.type2)
 					},
-					FastMoves = new List<string>(((IEnumerable<string>)template.pokemonSettings.quickMoves.ToObject<IEnumerable<string>>()).Select(m => m.Remove(m.Length - "_FAST".Length)).Distinct().OrderBy(m => m)),
-					ChargedMoves = new List<string>(((IEnumerable<string>)template.pokemonSettings.cinematicMoves.ToObject<IEnumerable<string>>()).Select(m => m).Distinct().OrderBy(m => m)),
+					FastMoves = new List<string>(((IEnumerable<string>)template.pokemonSettings.quickMoves.ToObject<IEnumerable<string>>()).Select(GenerateMoveId).Distinct().OrderBy(m => m)),
+					ChargedMoves = new List<string>(((IEnumerable<string>)template.pokemonSettings.cinematicMoves.ToObject<IEnumerable<string>>()).Select(GenerateMoveId).Distinct().OrderBy(m => m)),
 					LegacyMoves = new List<string>()
 				};
 
@@ -328,14 +328,14 @@ namespace PvPoke.UnitTest
 
 			foreach (dynamic template in templates)
 			{
-				string moveId = ((string)template.combatMove.uniqueId).Replace("_FAST", String.Empty);
+				string moveId = GenerateMoveId((string)template.combatMove.uniqueId);
 				int? energyDelta = template.combatMove.energyDelta;
 				int? turnCount = Int32.TryParse((string)template.combatMove.durationTurns, out int i) ? i : (int?)null;
 
 				moves.Add(new PvPokeGameMasterFileManager.GameMasterFile.MovesProperty
 				{
 					MoveId = moveId,
-					Name = String.Join(' ', moveId.ToLower().Split('_').Select(word => word.ToUpperFirstCharacter())),
+					Name = GenerateMoveName(moveId),
 					Type = ((string)template.combatMove.type).Substring("POKEMON_TYPE_".Length).ToLower(),
 					Power = (int?)template.combatMove.power ?? 0,
 					Energy = energyDelta != null ? (energyDelta < 0 ? Math.Abs((int)energyDelta) : 0) : 0,
@@ -345,6 +345,30 @@ namespace PvPoke.UnitTest
 			}
 
 			return moves.Select(m => m).OrderBy(m => m.Name);
+		}
+
+		private static string GenerateMoveId(string moveId)
+		{
+			switch (moveId)
+			{
+				case "FUTURESIGHT":
+					return "FUTURE_SIGHT";
+				case string m when m.EndsWith("_FAST"):
+					return moveId.Replace("_FAST", String.Empty);
+				default:
+					return moveId;
+			}
+		}
+
+		private static string GenerateMoveName(string moveId)
+		{
+			switch (moveId)
+			{
+				case "X_SCISSOR":
+					return "X-Scissor";
+				default:
+					return String.Join(' ', moveId.ToLower().Split('_').Select(word => word.ToUpperFirstCharacter()));
+			}
 		}
 	}
 
