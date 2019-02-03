@@ -308,6 +308,9 @@ namespace PvPoke.UnitTest
 				case "porygon_z":
 					speciesId = speciesId.Replace('_', '-');
 					break;
+				case "mr. mime":
+					speciesId = "Mr. Mime";
+					break;
 			}
 
 			if (speciesId.IndexOf('_') >= 0)
