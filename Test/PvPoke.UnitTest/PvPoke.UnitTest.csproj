@@ -10,6 +10,9 @@
     <Content Include="..\..\Source\PvPoke\Data\cups.json" Link="Data\cups.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="..\..\Source\PvPoke\Data\gameMaster.json" Link="Data\gameMaster.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="..\..\Source\PvPoke\Data\legacyMoves.json" Link="Data\legacyMoves.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
