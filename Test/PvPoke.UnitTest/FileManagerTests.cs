@@ -281,18 +281,6 @@ namespace PvPoke.UnitTest
 
 			switch (speciesId)
 			{
-				case "NIDORAN_MALE":
-					speciesId = "NIDORAN♂";
-					break;
-				case "NIDORAN_FEMALE":
-					speciesId = "NIDORAN♀";
-					break;
-				case "FARFETCHD":
-					speciesId = "FARFETCH'D";
-					break;
-				case "MR_MIME":
-					speciesId = "MR. MIME";
-					break;
 				case string s when s.EndsWith("ALOLA"):
 					speciesId += "N";
 					break;
@@ -309,12 +297,21 @@ namespace PvPoke.UnitTest
 				case "porygon_z":
 					speciesId = speciesId.Replace('_', '-');
 					break;
-				case "mr. mime":
+				case "mr_mime":
 					speciesId = "Mr. Mime";
 					break;
+                case "nidoran_male":
+                    speciesId = "Nidoran♂";
+                    break;
+                case "nidoran_female":
+                    speciesId = "Nidoran♀";
+                    break;
+                case "farfetchd":
+                    speciesId = "Farfetch'd";
+                    break;
 			}
 
-			if (speciesId.IndexOf('_') >= 0)
+            if (speciesId.IndexOf('_') >= 0)
 			{
 				var parts = speciesId.Split('_').Select(part => part.ToUpperFirstCharacter()).ToArray();
 				return $"{parts[0]} ({parts[1]})";
