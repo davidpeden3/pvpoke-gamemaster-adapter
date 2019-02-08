@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using CsvHelper;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using PvPoke.FileManagement;
@@ -123,9 +124,52 @@ namespace PvPoke.UnitTest
 
 			_output.WriteLine(JsonConvert.SerializeObject(legacyMoveCollection, _jsonSerializerSettings));
 		}
-	}
 
-	public static class GameMasterFileAdapter
+        [Fact]
+        public async Task GenerateFastMovesCsv()
+        {
+            var pvpokeJson = await PvPokeGameMasterFileManager.ReadFileAsync();
+            var pvpokeGameMaster = JsonConvert.DeserializeObject<PvPokeGameMasterFileManager.GameMasterFile>(pvpokeJson);
+
+            using (var writer = new StringWriter())
+            using (var csv = new CsvWriter(writer))
+            {
+                var fastMoves = pvpokeGameMaster.Moves.Where(m => m.EnergyGain > 0).Select(m => new
+                {
+                    Move = m.Name,
+                    m.Power,
+                    m.EnergyGain,
+                    Turns = m.Cooldown / 500,
+                    Type = m.Type.ToUpperFirstCharacter()
+                });
+                csv.WriteRecords(fastMoves);
+                _output.WriteLine(writer.ToString());
+            }
+        }
+
+        [Fact]
+        public async Task GenerateChargeMovesCsv()
+        {
+            var pvpokeJson = await PvPokeGameMasterFileManager.ReadFileAsync();
+            var pvpokeGameMaster = JsonConvert.DeserializeObject<PvPokeGameMasterFileManager.GameMasterFile>(pvpokeJson);
+
+            using (var writer = new StringWriter())
+            using (var csv = new CsvWriter(writer))
+            {
+                var chargeMoves = pvpokeGameMaster.Moves.Where(m => m.Energy > 0).Select(m => new
+                {
+                    Move = m.Name,
+                    m.Power,
+                    m.Energy,
+                    Type = m.Type.ToUpperFirstCharacter()
+                });
+                csv.WriteRecords(chargeMoves);
+                _output.WriteLine(writer.ToString());
+            }
+        }
+    }
+
+    public static class GameMasterFileAdapter
 	{
 		private static readonly IEnumerable<string> _hiddenPowers = new List<string>
 		{
@@ -432,4 +476,5 @@ namespace PvPoke.UnitTest
 			public List<string> LegacyChargeMoves { get; set; } = new List<string>();
 		}
 	}
+
 }
