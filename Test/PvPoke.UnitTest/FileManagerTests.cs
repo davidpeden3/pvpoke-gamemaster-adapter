@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
 using PvPoke.FileManagement;
 using PvPoke.FileManagement.PokemonGo;
@@ -27,6 +29,17 @@ namespace PvPoke.UnitTest
 		public FileManagerTests(ITestOutputHelper output)
 		{
 			_output = output;
+		}
+
+		[Fact]
+		public async Task FormatJsonFiles()
+		{
+			foreach (string filePath in Directory.EnumerateFiles(PokemonGoGameMasterFileManager.DataPath).Where(f => f.EndsWith(".json")))
+			{
+				var json = await FileManager.ReadFileAsync(filePath);
+				string jsonFormatted = JToken.Parse(json).ToString(Formatting.Indented);
+				await FileManager.SaveFileAsync(jsonFormatted, filePath);
+			}
 		}
 
 		[Fact]

@@ -12,7 +12,7 @@ namespace PvPoke.FileManagement.PokemonGo
 		private static readonly string _gameMasterVersionUri = "https://raw.githubusercontent.com/pokemongo-dev-contrib/pokemongo-game-master/master/versions/latest-version.txt";
 		private static readonly string _gameMasterJsonUri = "https://raw.githubusercontent.com/pokemongo-dev-contrib/pokemongo-game-master/master/versions/latest/GAME_MASTER.json";
 
-		private static string DataPath
+		public static string DataPath
 		{
 			get
 			{
