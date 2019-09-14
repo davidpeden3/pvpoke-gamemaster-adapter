@@ -31,9 +31,11 @@ namespace PvPoke.UnitTest
 			_output = output;
 		}
 
-		[Fact]
+		[Fact(Skip = "Refresh PvPoke game master")]
 		public async Task FormatJsonFiles()
 		{
+			await PvPokeGameMasterFileManager.FetchAndSaveFileAsync();
+
 			foreach (string filePath in Directory.EnumerateFiles(PokemonGoGameMasterFileManager.DataPath).Where(f => f.EndsWith(".json")))
 			{
 				var json = await FileManager.ReadFileAsync(filePath);
@@ -45,7 +47,7 @@ namespace PvPoke.UnitTest
 		[Fact]
 		public async Task RoundTripPvPokeJson()
 		{
-			var json = await PvPokeGameMasterFileManager.ReadFileAsync();
+			var json = await PvPokeGameMasterFileManager.ReadFileAsync(PvPokeGameMasterFileManager.GeneratedPvPokeGameMasterJsonPath);
 			PvPokeGameMasterFileManager.GameMasterFile file = PvPokeGameMasterFileManager.LoadFile(json);
 
 			foreach (var pokemonProperty in file.Pokemon)
@@ -109,7 +111,7 @@ namespace PvPoke.UnitTest
 				moves.Add(moveId.Replace("_FAST", String.Empty), moveId.EndsWith("_FAST"));
 			}
 
-			var pvpokeJson = await PvPokeGameMasterFileManager.ReadFileAsync();
+			var pvpokeJson = await PvPokeGameMasterFileManager.ReadFileAsync(PvPokeGameMasterFileManager.ActualPvPokeGameMasterJsonPath);
 			var pvpokeGameMaster = JsonConvert.DeserializeObject<PvPokeGameMasterFileManager.GameMasterFile>(pvpokeJson);
 			var legacyMoveCollection = new LegacyMoveCollection();
 
