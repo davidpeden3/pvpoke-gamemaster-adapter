@@ -77,15 +77,15 @@ namespace PvPoke.UnitTest
 			var json = await PokemonGoGameMasterFileManager.ReadFileAsync(PokemonGoGameMasterFileManager.GameMasterJsonPath);
 			dynamic gameMaster = JsonConvert.DeserializeObject<dynamic>(json);
 
-			var optionsJson = await FileManager.ReadFileAsync(PokemonGoGameMasterFileManager.OptionsJsonPath);
-			var options = FileManager.LoadFile<dynamic>(optionsJson);
+			var settingsJson = await FileManager.ReadFileAsync(PokemonGoGameMasterFileManager.SettingsJsonPath);
+			var settings = FileManager.LoadFile<dynamic>(settingsJson);
 
 			var cupsJson = await FileManager.ReadFileAsync(PokemonGoGameMasterFileManager.CupsJsonPath);
 			var cups = FileManager.LoadFile<dynamic>(cupsJson);
 
 			var gameMasterFile = new PvPokeGameMasterFileManager.GameMasterFile
 			{
-				Options = options,
+				Settings = settings,
 				Cups = cups,
 				Pokemon = await GameMasterFileAdapter.AdaptPokemonAsync(gameMaster),
 				Moves = GameMasterFileAdapter.AdaptMoves(gameMaster)
@@ -141,51 +141,51 @@ namespace PvPoke.UnitTest
 			_output.WriteLine(JsonConvert.SerializeObject(legacyMoveCollection, _jsonSerializerSettings));
 		}
 
-        [Fact]
-        public async Task GenerateFastMovesCsv()
-        {
-            var pvpokeJson = await PvPokeGameMasterFileManager.ReadFileAsync();
-            var pvpokeGameMaster = JsonConvert.DeserializeObject<PvPokeGameMasterFileManager.GameMasterFile>(pvpokeJson);
+		[Fact]
+		public async Task GenerateFastMovesCsv()
+		{
+			var pvpokeJson = await PvPokeGameMasterFileManager.ReadFileAsync(PvPokeGameMasterFileManager.GeneratedPvPokeGameMasterJsonPath);
+			var pvpokeGameMaster = JsonConvert.DeserializeObject<PvPokeGameMasterFileManager.GameMasterFile>(pvpokeJson);
 
-            using (var writer = new StringWriter())
-            using (var csv = new CsvWriter(writer))
-            {
-                var fastMoves = pvpokeGameMaster.Moves.Where(m => m.EnergyGain > 0).Select(m => new
-                {
-                    Move = m.Name,
-                    m.Power,
-                    m.EnergyGain,
-                    Turns = m.Cooldown / 500,
-                    Type = m.Type.ToUpperFirstCharacter()
-                });
-                csv.WriteRecords(fastMoves);
-                _output.WriteLine(writer.ToString());
-            }
-        }
+			using (var writer = new StringWriter())
+			using (var csv = new CsvWriter(writer))
+			{
+				var fastMoves = pvpokeGameMaster.Moves.Where(m => m.EnergyGain > 0).Select(m => new
+				{
+					Move = m.Name,
+					m.Power,
+					m.EnergyGain,
+					Turns = m.Cooldown / 500,
+					Type = m.Type.ToUpperFirstCharacter()
+				});
+				csv.WriteRecords(fastMoves);
+				_output.WriteLine(writer.ToString());
+			}
+		}
 
-        [Fact]
-        public async Task GenerateChargeMovesCsv()
-        {
-            var pvpokeJson = await PvPokeGameMasterFileManager.ReadFileAsync();
-            var pvpokeGameMaster = JsonConvert.DeserializeObject<PvPokeGameMasterFileManager.GameMasterFile>(pvpokeJson);
+		[Fact]
+		public async Task GenerateChargeMovesCsv()
+		{
+			var pvpokeJson = await PvPokeGameMasterFileManager.ReadFileAsync(PvPokeGameMasterFileManager.GeneratedPvPokeGameMasterJsonPath);
+			var pvpokeGameMaster = JsonConvert.DeserializeObject<PvPokeGameMasterFileManager.GameMasterFile>(pvpokeJson);
 
-            using (var writer = new StringWriter())
-            using (var csv = new CsvWriter(writer))
-            {
-                var chargeMoves = pvpokeGameMaster.Moves.Where(m => m.Energy > 0).Select(m => new
-                {
-                    Move = m.Name,
-                    m.Power,
-                    m.Energy,
-                    Type = m.Type.ToUpperFirstCharacter()
-                });
-                csv.WriteRecords(chargeMoves);
-                _output.WriteLine(writer.ToString());
-            }
-        }
-    }
+			using (var writer = new StringWriter())
+			using (var csv = new CsvWriter(writer))
+			{
+				var chargeMoves = pvpokeGameMaster.Moves.Where(m => m.Energy > 0).Select(m => new
+				{
+					Move = m.Name,
+					m.Power,
+					m.Energy,
+					Type = m.Type.ToUpperFirstCharacter()
+				});
+				csv.WriteRecords(chargeMoves);
+				_output.WriteLine(writer.ToString());
+			}
+		}
+	}
 
-    public static class GameMasterFileAdapter
+	public static class GameMasterFileAdapter
 	{
 		private static readonly IEnumerable<string> _hiddenPowers = new List<string>
 		{
@@ -243,7 +243,9 @@ namespace PvPoke.UnitTest
 				pokemon[speciesId] = pokemonProperty;
 			}
 
-			RemoveGenericFormPokemon(pokemon);
+			RemoveSubtypePokemon(pokemon, "_shadow");
+			RemoveSubtypePokemon(pokemon, "_purified");
+			RemoveSubtypePokemon(pokemon, "_normal");
 			RenameNormalFormPokemon(pokemon);
 
 			var legacyMovesJson = await FileManager.ReadFileAsync(PokemonGoGameMasterFileManager.LegacyMovesJsonPath);
@@ -268,15 +270,13 @@ namespace PvPoke.UnitTest
 			return pokemon.Values.OrderBy(p => p.Dex).ThenBy(p => p.SpeciesId);
 		}
 
-		private static void RemoveGenericFormPokemon(Dictionary<string, PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty> pokemon)
+		private static void RemoveSubtypePokemon(Dictionary<string, PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty> pokemon, string subtypeSuffix)
 		{
 			IEnumerable<IGrouping<int, PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty>> multiformPokemon = pokemon.Values.GroupBy(p => p.Dex).Where(g => g.Count() > 1);
 
-			var genericForms = multiformPokemon.Select(g => g.First());
-
-			foreach (PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty genericForm in genericForms)
+			foreach (PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty subtype in multiformPokemon.SelectMany(g => g.Where(p => p.SpeciesId.EndsWith(subtypeSuffix))))
 			{
-				pokemon.Remove(genericForm.SpeciesId);
+				pokemon.Remove(subtype.SpeciesId);
 			}
 		}
 
@@ -285,16 +285,29 @@ namespace PvPoke.UnitTest
 			IEnumerable<IGrouping<int, PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty>> multiformPokemon = pokemon.Values.GroupBy(p => p.Dex).Where(g => g.Count() > 1);
 			IEnumerable<PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty> normalForms = multiformPokemon.SelectMany(g => g.Where(p => p.SpeciesId.EndsWith("_normal")));
 
+			// handles normals vs alolans
 			foreach (PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty normalForm in normalForms)
+			{
+				CleanPokemonData(pokemon, normalForm);
+			}
+
+			// handles normals leftover from purified/shadow pokemon
+			IEnumerable<PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty> remainingNormalForms = pokemon.Values.Where(p => p.SpeciesId.EndsWith("_normal")).ToList();
+			foreach (var normalForm in remainingNormalForms)
+			{
+				CleanPokemonData(pokemon, normalForm);
+			}
+
+			void CleanPokemonData(Dictionary<string, PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty> pokemonCollection, PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty normalForm)
 			{
 				string oldSpeciesId = normalForm.SpeciesId;
 				string newSpeciesId = oldSpeciesId.Replace("_normal", String.Empty);
 
 				normalForm.SpeciesId = newSpeciesId;
 				normalForm.SpeciesName = normalForm.SpeciesName.Replace(" (Normal)", String.Empty);
-				pokemon.Add(normalForm.SpeciesId, normalForm);
+				pokemonCollection.Add(normalForm.SpeciesId, normalForm);
 
-				pokemon.Remove(oldSpeciesId);
+				pokemonCollection.Remove(oldSpeciesId);
 			}
 		}
 
@@ -360,18 +373,18 @@ namespace PvPoke.UnitTest
 				case "mr_mime":
 					speciesId = "Mr. Mime";
 					break;
-                case "nidoran_male":
-                    speciesId = "Nidoran♂";
-                    break;
-                case "nidoran_female":
-                    speciesId = "Nidoran♀";
-                    break;
-                case "farfetchd":
-                    speciesId = "Farfetch'd";
-                    break;
+				case "nidoran_male":
+					speciesId = "Nidoran♂";
+					break;
+				case "nidoran_female":
+					speciesId = "Nidoran♀";
+					break;
+				case "farfetchd":
+					speciesId = "Farfetch'd";
+					break;
 			}
 
-            if (speciesId.IndexOf('_') >= 0)
+			if (speciesId.IndexOf('_') >= 0)
 			{
 				var parts = speciesId.Split('_').Select(part => part.ToUpperFirstCharacter()).ToArray();
 				return $"{parts[0]} ({parts[1]})";
@@ -492,5 +505,4 @@ namespace PvPoke.UnitTest
 			public List<string> LegacyChargeMoves { get; set; } = new List<string>();
 		}
 	}
-
 }

@@ -1,6 +1,8 @@
 {
-  "options": {
-    "partySize": 3
+  "settings": {
+    "partySize": 3,
+    "maxBuffStages": 4,
+    "buffDivisor": 4
   },
   "cups": [
     {
@@ -286,101 +288,9 @@
       ]
     },
     {
-      "dex": 1,
-      "speciesName": "Bulbasaur (Purified)",
-      "speciesId": "bulbasaur_purified",
-      "baseStats": {
-        "atk": 118,
-        "def": 111,
-        "hp": 128
-      },
-      "types": [
-        "grass",
-        "poison"
-      ],
-      "fastMoves": [
-        "TACKLE",
-        "VINE_WHIP"
-      ],
-      "chargedMoves": [
-        "POWER_WHIP",
-        "SEED_BOMB",
-        "SLUDGE_BOMB"
-      ]
-    },
-    {
-      "dex": 1,
-      "speciesName": "Bulbasaur (Shadow)",
-      "speciesId": "bulbasaur_shadow",
-      "baseStats": {
-        "atk": 118,
-        "def": 111,
-        "hp": 128
-      },
-      "types": [
-        "grass",
-        "poison"
-      ],
-      "fastMoves": [
-        "TACKLE",
-        "VINE_WHIP"
-      ],
-      "chargedMoves": [
-        "POWER_WHIP",
-        "SEED_BOMB",
-        "SLUDGE_BOMB"
-      ]
-    },
-    {
       "dex": 2,
       "speciesName": "Ivysaur",
       "speciesId": "ivysaur",
-      "baseStats": {
-        "atk": 151,
-        "def": 143,
-        "hp": 155
-      },
-      "types": [
-        "grass",
-        "poison"
-      ],
-      "fastMoves": [
-        "RAZOR_LEAF",
-        "VINE_WHIP"
-      ],
-      "chargedMoves": [
-        "POWER_WHIP",
-        "SLUDGE_BOMB",
-        "SOLAR_BEAM"
-      ]
-    },
-    {
-      "dex": 2,
-      "speciesName": "Ivysaur (Purified)",
-      "speciesId": "ivysaur_purified",
-      "baseStats": {
-        "atk": 151,
-        "def": 143,
-        "hp": 155
-      },
-      "types": [
-        "grass",
-        "poison"
-      ],
-      "fastMoves": [
-        "RAZOR_LEAF",
-        "VINE_WHIP"
-      ],
-      "chargedMoves": [
-        "POWER_WHIP",
-        "SLUDGE_BOMB",
-        "SOLAR_BEAM"
-      ]
-    },
-    {
-      "dex": 2,
-      "speciesName": "Ivysaur (Shadow)",
-      "speciesId": "ivysaur_shadow",
       "baseStats": {
         "atk": 151,
         "def": 143,
@@ -428,101 +338,9 @@
       ]
     },
     {
-      "dex": 3,
-      "speciesName": "Venusaur (Purified)",
-      "speciesId": "venusaur_purified",
-      "baseStats": {
-        "atk": 198,
-        "def": 189,
-        "hp": 190
-      },
-      "types": [
-        "grass",
-        "poison"
-      ],
-      "fastMoves": [
-        "RAZOR_LEAF",
-        "VINE_WHIP"
-      ],
-      "chargedMoves": [
-        "PETAL_BLIZZARD",
-        "SLUDGE_BOMB",
-        "SOLAR_BEAM"
-      ]
-    },
-    {
-      "dex": 3,
-      "speciesName": "Venusaur (Shadow)",
-      "speciesId": "venusaur_shadow",
-      "baseStats": {
-        "atk": 198,
-        "def": 189,
-        "hp": 190
-      },
-      "types": [
-        "grass",
-        "poison"
-      ],
-      "fastMoves": [
-        "RAZOR_LEAF",
-        "VINE_WHIP"
-      ],
-      "chargedMoves": [
-        "PETAL_BLIZZARD",
-        "SLUDGE_BOMB",
-        "SOLAR_BEAM"
-      ]
-    },
-    {
       "dex": 4,
       "speciesName": "Charmander",
       "speciesId": "charmander",
-      "baseStats": {
-        "atk": 116,
-        "def": 93,
-        "hp": 118
-      },
-      "types": [
-        "fire",
-        "none"
-      ],
-      "fastMoves": [
-        "EMBER",
-        "SCRATCH"
-      ],
-      "chargedMoves": [
-        "FLAME_BURST",
-        "FLAME_CHARGE",
-        "FLAMETHROWER"
-      ]
-    },
-    {
-      "dex": 4,
-      "speciesName": "Charmander (Purified)",
-      "speciesId": "charmander_purified",
-      "baseStats": {
-        "atk": 116,
-        "def": 93,
-        "hp": 118
-      },
-      "types": [
-        "fire",
-        "none"
-      ],
-      "fastMoves": [
-        "EMBER",
-        "SCRATCH"
-      ],
-      "chargedMoves": [
-        "FLAME_BURST",
-        "FLAME_CHARGE",
-        "FLAMETHROWER"
-      ]
-    },
-    {
-      "dex": 4,
-      "speciesName": "Charmander (Shadow)",
-      "speciesId": "charmander_shadow",
       "baseStats": {
         "atk": 116,
         "def": 93,
@@ -570,52 +388,6 @@
       ]
     },
     {
-      "dex": 5,
-      "speciesName": "Charmeleon (Purified)",
-      "speciesId": "charmeleon_purified",
-      "baseStats": {
-        "atk": 158,
-        "def": 126,
-        "hp": 151
-      },
-      "types": [
-        "fire",
-        "none"
-      ],
-      "fastMoves": [
-        "EMBER",
-        "FIRE_FANG"
-      ],
-      "chargedMoves": [
-        "FIRE_PUNCH",
-        "FLAME_BURST",
-        "FLAMETHROWER"
-      ]
-    },
-    {
-      "dex": 5,
-      "speciesName": "Charmeleon (Shadow)",
-      "speciesId": "charmeleon_shadow",
-      "baseStats": {
-        "atk": 158,
-        "def": 126,
-        "hp": 151
-      },
-      "types": [
-        "fire",
-        "none"
-      ],
-      "fastMoves": [
-        "EMBER",
-        "FIRE_FANG"
-      ],
-      "chargedMoves": [
-        "FIRE_PUNCH",
-        "FLAME_BURST",
-        "FLAMETHROWER"
-      ]
-    },
-    {
       "dex": 6,
       "speciesName": "Charizard",
       "speciesId": "charizard",
@@ -649,52 +421,6 @@
       ]
     },
     {
-      "dex": 6,
-      "speciesName": "Charizard (Purified)",
-      "speciesId": "charizard_purified",
-      "baseStats": {
-        "atk": 223,
-        "def": 173,
-        "hp": 186
-      },
-      "types": [
-        "fire",
-        "flying"
-      ],
-      "fastMoves": [
-        "AIR_SLASH",
-        "FIRE_SPIN"
-      ],
-      "chargedMoves": [
-        "DRAGON_CLAW",
-        "FIRE_BLAST",
-        "OVERHEAT"
-      ]
-    },
-    {
-      "dex": 6,
-      "speciesName": "Charizard (Shadow)",
-      "speciesId": "charizard_shadow",
-      "baseStats": {
-        "atk": 223,
-        "def": 173,
-        "hp": 186
-      },
-      "types": [
-        "fire",
-        "flying"
-      ],
-      "fastMoves": [
-        "AIR_SLASH",
-        "FIRE_SPIN"
-      ],
-      "chargedMoves": [
-        "DRAGON_CLAW",
-        "FIRE_BLAST",
-        "OVERHEAT"
-      ]
-    },
-    {
       "dex": 7,
       "speciesName": "Squirtle",
       "speciesId": "squirtle",
@@ -718,101 +444,9 @@
       ]
     },
     {
-      "dex": 7,
-      "speciesName": "Squirtle (Purified)",
-      "speciesId": "squirtle_purified",
-      "baseStats": {
-        "atk": 94,
-        "def": 121,
-        "hp": 127
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "BUBBLE",
-        "TACKLE"
-      ],
-      "chargedMoves": [
-        "AQUA_JET",
-        "AQUA_TAIL",
-        "WATER_PULSE"
-      ]
-    },
-    {
-      "dex": 7,
-      "speciesName": "Squirtle (Shadow)",
-      "speciesId": "squirtle_shadow",
-      "baseStats": {
-        "atk": 94,
-        "def": 121,
-        "hp": 127
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "BUBBLE",
-        "TACKLE"
-      ],
-      "chargedMoves": [
-        "AQUA_JET",
-        "AQUA_TAIL",
-        "WATER_PULSE"
-      ]
-    },
-    {
       "dex": 8,
       "speciesName": "Wartortle",
       "speciesId": "wartortle",
-      "baseStats": {
-        "atk": 126,
-        "def": 155,
-        "hp": 153
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "BITE",
-        "WATER_GUN"
-      ],
-      "chargedMoves": [
-        "AQUA_JET",
-        "HYDRO_PUMP",
-        "ICE_BEAM"
-      ]
-    },
-    {
-      "dex": 8,
-      "speciesName": "Wartortle (Purified)",
-      "speciesId": "wartortle_purified",
-      "baseStats": {
-        "atk": 126,
-        "def": 155,
-        "hp": 153
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "BITE",
-        "WATER_GUN"
-      ],
-      "chargedMoves": [
-        "AQUA_JET",
-        "HYDRO_PUMP",
-        "ICE_BEAM"
-      ]
-    },
-    {
-      "dex": 8,
-      "speciesName": "Wartortle (Shadow)",
-      "speciesId": "wartortle_shadow",
       "baseStats": {
         "atk": 126,
         "def": 155,
@@ -858,54 +492,6 @@
       ],
       "legacyMoves": [
         "HYDRO_CANNON"
-      ]
-    },
-    {
-      "dex": 9,
-      "speciesName": "Blastoise (Purified)",
-      "speciesId": "blastoise_purified",
-      "baseStats": {
-        "atk": 171,
-        "def": 207,
-        "hp": 188
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "BITE",
-        "WATER_GUN"
-      ],
-      "chargedMoves": [
-        "FLASH_CANNON",
-        "HYDRO_PUMP",
-        "ICE_BEAM",
-        "SKULL_BASH"
-      ]
-    },
-    {
-      "dex": 9,
-      "speciesName": "Blastoise (Shadow)",
-      "speciesId": "blastoise_shadow",
-      "baseStats": {
-        "atk": 171,
-        "def": 207,
-        "hp": 188
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "BITE",
-        "WATER_GUN"
-      ],
-      "chargedMoves": [
-        "FLASH_CANNON",
-        "HYDRO_PUMP",
-        "ICE_BEAM",
-        "SKULL_BASH"
       ]
     },
     {
@@ -1168,52 +754,6 @@
       ]
     },
     {
-      "dex": 19,
-      "speciesName": "Rattata (Purified)",
-      "speciesId": "rattata_purified",
-      "baseStats": {
-        "atk": 103,
-        "def": 70,
-        "hp": 102
-      },
-      "types": [
-        "normal",
-        "none"
-      ],
-      "fastMoves": [
-        "QUICK_ATTACK",
-        "TACKLE"
-      ],
-      "chargedMoves": [
-        "BODY_SLAM",
-        "DIG",
-        "HYPER_FANG"
-      ]
-    },
-    {
-      "dex": 19,
-      "speciesName": "Rattata (Shadow)",
-      "speciesId": "rattata_shadow",
-      "baseStats": {
-        "atk": 103,
-        "def": 70,
-        "hp": 102
-      },
-      "types": [
-        "normal",
-        "none"
-      ],
-      "fastMoves": [
-        "QUICK_ATTACK",
-        "TACKLE"
-      ],
-      "chargedMoves": [
-        "BODY_SLAM",
-        "DIG",
-        "HYPER_FANG"
-      ]
-    },
-    {
       "dex": 20,
       "speciesName": "Raticate",
       "speciesId": "raticate",
@@ -1255,52 +795,6 @@
       ],
       "chargedMoves": [
         "CRUNCH",
-        "HYPER_BEAM",
-        "HYPER_FANG"
-      ]
-    },
-    {
-      "dex": 20,
-      "speciesName": "Raticate (Purified)",
-      "speciesId": "raticate_purified",
-      "baseStats": {
-        "atk": 161,
-        "def": 139,
-        "hp": 146
-      },
-      "types": [
-        "normal",
-        "none"
-      ],
-      "fastMoves": [
-        "BITE",
-        "QUICK_ATTACK"
-      ],
-      "chargedMoves": [
-        "DIG",
-        "HYPER_BEAM",
-        "HYPER_FANG"
-      ]
-    },
-    {
-      "dex": 20,
-      "speciesName": "Raticate (Shadow)",
-      "speciesId": "raticate_shadow",
-      "baseStats": {
-        "atk": 161,
-        "def": 139,
-        "hp": 146
-      },
-      "types": [
-        "normal",
-        "none"
-      ],
-      "fastMoves": [
-        "BITE",
-        "QUICK_ATTACK"
-      ],
-      "chargedMoves": [
-        "DIG",
         "HYPER_BEAM",
         "HYPER_FANG"
       ]
@@ -1596,7 +1090,7 @@
     {
       "dex": 29,
       "speciesName": "Nidoran♀",
-      "speciesId": "nidoran♀",
+      "speciesId": "nidoran_female",
       "baseStats": {
         "atk": 86,
         "def": 89,
@@ -1666,7 +1160,7 @@
     {
       "dex": 32,
       "speciesName": "Nidoran♂",
-      "speciesId": "nidoran♂",
+      "speciesId": "nidoran_male",
       "baseStats": {
         "atk": 105,
         "def": 76,
@@ -1973,52 +1467,6 @@
       ]
     },
     {
-      "dex": 41,
-      "speciesName": "Zubat (Purified)",
-      "speciesId": "zubat_purified",
-      "baseStats": {
-        "atk": 83,
-        "def": 73,
-        "hp": 120
-      },
-      "types": [
-        "poison",
-        "flying"
-      ],
-      "fastMoves": [
-        "BITE",
-        "QUICK_ATTACK"
-      ],
-      "chargedMoves": [
-        "AIR_CUTTER",
-        "POISON_FANG",
-        "SWIFT"
-      ]
-    },
-    {
-      "dex": 41,
-      "speciesName": "Zubat (Shadow)",
-      "speciesId": "zubat_shadow",
-      "baseStats": {
-        "atk": 83,
-        "def": 73,
-        "hp": 120
-      },
-      "types": [
-        "poison",
-        "flying"
-      ],
-      "fastMoves": [
-        "BITE",
-        "QUICK_ATTACK"
-      ],
-      "chargedMoves": [
-        "AIR_CUTTER",
-        "POISON_FANG",
-        "SWIFT"
-      ]
-    },
-    {
       "dex": 42,
       "speciesName": "Golbat",
       "speciesId": "golbat",
@@ -2046,101 +1494,9 @@
       ]
     },
     {
-      "dex": 42,
-      "speciesName": "Golbat (Purified)",
-      "speciesId": "golbat_purified",
-      "baseStats": {
-        "atk": 161,
-        "def": 150,
-        "hp": 181
-      },
-      "types": [
-        "poison",
-        "flying"
-      ],
-      "fastMoves": [
-        "BITE",
-        "WING_ATTACK"
-      ],
-      "chargedMoves": [
-        "AIR_CUTTER",
-        "POISON_FANG",
-        "SHADOW_BALL"
-      ]
-    },
-    {
-      "dex": 42,
-      "speciesName": "Golbat (Shadow)",
-      "speciesId": "golbat_shadow",
-      "baseStats": {
-        "atk": 161,
-        "def": 150,
-        "hp": 181
-      },
-      "types": [
-        "poison",
-        "flying"
-      ],
-      "fastMoves": [
-        "BITE",
-        "WING_ATTACK"
-      ],
-      "chargedMoves": [
-        "AIR_CUTTER",
-        "POISON_FANG",
-        "SHADOW_BALL"
-      ]
-    },
-    {
       "dex": 43,
       "speciesName": "Oddish",
       "speciesId": "oddish",
-      "baseStats": {
-        "atk": 131,
-        "def": 112,
-        "hp": 128
-      },
-      "types": [
-        "grass",
-        "poison"
-      ],
-      "fastMoves": [
-        "ACID",
-        "RAZOR_LEAF"
-      ],
-      "chargedMoves": [
-        "MOONBLAST",
-        "SEED_BOMB",
-        "SLUDGE_BOMB"
-      ]
-    },
-    {
-      "dex": 43,
-      "speciesName": "Oddish (Purified)",
-      "speciesId": "oddish_purified",
-      "baseStats": {
-        "atk": 131,
-        "def": 112,
-        "hp": 128
-      },
-      "types": [
-        "grass",
-        "poison"
-      ],
-      "fastMoves": [
-        "ACID",
-        "RAZOR_LEAF"
-      ],
-      "chargedMoves": [
-        "MOONBLAST",
-        "SEED_BOMB",
-        "SLUDGE_BOMB"
-      ]
-    },
-    {
-      "dex": 43,
-      "speciesName": "Oddish (Shadow)",
-      "speciesId": "oddish_shadow",
       "baseStats": {
         "atk": 131,
         "def": 112,
@@ -2184,103 +1540,9 @@
       ]
     },
     {
-      "dex": 44,
-      "speciesName": "Gloom (Purified)",
-      "speciesId": "gloom_purified",
-      "baseStats": {
-        "atk": 153,
-        "def": 136,
-        "hp": 155
-      },
-      "types": [
-        "grass",
-        "poison"
-      ],
-      "fastMoves": [
-        "ACID",
-        "RAZOR_LEAF"
-      ],
-      "chargedMoves": [
-        "MOONBLAST",
-        "PETAL_BLIZZARD",
-        "SLUDGE_BOMB"
-      ]
-    },
-    {
-      "dex": 44,
-      "speciesName": "Gloom (Shadow)",
-      "speciesId": "gloom_shadow",
-      "baseStats": {
-        "atk": 153,
-        "def": 136,
-        "hp": 155
-      },
-      "types": [
-        "grass",
-        "poison"
-      ],
-      "fastMoves": [
-        "ACID",
-        "RAZOR_LEAF"
-      ],
-      "chargedMoves": [
-        "MOONBLAST",
-        "PETAL_BLIZZARD",
-        "SLUDGE_BOMB"
-      ]
-    },
-    {
       "dex": 45,
       "speciesName": "Vileplume",
       "speciesId": "vileplume",
-      "baseStats": {
-        "atk": 202,
-        "def": 167,
-        "hp": 181
-      },
-      "types": [
-        "grass",
-        "poison"
-      ],
-      "fastMoves": [
-        "ACID",
-        "RAZOR_LEAF"
-      ],
-      "chargedMoves": [
-        "MOONBLAST",
-        "PETAL_BLIZZARD",
-        "SLUDGE_BOMB",
-        "SOLAR_BEAM"
-      ]
-    },
-    {
-      "dex": 45,
-      "speciesName": "Vileplume (Purified)",
-      "speciesId": "vileplume_purified",
-      "baseStats": {
-        "atk": 202,
-        "def": 167,
-        "hp": 181
-      },
-      "types": [
-        "grass",
-        "poison"
-      ],
-      "fastMoves": [
-        "ACID",
-        "RAZOR_LEAF"
-      ],
-      "chargedMoves": [
-        "MOONBLAST",
-        "PETAL_BLIZZARD",
-        "SLUDGE_BOMB",
-        "SOLAR_BEAM"
-      ]
-    },
-    {
-      "dex": 45,
-      "speciesName": "Vileplume (Shadow)",
-      "speciesId": "vileplume_shadow",
       "baseStats": {
         "atk": 202,
         "def": 167,
@@ -2375,52 +1637,6 @@
       ]
     },
     {
-      "dex": 48,
-      "speciesName": "Venonat (Purified)",
-      "speciesId": "venonat_purified",
-      "baseStats": {
-        "atk": 100,
-        "def": 100,
-        "hp": 155
-      },
-      "types": [
-        "bug",
-        "poison"
-      ],
-      "fastMoves": [
-        "BUG_BITE",
-        "CONFUSION"
-      ],
-      "chargedMoves": [
-        "POISON_FANG",
-        "PSYBEAM",
-        "SIGNAL_BEAM"
-      ]
-    },
-    {
-      "dex": 48,
-      "speciesName": "Venonat (Shadow)",
-      "speciesId": "venonat_shadow",
-      "baseStats": {
-        "atk": 100,
-        "def": 100,
-        "hp": 155
-      },
-      "types": [
-        "bug",
-        "poison"
-      ],
-      "fastMoves": [
-        "BUG_BITE",
-        "CONFUSION"
-      ],
-      "chargedMoves": [
-        "POISON_FANG",
-        "PSYBEAM",
-        "SIGNAL_BEAM"
-      ]
-    },
-    {
       "dex": 49,
       "speciesName": "Venomoth",
       "speciesId": "venomoth",
@@ -2447,52 +1663,6 @@
       "legacyMoves": [
         "BUG_BITE",
         "POISON_FANG"
-      ]
-    },
-    {
-      "dex": 49,
-      "speciesName": "Venomoth (Purified)",
-      "speciesId": "venomoth_purified",
-      "baseStats": {
-        "atk": 179,
-        "def": 143,
-        "hp": 172
-      },
-      "types": [
-        "bug",
-        "poison"
-      ],
-      "fastMoves": [
-        "CONFUSION",
-        "INFESTATION"
-      ],
-      "chargedMoves": [
-        "BUG_BUZZ",
-        "PSYCHIC",
-        "SILVER_WIND"
-      ]
-    },
-    {
-      "dex": 49,
-      "speciesName": "Venomoth (Shadow)",
-      "speciesId": "venomoth_shadow",
-      "baseStats": {
-        "atk": 179,
-        "def": 143,
-        "hp": 172
-      },
-      "types": [
-        "bug",
-        "poison"
-      ],
-      "fastMoves": [
-        "CONFUSION",
-        "INFESTATION"
-      ],
-      "chargedMoves": [
-        "BUG_BUZZ",
-        "PSYCHIC",
-        "SILVER_WIND"
       ]
     },
     {
@@ -2551,7 +1721,7 @@
       "speciesId": "dugtrio",
       "baseStats": {
         "atk": 167,
-        "def": 136,
+        "def": 134,
         "hp": 111
       },
       "types": [
@@ -2719,101 +1889,9 @@
       ]
     },
     {
-      "dex": 54,
-      "speciesName": "Psyduck (Purified)",
-      "speciesId": "psyduck_purified",
-      "baseStats": {
-        "atk": 122,
-        "def": 95,
-        "hp": 137
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "WATER_GUN",
-        "ZEN_HEADBUTT"
-      ],
-      "chargedMoves": [
-        "AQUA_TAIL",
-        "CROSS_CHOP",
-        "PSYBEAM"
-      ]
-    },
-    {
-      "dex": 54,
-      "speciesName": "Psyduck (Shadow)",
-      "speciesId": "psyduck_shadow",
-      "baseStats": {
-        "atk": 122,
-        "def": 95,
-        "hp": 137
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "WATER_GUN",
-        "ZEN_HEADBUTT"
-      ],
-      "chargedMoves": [
-        "AQUA_TAIL",
-        "CROSS_CHOP",
-        "PSYBEAM"
-      ]
-    },
-    {
       "dex": 55,
       "speciesName": "Golduck",
       "speciesId": "golduck",
-      "baseStats": {
-        "atk": 191,
-        "def": 162,
-        "hp": 190
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "CONFUSION",
-        "WATER_GUN"
-      ],
-      "chargedMoves": [
-        "HYDRO_PUMP",
-        "ICE_BEAM",
-        "PSYCHIC"
-      ]
-    },
-    {
-      "dex": 55,
-      "speciesName": "Golduck (Purified)",
-      "speciesId": "golduck_purified",
-      "baseStats": {
-        "atk": 191,
-        "def": 162,
-        "hp": 190
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "CONFUSION",
-        "WATER_GUN"
-      ],
-      "chargedMoves": [
-        "HYDRO_PUMP",
-        "ICE_BEAM",
-        "PSYCHIC"
-      ]
-    },
-    {
-      "dex": 55,
-      "speciesName": "Golduck (Shadow)",
-      "speciesId": "golduck_shadow",
       "baseStats": {
         "atk": 191,
         "def": 162,
@@ -2909,52 +1987,6 @@
       ]
     },
     {
-      "dex": 58,
-      "speciesName": "Growlithe (Purified)",
-      "speciesId": "growlithe_purified",
-      "baseStats": {
-        "atk": 136,
-        "def": 93,
-        "hp": 146
-      },
-      "types": [
-        "fire",
-        "none"
-      ],
-      "fastMoves": [
-        "BITE",
-        "EMBER"
-      ],
-      "chargedMoves": [
-        "BODY_SLAM",
-        "FLAME_WHEEL",
-        "FLAMETHROWER"
-      ]
-    },
-    {
-      "dex": 58,
-      "speciesName": "Growlithe (Shadow)",
-      "speciesId": "growlithe_shadow",
-      "baseStats": {
-        "atk": 136,
-        "def": 93,
-        "hp": 146
-      },
-      "types": [
-        "fire",
-        "none"
-      ],
-      "fastMoves": [
-        "BITE",
-        "EMBER"
-      ],
-      "chargedMoves": [
-        "BODY_SLAM",
-        "FLAME_WHEEL",
-        "FLAMETHROWER"
-      ]
-    },
-    {
       "dex": 59,
       "speciesName": "Arcanine",
       "speciesId": "arcanine",
@@ -2986,101 +2018,9 @@
       ]
     },
     {
-      "dex": 59,
-      "speciesName": "Arcanine (Purified)",
-      "speciesId": "arcanine_purified",
-      "baseStats": {
-        "atk": 227,
-        "def": 166,
-        "hp": 207
-      },
-      "types": [
-        "fire",
-        "none"
-      ],
-      "fastMoves": [
-        "FIRE_FANG",
-        "SNARL"
-      ],
-      "chargedMoves": [
-        "CRUNCH",
-        "FIRE_BLAST",
-        "WILD_CHARGE"
-      ]
-    },
-    {
-      "dex": 59,
-      "speciesName": "Arcanine (Shadow)",
-      "speciesId": "arcanine_shadow",
-      "baseStats": {
-        "atk": 227,
-        "def": 166,
-        "hp": 207
-      },
-      "types": [
-        "fire",
-        "none"
-      ],
-      "fastMoves": [
-        "FIRE_FANG",
-        "SNARL"
-      ],
-      "chargedMoves": [
-        "CRUNCH",
-        "FIRE_BLAST",
-        "WILD_CHARGE"
-      ]
-    },
-    {
       "dex": 60,
       "speciesName": "Poliwag",
       "speciesId": "poliwag",
-      "baseStats": {
-        "atk": 101,
-        "def": 82,
-        "hp": 120
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "BUBBLE",
-        "MUD_SHOT"
-      ],
-      "chargedMoves": [
-        "BODY_SLAM",
-        "BUBBLE_BEAM",
-        "MUD_BOMB"
-      ]
-    },
-    {
-      "dex": 60,
-      "speciesName": "Poliwag (Purified)",
-      "speciesId": "poliwag_purified",
-      "baseStats": {
-        "atk": 101,
-        "def": 82,
-        "hp": 120
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "BUBBLE",
-        "MUD_SHOT"
-      ],
-      "chargedMoves": [
-        "BODY_SLAM",
-        "BUBBLE_BEAM",
-        "MUD_BOMB"
-      ]
-    },
-    {
-      "dex": 60,
-      "speciesName": "Poliwag (Shadow)",
-      "speciesId": "poliwag_shadow",
       "baseStats": {
         "atk": 101,
         "def": 82,
@@ -3128,52 +2068,6 @@
       ]
     },
     {
-      "dex": 61,
-      "speciesName": "Poliwhirl (Purified)",
-      "speciesId": "poliwhirl_purified",
-      "baseStats": {
-        "atk": 130,
-        "def": 123,
-        "hp": 163
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "BUBBLE",
-        "MUD_SHOT"
-      ],
-      "chargedMoves": [
-        "BUBBLE_BEAM",
-        "MUD_BOMB",
-        "WATER_PULSE"
-      ]
-    },
-    {
-      "dex": 61,
-      "speciesName": "Poliwhirl (Shadow)",
-      "speciesId": "poliwhirl_shadow",
-      "baseStats": {
-        "atk": 130,
-        "def": 123,
-        "hp": 163
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "BUBBLE",
-        "MUD_SHOT"
-      ],
-      "chargedMoves": [
-        "BUBBLE_BEAM",
-        "MUD_BOMB",
-        "WATER_PULSE"
-      ]
-    },
-    {
       "dex": 62,
       "speciesName": "Poliwrath",
       "speciesId": "poliwrath",
@@ -3204,54 +2098,6 @@
       ]
     },
     {
-      "dex": 62,
-      "speciesName": "Poliwrath (Purified)",
-      "speciesId": "poliwrath_purified",
-      "baseStats": {
-        "atk": 182,
-        "def": 184,
-        "hp": 207
-      },
-      "types": [
-        "water",
-        "fighting"
-      ],
-      "fastMoves": [
-        "BUBBLE",
-        "ROCK_SMASH"
-      ],
-      "chargedMoves": [
-        "DYNAMIC_PUNCH",
-        "HYDRO_PUMP",
-        "ICE_PUNCH",
-        "POWER_UP_PUNCH"
-      ]
-    },
-    {
-      "dex": 62,
-      "speciesName": "Poliwrath (Shadow)",
-      "speciesId": "poliwrath_shadow",
-      "baseStats": {
-        "atk": 182,
-        "def": 184,
-        "hp": 207
-      },
-      "types": [
-        "water",
-        "fighting"
-      ],
-      "fastMoves": [
-        "BUBBLE",
-        "ROCK_SMASH"
-      ],
-      "chargedMoves": [
-        "DYNAMIC_PUNCH",
-        "HYDRO_PUMP",
-        "ICE_PUNCH",
-        "POWER_UP_PUNCH"
-      ]
-    },
-    {
       "dex": 63,
       "speciesName": "Abra",
       "speciesId": "abra",
@@ -3275,101 +2121,9 @@
       ]
     },
     {
-      "dex": 63,
-      "speciesName": "Abra (Purified)",
-      "speciesId": "abra_purified",
-      "baseStats": {
-        "atk": 195,
-        "def": 82,
-        "hp": 93
-      },
-      "types": [
-        "psychic",
-        "none"
-      ],
-      "fastMoves": [
-        "CHARGE_BEAM",
-        "ZEN_HEADBUTT"
-      ],
-      "chargedMoves": [
-        "PSYSHOCK",
-        "SHADOW_BALL",
-        "SIGNAL_BEAM"
-      ]
-    },
-    {
-      "dex": 63,
-      "speciesName": "Abra (Shadow)",
-      "speciesId": "abra_shadow",
-      "baseStats": {
-        "atk": 195,
-        "def": 82,
-        "hp": 93
-      },
-      "types": [
-        "psychic",
-        "none"
-      ],
-      "fastMoves": [
-        "CHARGE_BEAM",
-        "ZEN_HEADBUTT"
-      ],
-      "chargedMoves": [
-        "PSYSHOCK",
-        "SHADOW_BALL",
-        "SIGNAL_BEAM"
-      ]
-    },
-    {
       "dex": 64,
       "speciesName": "Kadabra",
       "speciesId": "kadabra",
-      "baseStats": {
-        "atk": 232,
-        "def": 117,
-        "hp": 120
-      },
-      "types": [
-        "psychic",
-        "none"
-      ],
-      "fastMoves": [
-        "CONFUSION",
-        "PSYCHO_CUT"
-      ],
-      "chargedMoves": [
-        "DAZZLING_GLEAM",
-        "PSYBEAM",
-        "SHADOW_BALL"
-      ]
-    },
-    {
-      "dex": 64,
-      "speciesName": "Kadabra (Purified)",
-      "speciesId": "kadabra_purified",
-      "baseStats": {
-        "atk": 232,
-        "def": 117,
-        "hp": 120
-      },
-      "types": [
-        "psychic",
-        "none"
-      ],
-      "fastMoves": [
-        "CONFUSION",
-        "PSYCHO_CUT"
-      ],
-      "chargedMoves": [
-        "DAZZLING_GLEAM",
-        "PSYBEAM",
-        "SHADOW_BALL"
-      ]
-    },
-    {
-      "dex": 64,
-      "speciesName": "Kadabra (Shadow)",
-      "speciesId": "kadabra_shadow",
       "baseStats": {
         "atk": 232,
         "def": 117,
@@ -3417,54 +2171,6 @@
       "legacyMoves": [
         "DAZZLING_GLEAM",
         "PSYCHIC"
-      ]
-    },
-    {
-      "dex": 65,
-      "speciesName": "Alakazam (Purified)",
-      "speciesId": "alakazam_purified",
-      "baseStats": {
-        "atk": 271,
-        "def": 167,
-        "hp": 146
-      },
-      "types": [
-        "psychic",
-        "none"
-      ],
-      "fastMoves": [
-        "CONFUSION",
-        "PSYCHO_CUT"
-      ],
-      "chargedMoves": [
-        "FIRE_PUNCH",
-        "FOCUS_BLAST",
-        "FUTURE_SIGHT",
-        "SHADOW_BALL"
-      ]
-    },
-    {
-      "dex": 65,
-      "speciesName": "Alakazam (Shadow)",
-      "speciesId": "alakazam_shadow",
-      "baseStats": {
-        "atk": 271,
-        "def": 167,
-        "hp": 146
-      },
-      "types": [
-        "psychic",
-        "none"
-      ],
-      "fastMoves": [
-        "CONFUSION",
-        "PSYCHO_CUT"
-      ],
-      "chargedMoves": [
-        "FIRE_PUNCH",
-        "FOCUS_BLAST",
-        "FUTURE_SIGHT",
-        "SHADOW_BALL"
       ]
     },
     {
@@ -3982,7 +2688,7 @@
     {
       "dex": 83,
       "speciesName": "Farfetch'd",
-      "speciesId": "farfetch'd",
+      "speciesId": "farfetchd",
       "baseStats": {
         "atk": 124,
         "def": 115,
@@ -4175,52 +2881,6 @@
       ]
     },
     {
-      "dex": 88,
-      "speciesName": "Grimer (Purified)",
-      "speciesId": "grimer_purified",
-      "baseStats": {
-        "atk": 135,
-        "def": 90,
-        "hp": 190
-      },
-      "types": [
-        "poison",
-        "none"
-      ],
-      "fastMoves": [
-        "MUD_SLAP",
-        "POISON_JAB"
-      ],
-      "chargedMoves": [
-        "MUD_BOMB",
-        "SLUDGE",
-        "SLUDGE_BOMB"
-      ]
-    },
-    {
-      "dex": 88,
-      "speciesName": "Grimer (Shadow)",
-      "speciesId": "grimer_shadow",
-      "baseStats": {
-        "atk": 135,
-        "def": 90,
-        "hp": 190
-      },
-      "types": [
-        "poison",
-        "none"
-      ],
-      "fastMoves": [
-        "MUD_SLAP",
-        "POISON_JAB"
-      ],
-      "chargedMoves": [
-        "MUD_BOMB",
-        "SLUDGE",
-        "SLUDGE_BOMB"
-      ]
-    },
-    {
       "dex": 89,
       "speciesName": "Muk",
       "speciesId": "muk",
@@ -4240,11 +2900,9 @@
         "POISON_JAB"
       ],
       "chargedMoves": [
-        "ACID_SPRAY",
         "DARK_PULSE",
         "GUNK_SHOT",
-        "SLUDGE_WAVE",
-        "THUNDER_PUNCH"
+        "SLUDGE_WAVE"
       ],
       "legacyMoves": [
         "ACID",
@@ -4274,56 +2932,6 @@
         "DARK_PULSE",
         "GUNK_SHOT",
         "SLUDGE_WAVE"
-      ]
-    },
-    {
-      "dex": 89,
-      "speciesName": "Muk (Purified)",
-      "speciesId": "muk_purified",
-      "baseStats": {
-        "atk": 190,
-        "def": 172,
-        "hp": 233
-      },
-      "types": [
-        "poison",
-        "none"
-      ],
-      "fastMoves": [
-        "INFESTATION",
-        "POISON_JAB"
-      ],
-      "chargedMoves": [
-        "ACID_SPRAY",
-        "DARK_PULSE",
-        "GUNK_SHOT",
-        "SLUDGE_WAVE",
-        "THUNDER_PUNCH"
-      ]
-    },
-    {
-      "dex": 89,
-      "speciesName": "Muk (Shadow)",
-      "speciesId": "muk_shadow",
-      "baseStats": {
-        "atk": 190,
-        "def": 172,
-        "hp": 233
-      },
-      "types": [
-        "poison",
-        "none"
-      ],
-      "fastMoves": [
-        "INFESTATION",
-        "POISON_JAB"
-      ],
-      "chargedMoves": [
-        "ACID_SPRAY",
-        "DARK_PULSE",
-        "GUNK_SHOT",
-        "SLUDGE_WAVE",
-        "THUNDER_PUNCH"
       ]
     },
     {
@@ -4524,52 +3132,6 @@
       ]
     },
     {
-      "dex": 96,
-      "speciesName": "Drowzee (Purified)",
-      "speciesId": "drowzee_purified",
-      "baseStats": {
-        "atk": 89,
-        "def": 136,
-        "hp": 155
-      },
-      "types": [
-        "psychic",
-        "none"
-      ],
-      "fastMoves": [
-        "CONFUSION",
-        "POUND"
-      ],
-      "chargedMoves": [
-        "PSYBEAM",
-        "PSYCHIC",
-        "PSYSHOCK"
-      ]
-    },
-    {
-      "dex": 96,
-      "speciesName": "Drowzee (Shadow)",
-      "speciesId": "drowzee_shadow",
-      "baseStats": {
-        "atk": 89,
-        "def": 136,
-        "hp": 155
-      },
-      "types": [
-        "psychic",
-        "none"
-      ],
-      "fastMoves": [
-        "CONFUSION",
-        "POUND"
-      ],
-      "chargedMoves": [
-        "PSYBEAM",
-        "PSYCHIC",
-        "PSYSHOCK"
-      ]
-    },
-    {
       "dex": 97,
       "speciesName": "Hypno",
       "speciesId": "hypno",
@@ -4599,58 +3161,6 @@
       "legacyMoves": [
         "PSYSHOCK",
         "SHADOW_BALL"
-      ]
-    },
-    {
-      "dex": 97,
-      "speciesName": "Hypno (Purified)",
-      "speciesId": "hypno_purified",
-      "baseStats": {
-        "atk": 144,
-        "def": 193,
-        "hp": 198
-      },
-      "types": [
-        "psychic",
-        "none"
-      ],
-      "fastMoves": [
-        "CONFUSION",
-        "ZEN_HEADBUTT"
-      ],
-      "chargedMoves": [
-        "FIRE_PUNCH",
-        "FOCUS_BLAST",
-        "FUTURE_SIGHT",
-        "ICE_PUNCH",
-        "PSYCHIC",
-        "THUNDER_PUNCH"
-      ]
-    },
-    {
-      "dex": 97,
-      "speciesName": "Hypno (Shadow)",
-      "speciesId": "hypno_shadow",
-      "baseStats": {
-        "atk": 144,
-        "def": 193,
-        "hp": 198
-      },
-      "types": [
-        "psychic",
-        "none"
-      ],
-      "fastMoves": [
-        "CONFUSION",
-        "ZEN_HEADBUTT"
-      ],
-      "chargedMoves": [
-        "FIRE_PUNCH",
-        "FOCUS_BLAST",
-        "FUTURE_SIGHT",
-        "ICE_PUNCH",
-        "PSYCHIC",
-        "THUNDER_PUNCH"
       ]
     },
     {
@@ -4858,52 +3368,6 @@
       ]
     },
     {
-      "dex": 104,
-      "speciesName": "Cubone (Purified)",
-      "speciesId": "cubone_purified",
-      "baseStats": {
-        "atk": 90,
-        "def": 144,
-        "hp": 137
-      },
-      "types": [
-        "ground",
-        "none"
-      ],
-      "fastMoves": [
-        "MUD_SLAP",
-        "ROCK_SMASH"
-      ],
-      "chargedMoves": [
-        "BONE_CLUB",
-        "BULLDOZE",
-        "DIG"
-      ]
-    },
-    {
-      "dex": 104,
-      "speciesName": "Cubone (Shadow)",
-      "speciesId": "cubone_shadow",
-      "baseStats": {
-        "atk": 90,
-        "def": 144,
-        "hp": 137
-      },
-      "types": [
-        "ground",
-        "none"
-      ],
-      "fastMoves": [
-        "MUD_SLAP",
-        "ROCK_SMASH"
-      ],
-      "chargedMoves": [
-        "BONE_CLUB",
-        "BULLDOZE",
-        "DIG"
-      ]
-    },
-    {
       "dex": 105,
       "speciesName": "Marowak",
       "speciesId": "marowak",
@@ -4947,52 +3411,6 @@
         "BONE_CLUB",
         "FIRE_BLAST",
         "SHADOW_BALL"
-      ]
-    },
-    {
-      "dex": 105,
-      "speciesName": "Marowak (Purified)",
-      "speciesId": "marowak_purified",
-      "baseStats": {
-        "atk": 144,
-        "def": 186,
-        "hp": 155
-      },
-      "types": [
-        "ground",
-        "none"
-      ],
-      "fastMoves": [
-        "MUD_SLAP",
-        "ROCK_SMASH"
-      ],
-      "chargedMoves": [
-        "BONE_CLUB",
-        "DIG",
-        "EARTHQUAKE"
-      ]
-    },
-    {
-      "dex": 105,
-      "speciesName": "Marowak (Shadow)",
-      "speciesId": "marowak_shadow",
-      "baseStats": {
-        "atk": 144,
-        "def": 186,
-        "hp": 155
-      },
-      "types": [
-        "ground",
-        "none"
-      ],
-      "fastMoves": [
-        "MUD_SLAP",
-        "ROCK_SMASH"
-      ],
-      "chargedMoves": [
-        "BONE_CLUB",
-        "DIG",
-        "EARTHQUAKE"
       ]
     },
     {
@@ -5053,56 +3471,6 @@
       "legacyMoves": [
         "BRICK_BREAK",
         "ROCK_SMASH"
-      ]
-    },
-    {
-      "dex": 107,
-      "speciesName": "Hitmonchan (Purified)",
-      "speciesId": "hitmonchan_purified",
-      "baseStats": {
-        "atk": 193,
-        "def": 197,
-        "hp": 137
-      },
-      "types": [
-        "fighting",
-        "none"
-      ],
-      "fastMoves": [
-        "BULLET_PUNCH",
-        "COUNTER"
-      ],
-      "chargedMoves": [
-        "CLOSE_COMBAT",
-        "FIRE_PUNCH",
-        "ICE_PUNCH",
-        "POWER_UP_PUNCH",
-        "THUNDER_PUNCH"
-      ]
-    },
-    {
-      "dex": 107,
-      "speciesName": "Hitmonchan (Shadow)",
-      "speciesId": "hitmonchan_shadow",
-      "baseStats": {
-        "atk": 193,
-        "def": 197,
-        "hp": 137
-      },
-      "types": [
-        "fighting",
-        "none"
-      ],
-      "fastMoves": [
-        "BULLET_PUNCH",
-        "COUNTER"
-      ],
-      "chargedMoves": [
-        "CLOSE_COMBAT",
-        "FIRE_PUNCH",
-        "ICE_PUNCH",
-        "POWER_UP_PUNCH",
-        "THUNDER_PUNCH"
       ]
     },
     {
@@ -5499,7 +3867,7 @@
     {
       "dex": 122,
       "speciesName": "Mr. Mime",
-      "speciesId": "mr. mime",
+      "speciesId": "mr_mime",
       "baseStats": {
         "atk": 192,
         "def": 205,
@@ -5546,52 +3914,6 @@
       "legacyMoves": [
         "BUG_BUZZ",
         "STEEL_WING"
-      ]
-    },
-    {
-      "dex": 123,
-      "speciesName": "Scyther (Purified)",
-      "speciesId": "scyther_purified",
-      "baseStats": {
-        "atk": 218,
-        "def": 170,
-        "hp": 172
-      },
-      "types": [
-        "bug",
-        "flying"
-      ],
-      "fastMoves": [
-        "AIR_SLASH",
-        "FURY_CUTTER"
-      ],
-      "chargedMoves": [
-        "AERIAL_ACE",
-        "NIGHT_SLASH",
-        "X_SCISSOR"
-      ]
-    },
-    {
-      "dex": 123,
-      "speciesName": "Scyther (Shadow)",
-      "speciesId": "scyther_shadow",
-      "baseStats": {
-        "atk": 218,
-        "def": 170,
-        "hp": 172
-      },
-      "types": [
-        "bug",
-        "flying"
-      ],
-      "fastMoves": [
-        "AIR_SLASH",
-        "FURY_CUTTER"
-      ],
-      "chargedMoves": [
-        "AERIAL_ACE",
-        "NIGHT_SLASH",
-        "X_SCISSOR"
       ]
     },
     {
@@ -5743,46 +4065,6 @@
       ]
     },
     {
-      "dex": 129,
-      "speciesName": "Magikarp (Purified)",
-      "speciesId": "magikarp_purified",
-      "baseStats": {
-        "atk": 29,
-        "def": 85,
-        "hp": 85
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "SPLASH"
-      ],
-      "chargedMoves": [
-        "STRUGGLE"
-      ]
-    },
-    {
-      "dex": 129,
-      "speciesName": "Magikarp (Shadow)",
-      "speciesId": "magikarp_shadow",
-      "baseStats": {
-        "atk": 29,
-        "def": 85,
-        "hp": 85
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "SPLASH"
-      ],
-      "chargedMoves": [
-        "STRUGGLE"
-      ]
-    },
-    {
       "dex": 130,
       "speciesName": "Gyarados",
       "speciesId": "gyarados",
@@ -5816,52 +4098,6 @@
       ]
     },
     {
-      "dex": 130,
-      "speciesName": "Gyarados (Purified)",
-      "speciesId": "gyarados_purified",
-      "baseStats": {
-        "atk": 237,
-        "def": 186,
-        "hp": 216
-      },
-      "types": [
-        "water",
-        "flying"
-      ],
-      "fastMoves": [
-        "BITE",
-        "WATERFALL"
-      ],
-      "chargedMoves": [
-        "CRUNCH",
-        "HYDRO_PUMP",
-        "OUTRAGE"
-      ]
-    },
-    {
-      "dex": 130,
-      "speciesName": "Gyarados (Shadow)",
-      "speciesId": "gyarados_shadow",
-      "baseStats": {
-        "atk": 237,
-        "def": 186,
-        "hp": 216
-      },
-      "types": [
-        "water",
-        "flying"
-      ],
-      "fastMoves": [
-        "BITE",
-        "WATERFALL"
-      ],
-      "chargedMoves": [
-        "CRUNCH",
-        "HYDRO_PUMP",
-        "OUTRAGE"
-      ]
-    },
-    {
       "dex": 131,
       "speciesName": "Lapras",
       "speciesId": "lapras",
@@ -5891,54 +4127,6 @@
         "DRAGON_PULSE",
         "ICE_BEAM",
         "ICE_SHARD"
-      ]
-    },
-    {
-      "dex": 131,
-      "speciesName": "Lapras (Purified)",
-      "speciesId": "lapras_purified",
-      "baseStats": {
-        "atk": 165,
-        "def": 174,
-        "hp": 277
-      },
-      "types": [
-        "water",
-        "ice"
-      ],
-      "fastMoves": [
-        "FROST_BREATH",
-        "WATER_GUN"
-      ],
-      "chargedMoves": [
-        "BLIZZARD",
-        "HYDRO_PUMP",
-        "SKULL_BASH",
-        "SURF"
-      ]
-    },
-    {
-      "dex": 131,
-      "speciesName": "Lapras (Shadow)",
-      "speciesId": "lapras_shadow",
-      "baseStats": {
-        "atk": 165,
-        "def": 174,
-        "hp": 277
-      },
-      "types": [
-        "water",
-        "ice"
-      ],
-      "fastMoves": [
-        "FROST_BREATH",
-        "WATER_GUN"
-      ],
-      "chargedMoves": [
-        "BLIZZARD",
-        "HYDRO_PUMP",
-        "SKULL_BASH",
-        "SURF"
       ]
     },
     {
@@ -6252,10 +4440,8 @@
       ],
       "chargedMoves": [
         "ANCIENT_POWER",
-        "EARTH_POWER",
         "HYPER_BEAM",
-        "IRON_HEAD",
-        "ROCK_SLIDE"
+        "IRON_HEAD"
       ]
     },
     {
@@ -6279,62 +4465,10 @@
         "BODY_SLAM",
         "EARTHQUAKE",
         "HEAVY_SLAM",
-        "HYPER_BEAM",
-        "OUTRAGE",
-        "SKULL_BASH"
+        "HYPER_BEAM"
       ],
       "legacyMoves": [
         "BODY_SLAM"
-      ]
-    },
-    {
-      "dex": 143,
-      "speciesName": "Snorlax (Purified)",
-      "speciesId": "snorlax_purified",
-      "baseStats": {
-        "atk": 190,
-        "def": 169,
-        "hp": 330
-      },
-      "types": [
-        "normal",
-        "none"
-      ],
-      "fastMoves": [
-        "LICK",
-        "ZEN_HEADBUTT"
-      ],
-      "chargedMoves": [
-        "EARTHQUAKE",
-        "HEAVY_SLAM",
-        "HYPER_BEAM",
-        "OUTRAGE",
-        "SKULL_BASH"
-      ]
-    },
-    {
-      "dex": 143,
-      "speciesName": "Snorlax (Shadow)",
-      "speciesId": "snorlax_shadow",
-      "baseStats": {
-        "atk": 190,
-        "def": 169,
-        "hp": 330
-      },
-      "types": [
-        "normal",
-        "none"
-      ],
-      "fastMoves": [
-        "LICK",
-        "ZEN_HEADBUTT"
-      ],
-      "chargedMoves": [
-        "EARTHQUAKE",
-        "HEAVY_SLAM",
-        "HYPER_BEAM",
-        "OUTRAGE",
-        "SKULL_BASH"
       ]
     },
     {
@@ -6449,101 +4583,9 @@
       ]
     },
     {
-      "dex": 147,
-      "speciesName": "Dratini (Purified)",
-      "speciesId": "dratini_purified",
-      "baseStats": {
-        "atk": 119,
-        "def": 91,
-        "hp": 121
-      },
-      "types": [
-        "dragon",
-        "none"
-      ],
-      "fastMoves": [
-        "DRAGON_BREATH",
-        "IRON_TAIL"
-      ],
-      "chargedMoves": [
-        "AQUA_TAIL",
-        "TWISTER",
-        "WRAP"
-      ]
-    },
-    {
-      "dex": 147,
-      "speciesName": "Dratini (Shadow)",
-      "speciesId": "dratini_shadow",
-      "baseStats": {
-        "atk": 119,
-        "def": 91,
-        "hp": 121
-      },
-      "types": [
-        "dragon",
-        "none"
-      ],
-      "fastMoves": [
-        "DRAGON_BREATH",
-        "IRON_TAIL"
-      ],
-      "chargedMoves": [
-        "AQUA_TAIL",
-        "TWISTER",
-        "WRAP"
-      ]
-    },
-    {
       "dex": 148,
       "speciesName": "Dragonair",
       "speciesId": "dragonair",
-      "baseStats": {
-        "atk": 163,
-        "def": 135,
-        "hp": 156
-      },
-      "types": [
-        "dragon",
-        "none"
-      ],
-      "fastMoves": [
-        "DRAGON_BREATH",
-        "IRON_TAIL"
-      ],
-      "chargedMoves": [
-        "AQUA_TAIL",
-        "DRAGON_PULSE",
-        "WRAP"
-      ]
-    },
-    {
-      "dex": 148,
-      "speciesName": "Dragonair (Purified)",
-      "speciesId": "dragonair_purified",
-      "baseStats": {
-        "atk": 163,
-        "def": 135,
-        "hp": 156
-      },
-      "types": [
-        "dragon",
-        "none"
-      ],
-      "fastMoves": [
-        "DRAGON_BREATH",
-        "IRON_TAIL"
-      ],
-      "chargedMoves": [
-        "AQUA_TAIL",
-        "DRAGON_PULSE",
-        "WRAP"
-      ]
-    },
-    {
-      "dex": 148,
-      "speciesName": "Dragonair (Shadow)",
-      "speciesId": "dragonair_shadow",
       "baseStats": {
         "atk": 163,
         "def": 135,
@@ -6597,52 +4639,6 @@
       ]
     },
     {
-      "dex": 149,
-      "speciesName": "Dragonite (Purified)",
-      "speciesId": "dragonite_purified",
-      "baseStats": {
-        "atk": 263,
-        "def": 198,
-        "hp": 209
-      },
-      "types": [
-        "dragon",
-        "flying"
-      ],
-      "fastMoves": [
-        "DRAGON_TAIL",
-        "STEEL_WING"
-      ],
-      "chargedMoves": [
-        "HURRICANE",
-        "HYPER_BEAM",
-        "OUTRAGE"
-      ]
-    },
-    {
-      "dex": 149,
-      "speciesName": "Dragonite (Shadow)",
-      "speciesId": "dragonite_shadow",
-      "baseStats": {
-        "atk": 263,
-        "def": 198,
-        "hp": 209
-      },
-      "types": [
-        "dragon",
-        "flying"
-      ],
-      "fastMoves": [
-        "DRAGON_TAIL",
-        "STEEL_WING"
-      ],
-      "chargedMoves": [
-        "HURRICANE",
-        "HYPER_BEAM",
-        "OUTRAGE"
-      ]
-    },
-    {
       "dex": 150,
       "speciesName": "Mewtwo",
       "speciesId": "mewtwo",
@@ -6671,30 +4667,6 @@
       "legacyMoves": [
         "HYPER_BEAM",
         "SHADOW_BALL"
-      ]
-    },
-    {
-      "dex": 150,
-      "speciesName": "Mewtwo (A)",
-      "speciesId": "mewtwo_a",
-      "baseStats": {
-        "atk": 182,
-        "def": 278,
-        "hp": 214
-      },
-      "types": [
-        "psychic",
-        "none"
-      ],
-      "fastMoves": [
-        "CONFUSION",
-        "IRON_TAIL"
-      ],
-      "chargedMoves": [
-        "DYNAMIC_PUNCH",
-        "EARTHQUAKE",
-        "FUTURE_SIGHT",
-        "ROCK_SLIDE"
       ]
     },
     {
@@ -7183,52 +5155,6 @@
       ]
     },
     {
-      "dex": 169,
-      "speciesName": "Crobat (Purified)",
-      "speciesId": "crobat_purified",
-      "baseStats": {
-        "atk": 194,
-        "def": 178,
-        "hp": 198
-      },
-      "types": [
-        "poison",
-        "flying"
-      ],
-      "fastMoves": [
-        "AIR_SLASH",
-        "BITE"
-      ],
-      "chargedMoves": [
-        "AIR_CUTTER",
-        "SHADOW_BALL",
-        "SLUDGE_BOMB"
-      ]
-    },
-    {
-      "dex": 169,
-      "speciesName": "Crobat (Shadow)",
-      "speciesId": "crobat_shadow",
-      "baseStats": {
-        "atk": 194,
-        "def": 178,
-        "hp": 198
-      },
-      "types": [
-        "poison",
-        "flying"
-      ],
-      "fastMoves": [
-        "AIR_SLASH",
-        "BITE"
-      ],
-      "chargedMoves": [
-        "AIR_CUTTER",
-        "SHADOW_BALL",
-        "SLUDGE_BOMB"
-      ]
-    },
-    {
       "dex": 170,
       "speciesName": "Chinchou",
       "speciesId": "chinchou",
@@ -7586,52 +5512,6 @@
       ]
     },
     {
-      "dex": 182,
-      "speciesName": "Bellossom (Purified)",
-      "speciesId": "bellossom_purified",
-      "baseStats": {
-        "atk": 169,
-        "def": 186,
-        "hp": 181
-      },
-      "types": [
-        "grass",
-        "none"
-      ],
-      "fastMoves": [
-        "ACID",
-        "RAZOR_LEAF"
-      ],
-      "chargedMoves": [
-        "DAZZLING_GLEAM",
-        "LEAF_BLADE",
-        "PETAL_BLIZZARD"
-      ]
-    },
-    {
-      "dex": 182,
-      "speciesName": "Bellossom (Shadow)",
-      "speciesId": "bellossom_shadow",
-      "baseStats": {
-        "atk": 169,
-        "def": 186,
-        "hp": 181
-      },
-      "types": [
-        "grass",
-        "none"
-      ],
-      "fastMoves": [
-        "ACID",
-        "RAZOR_LEAF"
-      ],
-      "chargedMoves": [
-        "DAZZLING_GLEAM",
-        "LEAF_BLADE",
-        "PETAL_BLIZZARD"
-      ]
-    },
-    {
       "dex": 183,
       "speciesName": "Marill",
       "speciesId": "marill",
@@ -7725,52 +5605,6 @@
       ],
       "legacyMoves": [
         "EARTHQUAKE"
-      ]
-    },
-    {
-      "dex": 186,
-      "speciesName": "Politoed (Purified)",
-      "speciesId": "politoed_purified",
-      "baseStats": {
-        "atk": 174,
-        "def": 179,
-        "hp": 207
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "BUBBLE",
-        "MUD_SHOT"
-      ],
-      "chargedMoves": [
-        "BLIZZARD",
-        "HYDRO_PUMP",
-        "SURF"
-      ]
-    },
-    {
-      "dex": 186,
-      "speciesName": "Politoed (Shadow)",
-      "speciesId": "politoed_shadow",
-      "baseStats": {
-        "atk": 174,
-        "def": 179,
-        "hp": 207
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "BUBBLE",
-        "MUD_SHOT"
-      ],
-      "chargedMoves": [
-        "BLIZZARD",
-        "HYDRO_PUMP",
-        "SURF"
       ]
     },
     {
@@ -8393,52 +6227,6 @@
       ]
     },
     {
-      "dex": 212,
-      "speciesName": "Scizor (Purified)",
-      "speciesId": "scizor_purified",
-      "baseStats": {
-        "atk": 236,
-        "def": 181,
-        "hp": 172
-      },
-      "types": [
-        "bug",
-        "steel"
-      ],
-      "fastMoves": [
-        "BULLET_PUNCH",
-        "FURY_CUTTER"
-      ],
-      "chargedMoves": [
-        "IRON_HEAD",
-        "NIGHT_SLASH",
-        "X_SCISSOR"
-      ]
-    },
-    {
-      "dex": 212,
-      "speciesName": "Scizor (Shadow)",
-      "speciesId": "scizor_shadow",
-      "baseStats": {
-        "atk": 236,
-        "def": 181,
-        "hp": 172
-      },
-      "types": [
-        "bug",
-        "steel"
-      ],
-      "fastMoves": [
-        "BULLET_PUNCH",
-        "FURY_CUTTER"
-      ],
-      "chargedMoves": [
-        "IRON_HEAD",
-        "NIGHT_SLASH",
-        "X_SCISSOR"
-      ]
-    },
-    {
       "dex": 213,
       "speciesName": "Shuckle",
       "speciesId": "shuckle",
@@ -8815,103 +6603,9 @@
       ]
     },
     {
-      "dex": 228,
-      "speciesName": "Houndour (Purified)",
-      "speciesId": "houndour_purified",
-      "baseStats": {
-        "atk": 152,
-        "def": 83,
-        "hp": 128
-      },
-      "types": [
-        "dark",
-        "fire"
-      ],
-      "fastMoves": [
-        "EMBER",
-        "FEINT_ATTACK"
-      ],
-      "chargedMoves": [
-        "CRUNCH",
-        "DARK_PULSE",
-        "FLAMETHROWER"
-      ]
-    },
-    {
-      "dex": 228,
-      "speciesName": "Houndour (Shadow)",
-      "speciesId": "houndour_shadow",
-      "baseStats": {
-        "atk": 152,
-        "def": 83,
-        "hp": 128
-      },
-      "types": [
-        "dark",
-        "fire"
-      ],
-      "fastMoves": [
-        "EMBER",
-        "FEINT_ATTACK"
-      ],
-      "chargedMoves": [
-        "CRUNCH",
-        "DARK_PULSE",
-        "FLAMETHROWER"
-      ]
-    },
-    {
       "dex": 229,
       "speciesName": "Houndoom",
       "speciesId": "houndoom",
-      "baseStats": {
-        "atk": 224,
-        "def": 144,
-        "hp": 181
-      },
-      "types": [
-        "dark",
-        "fire"
-      ],
-      "fastMoves": [
-        "FIRE_FANG",
-        "SNARL"
-      ],
-      "chargedMoves": [
-        "CRUNCH",
-        "FIRE_BLAST",
-        "FLAMETHROWER",
-        "FOUL_PLAY"
-      ]
-    },
-    {
-      "dex": 229,
-      "speciesName": "Houndoom (Purified)",
-      "speciesId": "houndoom_purified",
-      "baseStats": {
-        "atk": 224,
-        "def": 144,
-        "hp": 181
-      },
-      "types": [
-        "dark",
-        "fire"
-      ],
-      "fastMoves": [
-        "FIRE_FANG",
-        "SNARL"
-      ],
-      "chargedMoves": [
-        "CRUNCH",
-        "FIRE_BLAST",
-        "FLAMETHROWER",
-        "FOUL_PLAY"
-      ]
-    },
-    {
-      "dex": 229,
-      "speciesName": "Houndoom (Shadow)",
-      "speciesId": "houndoom_shadow",
       "baseStats": {
         "atk": 224,
         "def": 144,
@@ -8996,9 +6690,7 @@
         "none"
       ],
       "fastMoves": [
-        "CHARM",
         "COUNTER",
-        "MUD_SLAP",
         "TACKLE"
       ],
       "chargedMoves": [
@@ -9389,101 +7081,9 @@
       ]
     },
     {
-      "dex": 246,
-      "speciesName": "Larvitar (Purified)",
-      "speciesId": "larvitar_purified",
-      "baseStats": {
-        "atk": 115,
-        "def": 93,
-        "hp": 137
-      },
-      "types": [
-        "rock",
-        "ground"
-      ],
-      "fastMoves": [
-        "BITE",
-        "ROCK_SMASH"
-      ],
-      "chargedMoves": [
-        "ANCIENT_POWER",
-        "CRUNCH",
-        "STOMP"
-      ]
-    },
-    {
-      "dex": 246,
-      "speciesName": "Larvitar (Shadow)",
-      "speciesId": "larvitar_shadow",
-      "baseStats": {
-        "atk": 115,
-        "def": 93,
-        "hp": 137
-      },
-      "types": [
-        "rock",
-        "ground"
-      ],
-      "fastMoves": [
-        "BITE",
-        "ROCK_SMASH"
-      ],
-      "chargedMoves": [
-        "ANCIENT_POWER",
-        "CRUNCH",
-        "STOMP"
-      ]
-    },
-    {
       "dex": 247,
       "speciesName": "Pupitar",
       "speciesId": "pupitar",
-      "baseStats": {
-        "atk": 155,
-        "def": 133,
-        "hp": 172
-      },
-      "types": [
-        "rock",
-        "ground"
-      ],
-      "fastMoves": [
-        "BITE",
-        "ROCK_SMASH"
-      ],
-      "chargedMoves": [
-        "ANCIENT_POWER",
-        "CRUNCH",
-        "DIG"
-      ]
-    },
-    {
-      "dex": 247,
-      "speciesName": "Pupitar (Purified)",
-      "speciesId": "pupitar_purified",
-      "baseStats": {
-        "atk": 155,
-        "def": 133,
-        "hp": 172
-      },
-      "types": [
-        "rock",
-        "ground"
-      ],
-      "fastMoves": [
-        "BITE",
-        "ROCK_SMASH"
-      ],
-      "chargedMoves": [
-        "ANCIENT_POWER",
-        "CRUNCH",
-        "DIG"
-      ]
-    },
-    {
-      "dex": 247,
-      "speciesName": "Pupitar (Shadow)",
-      "speciesId": "pupitar_shadow",
       "baseStats": {
         "atk": 155,
         "def": 133,
@@ -9528,52 +7128,6 @@
       ],
       "legacyMoves": [
         "SMACK_DOWN"
-      ]
-    },
-    {
-      "dex": 248,
-      "speciesName": "Tyranitar (Purified)",
-      "speciesId": "tyranitar_purified",
-      "baseStats": {
-        "atk": 251,
-        "def": 207,
-        "hp": 225
-      },
-      "types": [
-        "rock",
-        "dark"
-      ],
-      "fastMoves": [
-        "BITE",
-        "IRON_TAIL"
-      ],
-      "chargedMoves": [
-        "CRUNCH",
-        "FIRE_BLAST",
-        "STONE_EDGE"
-      ]
-    },
-    {
-      "dex": 248,
-      "speciesName": "Tyranitar (Shadow)",
-      "speciesId": "tyranitar_shadow",
-      "baseStats": {
-        "atk": 251,
-        "def": 207,
-        "hp": 225
-      },
-      "types": [
-        "rock",
-        "dark"
-      ],
-      "fastMoves": [
-        "BITE",
-        "IRON_TAIL"
-      ],
-      "chargedMoves": [
-        "CRUNCH",
-        "FIRE_BLAST",
-        "STONE_EDGE"
       ]
     },
     {
@@ -9829,52 +7383,6 @@
       ]
     },
     {
-      "dex": 258,
-      "speciesName": "Mudkip (Purified)",
-      "speciesId": "mudkip_purified",
-      "baseStats": {
-        "atk": 126,
-        "def": 93,
-        "hp": 137
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "TACKLE",
-        "WATER_GUN"
-      ],
-      "chargedMoves": [
-        "DIG",
-        "SLUDGE",
-        "STOMP"
-      ]
-    },
-    {
-      "dex": 258,
-      "speciesName": "Mudkip (Shadow)",
-      "speciesId": "mudkip_shadow",
-      "baseStats": {
-        "atk": 126,
-        "def": 93,
-        "hp": 137
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "TACKLE",
-        "WATER_GUN"
-      ],
-      "chargedMoves": [
-        "DIG",
-        "SLUDGE",
-        "STOMP"
-      ]
-    },
-    {
       "dex": 259,
       "speciesName": "Marshtomp",
       "speciesId": "marshtomp",
@@ -9898,103 +7406,9 @@
       ]
     },
     {
-      "dex": 259,
-      "speciesName": "Marshtomp (Purified)",
-      "speciesId": "marshtomp_purified",
-      "baseStats": {
-        "atk": 156,
-        "def": 133,
-        "hp": 172
-      },
-      "types": [
-        "water",
-        "ground"
-      ],
-      "fastMoves": [
-        "MUD_SHOT",
-        "WATER_GUN"
-      ],
-      "chargedMoves": [
-        "MUD_BOMB",
-        "SLUDGE",
-        "SURF"
-      ]
-    },
-    {
-      "dex": 259,
-      "speciesName": "Marshtomp (Shadow)",
-      "speciesId": "marshtomp_shadow",
-      "baseStats": {
-        "atk": 156,
-        "def": 133,
-        "hp": 172
-      },
-      "types": [
-        "water",
-        "ground"
-      ],
-      "fastMoves": [
-        "MUD_SHOT",
-        "WATER_GUN"
-      ],
-      "chargedMoves": [
-        "MUD_BOMB",
-        "SLUDGE",
-        "SURF"
-      ]
-    },
-    {
       "dex": 260,
       "speciesName": "Swampert",
       "speciesId": "swampert",
-      "baseStats": {
-        "atk": 208,
-        "def": 175,
-        "hp": 225
-      },
-      "types": [
-        "water",
-        "ground"
-      ],
-      "fastMoves": [
-        "MUD_SHOT",
-        "WATER_GUN"
-      ],
-      "chargedMoves": [
-        "EARTHQUAKE",
-        "MUDDY_WATER",
-        "SLUDGE_WAVE",
-        "SURF"
-      ]
-    },
-    {
-      "dex": 260,
-      "speciesName": "Swampert (Purified)",
-      "speciesId": "swampert_purified",
-      "baseStats": {
-        "atk": 208,
-        "def": 175,
-        "hp": 225
-      },
-      "types": [
-        "water",
-        "ground"
-      ],
-      "fastMoves": [
-        "MUD_SHOT",
-        "WATER_GUN"
-      ],
-      "chargedMoves": [
-        "EARTHQUAKE",
-        "MUDDY_WATER",
-        "SLUDGE_WAVE",
-        "SURF"
-      ]
-    },
-    {
-      "dex": 260,
-      "speciesName": "Swampert (Shadow)",
-      "speciesId": "swampert_shadow",
       "baseStats": {
         "atk": 208,
         "def": 175,
@@ -10469,52 +7883,6 @@
       ]
     },
     {
-      "dex": 280,
-      "speciesName": "Ralts (Purified)",
-      "speciesId": "ralts_purified",
-      "baseStats": {
-        "atk": 79,
-        "def": 59,
-        "hp": 99
-      },
-      "types": [
-        "psychic",
-        "fairy"
-      ],
-      "fastMoves": [
-        "CHARGE_BEAM",
-        "CONFUSION"
-      ],
-      "chargedMoves": [
-        "DISARMING_VOICE",
-        "PSYSHOCK",
-        "SHADOW_SNEAK"
-      ]
-    },
-    {
-      "dex": 280,
-      "speciesName": "Ralts (Shadow)",
-      "speciesId": "ralts_shadow",
-      "baseStats": {
-        "atk": 79,
-        "def": 59,
-        "hp": 99
-      },
-      "types": [
-        "psychic",
-        "fairy"
-      ],
-      "fastMoves": [
-        "CHARGE_BEAM",
-        "CONFUSION"
-      ],
-      "chargedMoves": [
-        "DISARMING_VOICE",
-        "PSYSHOCK",
-        "SHADOW_SNEAK"
-      ]
-    },
-    {
       "dex": 281,
       "speciesName": "Kirlia",
       "speciesId": "kirlia",
@@ -10538,103 +7906,9 @@
       ]
     },
     {
-      "dex": 281,
-      "speciesName": "Kirlia (Purified)",
-      "speciesId": "kirlia_purified",
-      "baseStats": {
-        "atk": 117,
-        "def": 90,
-        "hp": 116
-      },
-      "types": [
-        "psychic",
-        "fairy"
-      ],
-      "fastMoves": [
-        "CHARGE_BEAM",
-        "CONFUSION"
-      ],
-      "chargedMoves": [
-        "DISARMING_VOICE",
-        "PSYCHIC",
-        "SHADOW_SNEAK"
-      ]
-    },
-    {
-      "dex": 281,
-      "speciesName": "Kirlia (Shadow)",
-      "speciesId": "kirlia_shadow",
-      "baseStats": {
-        "atk": 117,
-        "def": 90,
-        "hp": 116
-      },
-      "types": [
-        "psychic",
-        "fairy"
-      ],
-      "fastMoves": [
-        "CHARGE_BEAM",
-        "CONFUSION"
-      ],
-      "chargedMoves": [
-        "DISARMING_VOICE",
-        "PSYCHIC",
-        "SHADOW_SNEAK"
-      ]
-    },
-    {
       "dex": 282,
       "speciesName": "Gardevoir",
       "speciesId": "gardevoir",
-      "baseStats": {
-        "atk": 237,
-        "def": 195,
-        "hp": 169
-      },
-      "types": [
-        "psychic",
-        "fairy"
-      ],
-      "fastMoves": [
-        "CHARGE_BEAM",
-        "CHARM",
-        "CONFUSION"
-      ],
-      "chargedMoves": [
-        "DAZZLING_GLEAM",
-        "PSYCHIC",
-        "SHADOW_BALL"
-      ]
-    },
-    {
-      "dex": 282,
-      "speciesName": "Gardevoir (Purified)",
-      "speciesId": "gardevoir_purified",
-      "baseStats": {
-        "atk": 237,
-        "def": 195,
-        "hp": 169
-      },
-      "types": [
-        "psychic",
-        "fairy"
-      ],
-      "fastMoves": [
-        "CHARGE_BEAM",
-        "CHARM",
-        "CONFUSION"
-      ],
-      "chargedMoves": [
-        "DAZZLING_GLEAM",
-        "PSYCHIC",
-        "SHADOW_BALL"
-      ]
-    },
-    {
-      "dex": 282,
-      "speciesName": "Gardevoir (Shadow)",
-      "speciesId": "gardevoir_shadow",
       "baseStats": {
         "atk": 237,
         "def": 195,
@@ -12250,8 +9524,7 @@
       ],
       "chargedMoves": [
         "ENERGY_BALL",
-        "HURRICANE",
-        "WEATHER_BALL_ROCK"
+        "HURRICANE"
       ]
     },
     {
@@ -13127,7 +10400,7 @@
       "chargedMoves": [
         "HYPER_BEAM",
         "PSYCHO_BOOST",
-        "THUNDERBOLT"
+        "ZAP_CANNON"
       ]
     },
     {
@@ -13223,52 +10496,6 @@
       ]
     },
     {
-      "dex": 387,
-      "speciesName": "Turtwig (Purified)",
-      "speciesId": "turtwig_purified",
-      "baseStats": {
-        "atk": 119,
-        "def": 110,
-        "hp": 146
-      },
-      "types": [
-        "grass",
-        "none"
-      ],
-      "fastMoves": [
-        "RAZOR_LEAF",
-        "TACKLE"
-      ],
-      "chargedMoves": [
-        "BODY_SLAM",
-        "ENERGY_BALL",
-        "SEED_BOMB"
-      ]
-    },
-    {
-      "dex": 387,
-      "speciesName": "Turtwig (Shadow)",
-      "speciesId": "turtwig_shadow",
-      "baseStats": {
-        "atk": 119,
-        "def": 110,
-        "hp": 146
-      },
-      "types": [
-        "grass",
-        "none"
-      ],
-      "fastMoves": [
-        "RAZOR_LEAF",
-        "TACKLE"
-      ],
-      "chargedMoves": [
-        "BODY_SLAM",
-        "ENERGY_BALL",
-        "SEED_BOMB"
-      ]
-    },
-    {
       "dex": 388,
       "speciesName": "Grotle",
       "speciesId": "grotle",
@@ -13292,101 +10519,9 @@
       ]
     },
     {
-      "dex": 388,
-      "speciesName": "Grotle (Purified)",
-      "speciesId": "grotle_purified",
-      "baseStats": {
-        "atk": 157,
-        "def": 143,
-        "hp": 181
-      },
-      "types": [
-        "grass",
-        "none"
-      ],
-      "fastMoves": [
-        "BITE",
-        "RAZOR_LEAF"
-      ],
-      "chargedMoves": [
-        "BODY_SLAM",
-        "ENERGY_BALL",
-        "SOLAR_BEAM"
-      ]
-    },
-    {
-      "dex": 388,
-      "speciesName": "Grotle (Shadow)",
-      "speciesId": "grotle_shadow",
-      "baseStats": {
-        "atk": 157,
-        "def": 143,
-        "hp": 181
-      },
-      "types": [
-        "grass",
-        "none"
-      ],
-      "fastMoves": [
-        "BITE",
-        "RAZOR_LEAF"
-      ],
-      "chargedMoves": [
-        "BODY_SLAM",
-        "ENERGY_BALL",
-        "SOLAR_BEAM"
-      ]
-    },
-    {
       "dex": 389,
       "speciesName": "Torterra",
       "speciesId": "torterra",
-      "baseStats": {
-        "atk": 202,
-        "def": 188,
-        "hp": 216
-      },
-      "types": [
-        "grass",
-        "ground"
-      ],
-      "fastMoves": [
-        "BITE",
-        "RAZOR_LEAF"
-      ],
-      "chargedMoves": [
-        "EARTHQUAKE",
-        "SOLAR_BEAM",
-        "STONE_EDGE"
-      ]
-    },
-    {
-      "dex": 389,
-      "speciesName": "Torterra (Purified)",
-      "speciesId": "torterra_purified",
-      "baseStats": {
-        "atk": 202,
-        "def": 188,
-        "hp": 216
-      },
-      "types": [
-        "grass",
-        "ground"
-      ],
-      "fastMoves": [
-        "BITE",
-        "RAZOR_LEAF"
-      ],
-      "chargedMoves": [
-        "EARTHQUAKE",
-        "SOLAR_BEAM",
-        "STONE_EDGE"
-      ]
-    },
-    {
-      "dex": 389,
-      "speciesName": "Torterra (Shadow)",
-      "speciesId": "torterra_shadow",
       "baseStats": {
         "atk": 202,
         "def": 188,
@@ -13942,6 +11077,27 @@
     },
     {
       "dex": 412,
+      "speciesName": "Burmy",
+      "speciesId": "burmy",
+      "baseStats": {
+        "atk": 53,
+        "def": 83,
+        "hp": 120
+      },
+      "types": [
+        "bug",
+        "none"
+      ],
+      "fastMoves": [
+        "BUG_BITE",
+        "TACKLE"
+      ],
+      "chargedMoves": [
+        "STRUGGLE"
+      ]
+    },
+    {
+      "dex": 412,
       "speciesName": "Burmy (Plant)",
       "speciesId": "burmy_plant",
       "baseStats": {
@@ -13994,6 +11150,27 @@
       "types": [
         "bug",
         "none"
+      ],
+      "fastMoves": [
+        "BUG_BITE",
+        "TACKLE"
+      ],
+      "chargedMoves": [
+        "STRUGGLE"
+      ]
+    },
+    {
+      "dex": 413,
+      "speciesName": "Wormadam",
+      "speciesId": "wormadam",
+      "baseStats": {
+        "atk": 141,
+        "def": 180,
+        "hp": 155
+      },
+      "types": [
+        "bug",
+        "grass"
       ],
       "fastMoves": [
         "BUG_BITE",
@@ -14232,6 +11409,29 @@
     },
     {
       "dex": 421,
+      "speciesName": "Cherrim",
+      "speciesId": "cherrim",
+      "baseStats": {
+        "atk": 170,
+        "def": 153,
+        "hp": 172
+      },
+      "types": [
+        "grass",
+        "none"
+      ],
+      "fastMoves": [
+        "BULLET_SEED",
+        "RAZOR_LEAF"
+      ],
+      "chargedMoves": [
+        "DAZZLING_GLEAM",
+        "HYPER_BEAM",
+        "SOLAR_BEAM"
+      ]
+    },
+    {
+      "dex": 421,
       "speciesName": "Cherrim (Overcast)",
       "speciesId": "cherrim_overcast",
       "baseStats": {
@@ -14274,6 +11474,44 @@
         "DAZZLING_GLEAM",
         "HYPER_BEAM",
         "SOLAR_BEAM"
+      ]
+    },
+    {
+      "dex": 422,
+      "speciesName": "Shellos",
+      "speciesId": "shellos",
+      "baseStats": {
+        "atk": 103,
+        "def": 105,
+        "hp": 183
+      },
+      "types": [
+        "water",
+        "none"
+      ],
+      "fastMoves": [
+        "HIDDEN_POWER_BUG",
+        "HIDDEN_POWER_DARK",
+        "HIDDEN_POWER_DRAGON",
+        "HIDDEN_POWER_ELECTRIC",
+        "HIDDEN_POWER_FIGHTING",
+        "HIDDEN_POWER_FIRE",
+        "HIDDEN_POWER_FLYING",
+        "HIDDEN_POWER_GHOST",
+        "HIDDEN_POWER_GRASS",
+        "HIDDEN_POWER_GROUND",
+        "HIDDEN_POWER_ICE",
+        "HIDDEN_POWER_POISON",
+        "HIDDEN_POWER_PSYCHIC",
+        "HIDDEN_POWER_ROCK",
+        "HIDDEN_POWER_STEEL",
+        "HIDDEN_POWER_WATER",
+        "MUD_SLAP"
+      ],
+      "chargedMoves": [
+        "BODY_SLAM",
+        "MUD_BOMB",
+        "WATER_PULSE"
       ]
     },
     {
@@ -14349,6 +11587,44 @@
       "chargedMoves": [
         "BODY_SLAM",
         "MUD_BOMB",
+        "WATER_PULSE"
+      ]
+    },
+    {
+      "dex": 423,
+      "speciesName": "Gastrodon",
+      "speciesId": "gastrodon",
+      "baseStats": {
+        "atk": 169,
+        "def": 143,
+        "hp": 244
+      },
+      "types": [
+        "water",
+        "ground"
+      ],
+      "fastMoves": [
+        "HIDDEN_POWER_BUG",
+        "HIDDEN_POWER_DARK",
+        "HIDDEN_POWER_DRAGON",
+        "HIDDEN_POWER_ELECTRIC",
+        "HIDDEN_POWER_FIGHTING",
+        "HIDDEN_POWER_FIRE",
+        "HIDDEN_POWER_FLYING",
+        "HIDDEN_POWER_GHOST",
+        "HIDDEN_POWER_GRASS",
+        "HIDDEN_POWER_GROUND",
+        "HIDDEN_POWER_ICE",
+        "HIDDEN_POWER_POISON",
+        "HIDDEN_POWER_PSYCHIC",
+        "HIDDEN_POWER_ROCK",
+        "HIDDEN_POWER_STEEL",
+        "HIDDEN_POWER_WATER",
+        "MUD_SLAP"
+      ],
+      "chargedMoves": [
+        "BODY_SLAM",
+        "EARTH_POWER",
         "WATER_PULSE"
       ]
     },
@@ -15665,54 +12941,6 @@
       ]
     },
     {
-      "dex": 475,
-      "speciesName": "Gallade (Purified)",
-      "speciesId": "gallade_purified",
-      "baseStats": {
-        "atk": 237,
-        "def": 195,
-        "hp": 169
-      },
-      "types": [
-        "psychic",
-        "fighting"
-      ],
-      "fastMoves": [
-        "CHARM",
-        "CONFUSION",
-        "LOW_KICK"
-      ],
-      "chargedMoves": [
-        "CLOSE_COMBAT",
-        "LEAF_BLADE",
-        "PSYCHIC"
-      ]
-    },
-    {
-      "dex": 475,
-      "speciesName": "Gallade (Shadow)",
-      "speciesId": "gallade_shadow",
-      "baseStats": {
-        "atk": 237,
-        "def": 195,
-        "hp": 169
-      },
-      "types": [
-        "psychic",
-        "fighting"
-      ],
-      "fastMoves": [
-        "CHARM",
-        "CONFUSION",
-        "LOW_KICK"
-      ],
-      "chargedMoves": [
-        "CLOSE_COMBAT",
-        "LEAF_BLADE",
-        "PSYCHIC"
-      ]
-    },
-    {
       "dex": 476,
       "speciesName": "Probopass",
       "speciesId": "probopass",
@@ -16082,6 +13310,29 @@
     },
     {
       "dex": 487,
+      "speciesName": "Giratina",
+      "speciesId": "giratina",
+      "baseStats": {
+        "atk": 187,
+        "def": 225,
+        "hp": 284
+      },
+      "types": [
+        "ghost",
+        "dragon"
+      ],
+      "fastMoves": [
+        "DRAGON_BREATH",
+        "SHADOW_CLAW"
+      ],
+      "chargedMoves": [
+        "ANCIENT_POWER",
+        "DRAGON_CLAW",
+        "SHADOW_SNEAK"
+      ]
+    },
+    {
+      "dex": 487,
       "speciesName": "Giratina (Altered)",
       "speciesId": "giratina_altered",
       "baseStats": {
@@ -16216,6 +13467,44 @@
         "DARK_PULSE",
         "FOCUS_BLAST",
         "SHADOW_BALL"
+      ]
+    },
+    {
+      "dex": 492,
+      "speciesName": "Shaymin",
+      "speciesId": "shaymin",
+      "baseStats": {
+        "atk": 210,
+        "def": 210,
+        "hp": 225
+      },
+      "types": [
+        "grass",
+        "none"
+      ],
+      "fastMoves": [
+        "HIDDEN_POWER_BUG",
+        "HIDDEN_POWER_DARK",
+        "HIDDEN_POWER_DRAGON",
+        "HIDDEN_POWER_ELECTRIC",
+        "HIDDEN_POWER_FIGHTING",
+        "HIDDEN_POWER_FIRE",
+        "HIDDEN_POWER_FLYING",
+        "HIDDEN_POWER_GHOST",
+        "HIDDEN_POWER_GRASS",
+        "HIDDEN_POWER_GROUND",
+        "HIDDEN_POWER_ICE",
+        "HIDDEN_POWER_POISON",
+        "HIDDEN_POWER_PSYCHIC",
+        "HIDDEN_POWER_ROCK",
+        "HIDDEN_POWER_STEEL",
+        "HIDDEN_POWER_WATER",
+        "ZEN_HEADBUTT"
+      ],
+      "chargedMoves": [
+        "ENERGY_BALL",
+        "GRASS_KNOT",
+        "SOLAR_BEAM"
       ]
     },
     {
@@ -16709,3727 +13998,6 @@
       ]
     },
     {
-      "dex": 494,
-      "speciesName": "Victini",
-      "speciesId": "victini",
-      "baseStats": {
-        "atk": 210,
-        "def": 210,
-        "hp": 225
-      },
-      "types": [
-        "psychic",
-        "fire"
-      ],
-      "fastMoves": [
-        "CONFUSION",
-        "QUICK_ATTACK"
-      ],
-      "chargedMoves": [
-        "FOCUS_BLAST",
-        "OVERHEAT",
-        "PSYCHIC"
-      ]
-    },
-    {
-      "dex": 495,
-      "speciesName": "Snivy",
-      "speciesId": "snivy",
-      "baseStats": {
-        "atk": 88,
-        "def": 107,
-        "hp": 128
-      },
-      "types": [
-        "grass",
-        "none"
-      ],
-      "fastMoves": [
-        "TACKLE",
-        "VINE_WHIP"
-      ],
-      "chargedMoves": [
-        "ENERGY_BALL",
-        "SEED_BOMB",
-        "WRAP"
-      ]
-    },
-    {
-      "dex": 496,
-      "speciesName": "Servine",
-      "speciesId": "servine",
-      "baseStats": {
-        "atk": 122,
-        "def": 152,
-        "hp": 155
-      },
-      "types": [
-        "grass",
-        "none"
-      ],
-      "fastMoves": [
-        "IRON_TAIL",
-        "VINE_WHIP"
-      ],
-      "chargedMoves": [
-        "GRASS_KNOT",
-        "LEAF_TORNADO",
-        "WRAP"
-      ]
-    },
-    {
-      "dex": 497,
-      "speciesName": "Serperior",
-      "speciesId": "serperior",
-      "baseStats": {
-        "atk": 161,
-        "def": 204,
-        "hp": 181
-      },
-      "types": [
-        "grass",
-        "none"
-      ],
-      "fastMoves": [
-        "IRON_TAIL",
-        "VINE_WHIP"
-      ],
-      "chargedMoves": [
-        "AERIAL_ACE",
-        "GRASS_KNOT",
-        "LEAF_TORNADO"
-      ]
-    },
-    {
-      "dex": 498,
-      "speciesName": "Tepig",
-      "speciesId": "tepig",
-      "baseStats": {
-        "atk": 115,
-        "def": 85,
-        "hp": 163
-      },
-      "types": [
-        "fire",
-        "none"
-      ],
-      "fastMoves": [
-        "EMBER",
-        "TACKLE"
-      ],
-      "chargedMoves": [
-        "BODY_SLAM",
-        "FLAME_CHARGE",
-        "FLAMETHROWER"
-      ]
-    },
-    {
-      "dex": 499,
-      "speciesName": "Pignite",
-      "speciesId": "pignite",
-      "baseStats": {
-        "atk": 173,
-        "def": 106,
-        "hp": 207
-      },
-      "types": [
-        "fire",
-        "fighting"
-      ],
-      "fastMoves": [
-        "EMBER",
-        "TACKLE"
-      ],
-      "chargedMoves": [
-        "FLAME_CHARGE",
-        "FLAMETHROWER",
-        "ROCK_TOMB"
-      ]
-    },
-    {
-      "dex": 500,
-      "speciesName": "Emboar",
-      "speciesId": "emboar",
-      "baseStats": {
-        "atk": 235,
-        "def": 127,
-        "hp": 242
-      },
-      "types": [
-        "fire",
-        "fighting"
-      ],
-      "fastMoves": [
-        "EMBER",
-        "LOW_KICK"
-      ],
-      "chargedMoves": [
-        "FOCUS_BLAST",
-        "HEAT_WAVE",
-        "ROCK_SLIDE"
-      ]
-    },
-    {
-      "dex": 501,
-      "speciesName": "Oshawott",
-      "speciesId": "oshawott",
-      "baseStats": {
-        "atk": 117,
-        "def": 85,
-        "hp": 146
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "TACKLE",
-        "WATER_GUN"
-      ],
-      "chargedMoves": [
-        "AQUA_TAIL",
-        "NIGHT_SLASH",
-        "WATER_PULSE"
-      ]
-    },
-    {
-      "dex": 502,
-      "speciesName": "Dewott",
-      "speciesId": "dewott",
-      "baseStats": {
-        "atk": 159,
-        "def": 116,
-        "hp": 181
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "FURY_CUTTER",
-        "WATER_GUN"
-      ],
-      "chargedMoves": [
-        "AQUA_TAIL",
-        "WATER_PULSE",
-        "X_SCISSOR"
-      ]
-    },
-    {
-      "dex": 503,
-      "speciesName": "Samurott",
-      "speciesId": "samurott",
-      "baseStats": {
-        "atk": 212,
-        "def": 157,
-        "hp": 216
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "FURY_CUTTER",
-        "WATERFALL"
-      ],
-      "chargedMoves": [
-        "BLIZZARD",
-        "HYDRO_PUMP",
-        "MEGAHORN"
-      ]
-    },
-    {
-      "dex": 504,
-      "speciesName": "Patrat",
-      "speciesId": "patrat",
-      "baseStats": {
-        "atk": 98,
-        "def": 73,
-        "hp": 128
-      },
-      "types": [
-        "normal",
-        "none"
-      ],
-      "fastMoves": [
-        "BITE",
-        "TACKLE"
-      ],
-      "chargedMoves": [
-        "DIG",
-        "GRASS_KNOT",
-        "HYPER_FANG"
-      ]
-    },
-    {
-      "dex": 505,
-      "speciesName": "Watchog",
-      "speciesId": "watchog",
-      "baseStats": {
-        "atk": 165,
-        "def": 139,
-        "hp": 155
-      },
-      "types": [
-        "normal",
-        "none"
-      ],
-      "fastMoves": [
-        "BITE",
-        "LOW_KICK"
-      ],
-      "chargedMoves": [
-        "CRUNCH",
-        "GRASS_KNOT",
-        "HYPER_FANG"
-      ]
-    },
-    {
-      "dex": 506,
-      "speciesName": "Lillipup",
-      "speciesId": "lillipup",
-      "baseStats": {
-        "atk": 107,
-        "def": 86,
-        "hp": 128
-      },
-      "types": [
-        "normal",
-        "none"
-      ],
-      "fastMoves": [
-        "TACKLE",
-        "TAKE_DOWN"
-      ],
-      "chargedMoves": [
-        "DIG",
-        "ROCK_TOMB",
-        "THUNDERBOLT"
-      ]
-    },
-    {
-      "dex": 507,
-      "speciesName": "Herdier",
-      "speciesId": "herdier",
-      "baseStats": {
-        "atk": 145,
-        "def": 126,
-        "hp": 163
-      },
-      "types": [
-        "normal",
-        "none"
-      ],
-      "fastMoves": [
-        "LICK",
-        "TAKE_DOWN"
-      ],
-      "chargedMoves": [
-        "DIG",
-        "PLAY_ROUGH",
-        "THUNDERBOLT"
-      ]
-    },
-    {
-      "dex": 508,
-      "speciesName": "Stoutland",
-      "speciesId": "stoutland",
-      "baseStats": {
-        "atk": 206,
-        "def": 182,
-        "hp": 198
-      },
-      "types": [
-        "normal",
-        "none"
-      ],
-      "fastMoves": [
-        "LICK",
-        "TAKE_DOWN"
-      ],
-      "chargedMoves": [
-        "CRUNCH",
-        "PLAY_ROUGH",
-        "WILD_CHARGE"
-      ]
-    },
-    {
-      "dex": 509,
-      "speciesName": "Purrloin",
-      "speciesId": "purrloin",
-      "baseStats": {
-        "atk": 98,
-        "def": 73,
-        "hp": 121
-      },
-      "types": [
-        "dark",
-        "none"
-      ],
-      "fastMoves": [
-        "SCRATCH",
-        "SUCKER_PUNCH"
-      ],
-      "chargedMoves": [
-        "DARK_PULSE",
-        "NIGHT_SLASH",
-        "PLAY_ROUGH"
-      ]
-    },
-    {
-      "dex": 510,
-      "speciesName": "Liepard",
-      "speciesId": "liepard",
-      "baseStats": {
-        "atk": 187,
-        "def": 106,
-        "hp": 162
-      },
-      "types": [
-        "dark",
-        "none"
-      ],
-      "fastMoves": [
-        "CHARM",
-        "SNARL"
-      ],
-      "chargedMoves": [
-        "DARK_PULSE",
-        "GUNK_SHOT",
-        "PLAY_ROUGH"
-      ]
-    },
-    {
-      "dex": 511,
-      "speciesName": "Pansage",
-      "speciesId": "pansage",
-      "baseStats": {
-        "atk": 104,
-        "def": 94,
-        "hp": 137
-      },
-      "types": [
-        "grass",
-        "none"
-      ],
-      "fastMoves": [
-        "SCRATCH",
-        "VINE_WHIP"
-      ],
-      "chargedMoves": [
-        "CRUNCH",
-        "ENERGY_BALL",
-        "SEED_BOMB"
-      ]
-    },
-    {
-      "dex": 512,
-      "speciesName": "Simisage",
-      "speciesId": "simisage",
-      "baseStats": {
-        "atk": 206,
-        "def": 133,
-        "hp": 181
-      },
-      "types": [
-        "grass",
-        "none"
-      ],
-      "fastMoves": [
-        "BITE",
-        "VINE_WHIP"
-      ],
-      "chargedMoves": [
-        "CRUNCH",
-        "GRASS_KNOT",
-        "SOLAR_BEAM"
-      ]
-    },
-    {
-      "dex": 513,
-      "speciesName": "Pansear",
-      "speciesId": "pansear",
-      "baseStats": {
-        "atk": 104,
-        "def": 94,
-        "hp": 137
-      },
-      "types": [
-        "fire",
-        "none"
-      ],
-      "fastMoves": [
-        "FIRE_SPIN",
-        "SCRATCH"
-      ],
-      "chargedMoves": [
-        "CRUNCH",
-        "FLAME_BURST",
-        "FLAME_CHARGE"
-      ]
-    },
-    {
-      "dex": 514,
-      "speciesName": "Simisear",
-      "speciesId": "simisear",
-      "baseStats": {
-        "atk": 206,
-        "def": 133,
-        "hp": 181
-      },
-      "types": [
-        "fire",
-        "none"
-      ],
-      "fastMoves": [
-        "BITE",
-        "FIRE_SPIN"
-      ],
-      "chargedMoves": [
-        "CRUNCH",
-        "FIRE_BLAST",
-        "FLAMETHROWER"
-      ]
-    },
-    {
-      "dex": 515,
-      "speciesName": "Panpour",
-      "speciesId": "panpour",
-      "baseStats": {
-        "atk": 104,
-        "def": 94,
-        "hp": 137
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "SCRATCH",
-        "WATER_GUN"
-      ],
-      "chargedMoves": [
-        "CRUNCH",
-        "SURF",
-        "WATER_PULSE"
-      ]
-    },
-    {
-      "dex": 516,
-      "speciesName": "Simipour",
-      "speciesId": "simipour",
-      "baseStats": {
-        "atk": 206,
-        "def": 133,
-        "hp": 181
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "BITE",
-        "WATER_GUN"
-      ],
-      "chargedMoves": [
-        "CRUNCH",
-        "HYDRO_PUMP",
-        "SURF"
-      ]
-    },
-    {
-      "dex": 517,
-      "speciesName": "Munna",
-      "speciesId": "munna",
-      "baseStats": {
-        "atk": 111,
-        "def": 92,
-        "hp": 183
-      },
-      "types": [
-        "psychic",
-        "none"
-      ],
-      "fastMoves": [
-        "CHARGE_BEAM",
-        "ZEN_HEADBUTT"
-      ],
-      "chargedMoves": [
-        "DAZZLING_GLEAM",
-        "PSYBEAM",
-        "PSYSHOCK"
-      ]
-    },
-    {
-      "dex": 518,
-      "speciesName": "Musharna",
-      "speciesId": "musharna",
-      "baseStats": {
-        "atk": 183,
-        "def": 166,
-        "hp": 253
-      },
-      "types": [
-        "psychic",
-        "none"
-      ],
-      "fastMoves": [
-        "CHARGE_BEAM",
-        "ZEN_HEADBUTT"
-      ],
-      "chargedMoves": [
-        "DAZZLING_GLEAM",
-        "FUTURE_SIGHT",
-        "PSYSHOCK"
-      ]
-    },
-    {
-      "dex": 519,
-      "speciesName": "Pidove",
-      "speciesId": "pidove",
-      "baseStats": {
-        "atk": 98,
-        "def": 80,
-        "hp": 137
-      },
-      "types": [
-        "normal",
-        "flying"
-      ],
-      "fastMoves": [
-        "AIR_SLASH",
-        "QUICK_ATTACK"
-      ],
-      "chargedMoves": [
-        "AERIAL_ACE",
-        "AIR_CUTTER",
-        "HEAT_WAVE"
-      ]
-    },
-    {
-      "dex": 520,
-      "speciesName": "Tranquill",
-      "speciesId": "tranquill",
-      "baseStats": {
-        "atk": 144,
-        "def": 107,
-        "hp": 158
-      },
-      "types": [
-        "normal",
-        "flying"
-      ],
-      "fastMoves": [
-        "AIR_SLASH",
-        "STEEL_WING"
-      ],
-      "chargedMoves": [
-        "AERIAL_ACE",
-        "HEAT_WAVE",
-        "SKY_ATTACK"
-      ]
-    },
-    {
-      "dex": 521,
-      "speciesName": "Unfezant",
-      "speciesId": "unfezant",
-      "baseStats": {
-        "atk": 226,
-        "def": 146,
-        "hp": 190
-      },
-      "types": [
-        "normal",
-        "flying"
-      ],
-      "fastMoves": [
-        "AIR_SLASH",
-        "STEEL_WING"
-      ],
-      "chargedMoves": [
-        "HEAT_WAVE",
-        "HYPER_BEAM",
-        "SKY_ATTACK"
-      ]
-    },
-    {
-      "dex": 522,
-      "speciesName": "Blitzle",
-      "speciesId": "blitzle",
-      "baseStats": {
-        "atk": 118,
-        "def": 64,
-        "hp": 128
-      },
-      "types": [
-        "electric",
-        "none"
-      ],
-      "fastMoves": [
-        "QUICK_ATTACK",
-        "SPARK"
-      ],
-      "chargedMoves": [
-        "DISCHARGE",
-        "FLAME_CHARGE",
-        "THUNDERBOLT"
-      ]
-    },
-    {
-      "dex": 523,
-      "speciesName": "Zebstrika",
-      "speciesId": "zebstrika",
-      "baseStats": {
-        "atk": 211,
-        "def": 136,
-        "hp": 181
-      },
-      "types": [
-        "electric",
-        "none"
-      ],
-      "fastMoves": [
-        "LOW_KICK",
-        "SPARK"
-      ],
-      "chargedMoves": [
-        "DISCHARGE",
-        "FLAME_CHARGE",
-        "WILD_CHARGE"
-      ]
-    },
-    {
-      "dex": 524,
-      "speciesName": "Roggenrola",
-      "speciesId": "roggenrola",
-      "baseStats": {
-        "atk": 121,
-        "def": 110,
-        "hp": 146
-      },
-      "types": [
-        "rock",
-        "none"
-      ],
-      "fastMoves": [
-        "SMACK_DOWN",
-        "TACKLE"
-      ],
-      "chargedMoves": [
-        "POWER_GEM",
-        "ROCK_BLAST",
-        "STONE_EDGE"
-      ]
-    },
-    {
-      "dex": 525,
-      "speciesName": "Boldore",
-      "speciesId": "boldore",
-      "baseStats": {
-        "atk": 174,
-        "def": 143,
-        "hp": 172
-      },
-      "types": [
-        "rock",
-        "none"
-      ],
-      "fastMoves": [
-        "MUD_SLAP",
-        "SMACK_DOWN"
-      ],
-      "chargedMoves": [
-        "ROCK_SLIDE",
-        "SOLAR_BEAM",
-        "STONE_EDGE"
-      ]
-    },
-    {
-      "dex": 526,
-      "speciesName": "Gigalith",
-      "speciesId": "gigalith",
-      "baseStats": {
-        "atk": 226,
-        "def": 201,
-        "hp": 198
-      },
-      "types": [
-        "rock",
-        "none"
-      ],
-      "fastMoves": [
-        "MUD_SLAP",
-        "SMACK_DOWN"
-      ],
-      "chargedMoves": [
-        "HEAVY_SLAM",
-        "ROCK_SLIDE",
-        "SOLAR_BEAM",
-        "STONE_EDGE"
-      ]
-    },
-    {
-      "dex": 527,
-      "speciesName": "Woobat",
-      "speciesId": "woobat",
-      "baseStats": {
-        "atk": 107,
-        "def": 85,
-        "hp": 163
-      },
-      "types": [
-        "psychic",
-        "flying"
-      ],
-      "fastMoves": [
-        "AIR_SLASH",
-        "CONFUSION"
-      ],
-      "chargedMoves": [
-        "AERIAL_ACE",
-        "AIR_CUTTER",
-        "PSYSHOCK"
-      ]
-    },
-    {
-      "dex": 528,
-      "speciesName": "Swoobat",
-      "speciesId": "swoobat",
-      "baseStats": {
-        "atk": 161,
-        "def": 119,
-        "hp": 167
-      },
-      "types": [
-        "psychic",
-        "flying"
-      ],
-      "fastMoves": [
-        "AIR_SLASH",
-        "CONFUSION"
-      ],
-      "chargedMoves": [
-        "AERIAL_ACE",
-        "FUTURE_SIGHT",
-        "PSYCHIC"
-      ]
-    },
-    {
-      "dex": 529,
-      "speciesName": "Drilbur",
-      "speciesId": "drilbur",
-      "baseStats": {
-        "atk": 154,
-        "def": 85,
-        "hp": 155
-      },
-      "types": [
-        "ground",
-        "none"
-      ],
-      "fastMoves": [
-        "MUD_SLAP",
-        "SCRATCH"
-      ],
-      "chargedMoves": [
-        "DIG",
-        "DRILL_RUN",
-        "ROCK_TOMB"
-      ]
-    },
-    {
-      "dex": 530,
-      "speciesName": "Excadrill",
-      "speciesId": "excadrill",
-      "baseStats": {
-        "atk": 255,
-        "def": 129,
-        "hp": 242
-      },
-      "types": [
-        "ground",
-        "steel"
-      ],
-      "fastMoves": [
-        "METAL_CLAW",
-        "MUD_SLAP"
-      ],
-      "chargedMoves": [
-        "DRILL_RUN",
-        "EARTHQUAKE",
-        "IRON_HEAD",
-        "ROCK_SLIDE"
-      ]
-    },
-    {
-      "dex": 531,
-      "speciesName": "Audino",
-      "speciesId": "audino",
-      "baseStats": {
-        "atk": 114,
-        "def": 163,
-        "hp": 230
-      },
-      "types": [
-        "normal",
-        "none"
-      ],
-      "fastMoves": [
-        "POUND",
-        "ZEN_HEADBUTT"
-      ],
-      "chargedMoves": [
-        "DAZZLING_GLEAM",
-        "DISARMING_VOICE",
-        "HYPER_BEAM"
-      ]
-    },
-    {
-      "dex": 532,
-      "speciesName": "Timburr",
-      "speciesId": "timburr",
-      "baseStats": {
-        "atk": 134,
-        "def": 87,
-        "hp": 181
-      },
-      "types": [
-        "fighting",
-        "none"
-      ],
-      "fastMoves": [
-        "LOW_KICK",
-        "POUND"
-      ],
-      "chargedMoves": [
-        "BRICK_BREAK",
-        "LOW_SWEEP",
-        "ROCK_TOMB"
-      ]
-    },
-    {
-      "dex": 533,
-      "speciesName": "Gurdurr",
-      "speciesId": "gurdurr",
-      "baseStats": {
-        "atk": 180,
-        "def": 134,
-        "hp": 198
-      },
-      "types": [
-        "fighting",
-        "none"
-      ],
-      "fastMoves": [
-        "LOW_KICK",
-        "POISON_JAB"
-      ],
-      "chargedMoves": [
-        "BRICK_BREAK",
-        "LOW_SWEEP",
-        "STONE_EDGE"
-      ]
-    },
-    {
-      "dex": 534,
-      "speciesName": "Conkeldurr",
-      "speciesId": "conkeldurr",
-      "baseStats": {
-        "atk": 243,
-        "def": 158,
-        "hp": 233
-      },
-      "types": [
-        "fighting",
-        "none"
-      ],
-      "fastMoves": [
-        "COUNTER",
-        "POISON_JAB"
-      ],
-      "chargedMoves": [
-        "DYNAMIC_PUNCH",
-        "FOCUS_BLAST",
-        "STONE_EDGE"
-      ]
-    },
-    {
-      "dex": 535,
-      "speciesName": "Tympole",
-      "speciesId": "tympole",
-      "baseStats": {
-        "atk": 98,
-        "def": 78,
-        "hp": 137
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "BUBBLE",
-        "MUD_SHOT"
-      ],
-      "chargedMoves": [
-        "MUD_BOMB",
-        "SLUDGE_WAVE",
-        "WATER_PULSE"
-      ]
-    },
-    {
-      "dex": 536,
-      "speciesName": "Palpitoad",
-      "speciesId": "palpitoad",
-      "baseStats": {
-        "atk": 128,
-        "def": 109,
-        "hp": 181
-      },
-      "types": [
-        "water",
-        "ground"
-      ],
-      "fastMoves": [
-        "BUBBLE",
-        "MUD_SHOT"
-      ],
-      "chargedMoves": [
-        "EARTH_POWER",
-        "SLUDGE_WAVE",
-        "WATER_PULSE"
-      ]
-    },
-    {
-      "dex": 537,
-      "speciesName": "Seismitoad",
-      "speciesId": "seismitoad",
-      "baseStats": {
-        "atk": 188,
-        "def": 150,
-        "hp": 233
-      },
-      "types": [
-        "water",
-        "ground"
-      ],
-      "fastMoves": [
-        "BUBBLE",
-        "MUD_SHOT"
-      ],
-      "chargedMoves": [
-        "EARTH_POWER",
-        "MUDDY_WATER",
-        "SLUDGE_BOMB"
-      ]
-    },
-    {
-      "dex": 538,
-      "speciesName": "Throh",
-      "speciesId": "throh",
-      "baseStats": {
-        "atk": 172,
-        "def": 160,
-        "hp": 260
-      },
-      "types": [
-        "fighting",
-        "none"
-      ],
-      "fastMoves": [
-        "LOW_KICK",
-        "ZEN_HEADBUTT"
-      ],
-      "chargedMoves": [
-        "BODY_SLAM",
-        "FOCUS_BLAST",
-        "LOW_SWEEP"
-      ]
-    },
-    {
-      "dex": 539,
-      "speciesName": "Sawk",
-      "speciesId": "sawk",
-      "baseStats": {
-        "atk": 231,
-        "def": 153,
-        "hp": 181
-      },
-      "types": [
-        "fighting",
-        "none"
-      ],
-      "fastMoves": [
-        "LOW_KICK",
-        "POISON_JAB"
-      ],
-      "chargedMoves": [
-        "BODY_SLAM",
-        "FOCUS_BLAST",
-        "LOW_SWEEP"
-      ]
-    },
-    {
-      "dex": 540,
-      "speciesName": "Sewaddle",
-      "speciesId": "sewaddle",
-      "baseStats": {
-        "atk": 96,
-        "def": 124,
-        "hp": 128
-      },
-      "types": [
-        "bug",
-        "grass"
-      ],
-      "fastMoves": [
-        "BUG_BITE",
-        "STRUGGLE_BUG"
-      ],
-      "chargedMoves": [
-        "ENERGY_BALL",
-        "SEED_BOMB",
-        "SILVER_WIND"
-      ]
-    },
-    {
-      "dex": 541,
-      "speciesName": "Swadloon",
-      "speciesId": "swadloon",
-      "baseStats": {
-        "atk": 115,
-        "def": 162,
-        "hp": 146
-      },
-      "types": [
-        "bug",
-        "grass"
-      ],
-      "fastMoves": [
-        "BUG_BITE",
-        "STRUGGLE_BUG"
-      ],
-      "chargedMoves": [
-        "BUG_BUZZ",
-        "ENERGY_BALL",
-        "SILVER_WIND"
-      ]
-    },
-    {
-      "dex": 542,
-      "speciesName": "Leavanny",
-      "speciesId": "leavanny",
-      "baseStats": {
-        "atk": 205,
-        "def": 165,
-        "hp": 181
-      },
-      "types": [
-        "bug",
-        "grass"
-      ],
-      "fastMoves": [
-        "BUG_BITE",
-        "RAZOR_LEAF"
-      ],
-      "chargedMoves": [
-        "LEAF_BLADE",
-        "SILVER_WIND",
-        "X_SCISSOR"
-      ]
-    },
-    {
-      "dex": 543,
-      "speciesName": "Venipede",
-      "speciesId": "venipede",
-      "baseStats": {
-        "atk": 83,
-        "def": 99,
-        "hp": 102
-      },
-      "types": [
-        "bug",
-        "poison"
-      ],
-      "fastMoves": [
-        "BUG_BITE",
-        "POISON_STING"
-      ],
-      "chargedMoves": [
-        "GYRO_BALL",
-        "SIGNAL_BEAM",
-        "SLUDGE_BOMB"
-      ]
-    },
-    {
-      "dex": 544,
-      "speciesName": "Whirlipede",
-      "speciesId": "whirlipede",
-      "baseStats": {
-        "atk": 100,
-        "def": 173,
-        "hp": 120
-      },
-      "types": [
-        "bug",
-        "poison"
-      ],
-      "fastMoves": [
-        "BUG_BITE",
-        "POISON_STING"
-      ],
-      "chargedMoves": [
-        "GYRO_BALL",
-        "SIGNAL_BEAM",
-        "SLUDGE_BOMB"
-      ]
-    },
-    {
-      "dex": 545,
-      "speciesName": "Scolipede",
-      "speciesId": "scolipede",
-      "baseStats": {
-        "atk": 203,
-        "def": 175,
-        "hp": 155
-      },
-      "types": [
-        "bug",
-        "poison"
-      ],
-      "fastMoves": [
-        "BUG_BITE",
-        "POISON_JAB"
-      ],
-      "chargedMoves": [
-        "GYRO_BALL",
-        "MEGAHORN",
-        "SLUDGE_BOMB"
-      ]
-    },
-    {
-      "dex": 546,
-      "speciesName": "Cottonee",
-      "speciesId": "cottonee",
-      "baseStats": {
-        "atk": 71,
-        "def": 111,
-        "hp": 120
-      },
-      "types": [
-        "grass",
-        "fairy"
-      ],
-      "fastMoves": [
-        "CHARM",
-        "RAZOR_LEAF"
-      ],
-      "chargedMoves": [
-        "ENERGY_BALL",
-        "GRASS_KNOT",
-        "SEED_BOMB"
-      ]
-    },
-    {
-      "dex": 547,
-      "speciesName": "Whimsicott",
-      "speciesId": "whimsicott",
-      "baseStats": {
-        "atk": 164,
-        "def": 176,
-        "hp": 155
-      },
-      "types": [
-        "grass",
-        "fairy"
-      ],
-      "fastMoves": [
-        "CHARM",
-        "RAZOR_LEAF"
-      ],
-      "chargedMoves": [
-        "GRASS_KNOT",
-        "HURRICANE",
-        "MOONBLAST"
-      ]
-    },
-    {
-      "dex": 548,
-      "speciesName": "Petilil",
-      "speciesId": "petilil",
-      "baseStats": {
-        "atk": 119,
-        "def": 91,
-        "hp": 128
-      },
-      "types": [
-        "grass",
-        "none"
-      ],
-      "fastMoves": [
-        "CHARM",
-        "HIDDEN_POWER_BUG",
-        "HIDDEN_POWER_DARK",
-        "HIDDEN_POWER_DRAGON",
-        "HIDDEN_POWER_ELECTRIC",
-        "HIDDEN_POWER_FIGHTING",
-        "HIDDEN_POWER_FIRE",
-        "HIDDEN_POWER_FLYING",
-        "HIDDEN_POWER_GHOST",
-        "HIDDEN_POWER_GRASS",
-        "HIDDEN_POWER_GROUND",
-        "HIDDEN_POWER_ICE",
-        "HIDDEN_POWER_POISON",
-        "HIDDEN_POWER_PSYCHIC",
-        "HIDDEN_POWER_ROCK",
-        "HIDDEN_POWER_STEEL",
-        "HIDDEN_POWER_WATER"
-      ],
-      "chargedMoves": [
-        "ENERGY_BALL",
-        "SEED_BOMB"
-      ]
-    },
-    {
-      "dex": 549,
-      "speciesName": "Lilligant",
-      "speciesId": "lilligant",
-      "baseStats": {
-        "atk": 214,
-        "def": 155,
-        "hp": 172
-      },
-      "types": [
-        "grass",
-        "none"
-      ],
-      "fastMoves": [
-        "CHARM",
-        "HIDDEN_POWER_BUG",
-        "HIDDEN_POWER_DARK",
-        "HIDDEN_POWER_DRAGON",
-        "HIDDEN_POWER_ELECTRIC",
-        "HIDDEN_POWER_FIGHTING",
-        "HIDDEN_POWER_FIRE",
-        "HIDDEN_POWER_FLYING",
-        "HIDDEN_POWER_GHOST",
-        "HIDDEN_POWER_GRASS",
-        "HIDDEN_POWER_GROUND",
-        "HIDDEN_POWER_ICE",
-        "HIDDEN_POWER_POISON",
-        "HIDDEN_POWER_PSYCHIC",
-        "HIDDEN_POWER_ROCK",
-        "HIDDEN_POWER_STEEL",
-        "HIDDEN_POWER_WATER"
-      ],
-      "chargedMoves": [
-        "HYPER_BEAM",
-        "PETAL_BLIZZARD",
-        "SOLAR_BEAM"
-      ]
-    },
-    {
-      "dex": 550,
-      "speciesName": "Basculin (Blue)",
-      "speciesId": "basculin_blue_striped",
-      "baseStats": {
-        "atk": 189,
-        "def": 129,
-        "hp": 172
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "TACKLE",
-        "WATER_GUN"
-      ],
-      "chargedMoves": [
-        "AQUA_JET",
-        "AQUA_TAIL",
-        "MUDDY_WATER"
-      ]
-    },
-    {
-      "dex": 550,
-      "speciesName": "Basculin (Red)",
-      "speciesId": "basculin_red_striped",
-      "baseStats": {
-        "atk": 189,
-        "def": 129,
-        "hp": 172
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "TACKLE",
-        "WATER_GUN"
-      ],
-      "chargedMoves": [
-        "AQUA_JET",
-        "AQUA_TAIL",
-        "MUDDY_WATER"
-      ]
-    },
-    {
-      "dex": 551,
-      "speciesName": "Sandile",
-      "speciesId": "sandile",
-      "baseStats": {
-        "atk": 132,
-        "def": 69,
-        "hp": 137
-      },
-      "types": [
-        "ground",
-        "dark"
-      ],
-      "fastMoves": [
-        "BITE",
-        "MUD_SLAP"
-      ],
-      "chargedMoves": [
-        "BULLDOZE",
-        "CRUNCH",
-        "DIG"
-      ]
-    },
-    {
-      "dex": 552,
-      "speciesName": "Krokorok",
-      "speciesId": "krokorok",
-      "baseStats": {
-        "atk": 155,
-        "def": 90,
-        "hp": 155
-      },
-      "types": [
-        "ground",
-        "dark"
-      ],
-      "fastMoves": [
-        "BITE",
-        "MUD_SLAP"
-      ],
-      "chargedMoves": [
-        "BULLDOZE",
-        "CRUNCH",
-        "EARTHQUAKE"
-      ]
-    },
-    {
-      "dex": 553,
-      "speciesName": "Krookodile",
-      "speciesId": "krookodile",
-      "baseStats": {
-        "atk": 229,
-        "def": 158,
-        "hp": 216
-      },
-      "types": [
-        "ground",
-        "dark"
-      ],
-      "fastMoves": [
-        "MUD_SLAP",
-        "SNARL"
-      ],
-      "chargedMoves": [
-        "CRUNCH",
-        "EARTHQUAKE",
-        "OUTRAGE"
-      ]
-    },
-    {
-      "dex": 554,
-      "speciesName": "Darumaka",
-      "speciesId": "darumaka",
-      "baseStats": {
-        "atk": 153,
-        "def": 86,
-        "hp": 172
-      },
-      "types": [
-        "fire",
-        "none"
-      ],
-      "fastMoves": [
-        "FIRE_FANG",
-        "TACKLE"
-      ],
-      "chargedMoves": [
-        "FIRE_PUNCH",
-        "FLAME_CHARGE",
-        "PSYCHIC"
-      ]
-    },
-    {
-      "dex": 555,
-      "speciesName": "Darmanitan (Zen)",
-      "speciesId": "darmanitan_zen",
-      "baseStats": {
-        "atk": 243,
-        "def": 202,
-        "hp": 233
-      },
-      "types": [
-        "fire",
-        "psychic"
-      ],
-      "fastMoves": [
-        "FIRE_FANG",
-        "TACKLE"
-      ],
-      "chargedMoves": [
-        "FOCUS_BLAST",
-        "OVERHEAT",
-        "PSYCHIC",
-        "ROCK_SLIDE"
-      ]
-    },
-    {
-      "dex": 556,
-      "speciesName": "Maractus",
-      "speciesId": "maractus",
-      "baseStats": {
-        "atk": 201,
-        "def": 130,
-        "hp": 181
-      },
-      "types": [
-        "grass",
-        "none"
-      ],
-      "fastMoves": [
-        "BULLET_SEED",
-        "POISON_JAB"
-      ],
-      "chargedMoves": [
-        "AERIAL_ACE",
-        "PETAL_BLIZZARD",
-        "SOLAR_BEAM"
-      ]
-    },
-    {
-      "dex": 557,
-      "speciesName": "Dwebble",
-      "speciesId": "dwebble",
-      "baseStats": {
-        "atk": 118,
-        "def": 128,
-        "hp": 137
-      },
-      "types": [
-        "bug",
-        "rock"
-      ],
-      "fastMoves": [
-        "CUT",
-        "SMACK_DOWN"
-      ],
-      "chargedMoves": [
-        "ROCK_BLAST",
-        "ROCK_TOMB",
-        "X_SCISSOR"
-      ]
-    },
-    {
-      "dex": 558,
-      "speciesName": "Crustle",
-      "speciesId": "crustle",
-      "baseStats": {
-        "atk": 188,
-        "def": 200,
-        "hp": 172
-      },
-      "types": [
-        "bug",
-        "rock"
-      ],
-      "fastMoves": [
-        "FURY_CUTTER",
-        "SMACK_DOWN"
-      ],
-      "chargedMoves": [
-        "ROCK_BLAST",
-        "ROCK_SLIDE",
-        "X_SCISSOR"
-      ]
-    },
-    {
-      "dex": 559,
-      "speciesName": "Scraggy",
-      "speciesId": "scraggy",
-      "baseStats": {
-        "atk": 132,
-        "def": 132,
-        "hp": 137
-      },
-      "types": [
-        "dark",
-        "fighting"
-      ],
-      "fastMoves": [
-        "FEINT_ATTACK",
-        "ROCK_SMASH"
-      ],
-      "chargedMoves": [
-        "ACID_SPRAY",
-        "BRICK_BREAK",
-        "FOUL_PLAY"
-      ]
-    },
-    {
-      "dex": 560,
-      "speciesName": "Scrafty",
-      "speciesId": "scrafty",
-      "baseStats": {
-        "atk": 163,
-        "def": 222,
-        "hp": 163
-      },
-      "types": [
-        "dark",
-        "fighting"
-      ],
-      "fastMoves": [
-        "COUNTER",
-        "SNARL"
-      ],
-      "chargedMoves": [
-        "ACID_SPRAY",
-        "FOUL_PLAY",
-        "POWER_UP_PUNCH"
-      ]
-    },
-    {
-      "dex": 561,
-      "speciesName": "Sigilyph",
-      "speciesId": "sigilyph",
-      "baseStats": {
-        "atk": 204,
-        "def": 167,
-        "hp": 176
-      },
-      "types": [
-        "psychic",
-        "flying"
-      ],
-      "fastMoves": [
-        "AIR_SLASH",
-        "ZEN_HEADBUTT"
-      ],
-      "chargedMoves": [
-        "AIR_CUTTER",
-        "ANCIENT_POWER",
-        "PSYBEAM",
-        "SIGNAL_BEAM"
-      ]
-    },
-    {
-      "dex": 562,
-      "speciesName": "Yamask",
-      "speciesId": "yamask",
-      "baseStats": {
-        "atk": 95,
-        "def": 141,
-        "hp": 116
-      },
-      "types": [
-        "ghost",
-        "none"
-      ],
-      "fastMoves": [
-        "ASTONISH",
-        "ZEN_HEADBUTT"
-      ],
-      "chargedMoves": [
-        "DARK_PULSE",
-        "OMINOUS_WIND",
-        "SHADOW_BALL"
-      ]
-    },
-    {
-      "dex": 563,
-      "speciesName": "Cofagrigus",
-      "speciesId": "cofagrigus",
-      "baseStats": {
-        "atk": 163,
-        "def": 237,
-        "hp": 151
-      },
-      "types": [
-        "ghost",
-        "none"
-      ],
-      "fastMoves": [
-        "ASTONISH",
-        "ZEN_HEADBUTT"
-      ],
-      "chargedMoves": [
-        "DARK_PULSE",
-        "PSYCHIC",
-        "SHADOW_BALL"
-      ]
-    },
-    {
-      "dex": 564,
-      "speciesName": "Tirtouga",
-      "speciesId": "tirtouga",
-      "baseStats": {
-        "atk": 134,
-        "def": 146,
-        "hp": 144
-      },
-      "types": [
-        "water",
-        "rock"
-      ],
-      "fastMoves": [
-        "BITE",
-        "WATER_GUN"
-      ],
-      "chargedMoves": [
-        "ANCIENT_POWER",
-        "BODY_SLAM",
-        "SURF"
-      ]
-    },
-    {
-      "dex": 565,
-      "speciesName": "Carracosta",
-      "speciesId": "carracosta",
-      "baseStats": {
-        "atk": 192,
-        "def": 197,
-        "hp": 179
-      },
-      "types": [
-        "water",
-        "rock"
-      ],
-      "fastMoves": [
-        "ROCK_THROW",
-        "WATER_GUN"
-      ],
-      "chargedMoves": [
-        "ANCIENT_POWER",
-        "BODY_SLAM",
-        "SURF"
-      ]
-    },
-    {
-      "dex": 566,
-      "speciesName": "Archen",
-      "speciesId": "archen",
-      "baseStats": {
-        "atk": 213,
-        "def": 89,
-        "hp": 146
-      },
-      "types": [
-        "rock",
-        "flying"
-      ],
-      "fastMoves": [
-        "QUICK_ATTACK",
-        "WING_ATTACK"
-      ],
-      "chargedMoves": [
-        "ANCIENT_POWER",
-        "CRUNCH",
-        "DRAGON_CLAW"
-      ]
-    },
-    {
-      "dex": 567,
-      "speciesName": "Archeops",
-      "speciesId": "archeops",
-      "baseStats": {
-        "atk": 292,
-        "def": 139,
-        "hp": 181
-      },
-      "types": [
-        "rock",
-        "flying"
-      ],
-      "fastMoves": [
-        "STEEL_WING",
-        "WING_ATTACK"
-      ],
-      "chargedMoves": [
-        "ANCIENT_POWER",
-        "CRUNCH",
-        "DRAGON_CLAW"
-      ]
-    },
-    {
-      "dex": 568,
-      "speciesName": "Trubbish",
-      "speciesId": "trubbish",
-      "baseStats": {
-        "atk": 96,
-        "def": 122,
-        "hp": 137
-      },
-      "types": [
-        "poison",
-        "none"
-      ],
-      "fastMoves": [
-        "ACID",
-        "POUND"
-      ],
-      "chargedMoves": [
-        "GUNK_SHOT",
-        "SEED_BOMB"
-      ]
-    },
-    {
-      "dex": 569,
-      "speciesName": "Garbodor",
-      "speciesId": "garbodor",
-      "baseStats": {
-        "atk": 181,
-        "def": 164,
-        "hp": 190
-      },
-      "types": [
-        "poison",
-        "none"
-      ],
-      "fastMoves": [
-        "ACID",
-        "INFESTATION"
-      ],
-      "chargedMoves": [
-        "ACID_SPRAY",
-        "BODY_SLAM",
-        "GUNK_SHOT",
-        "SEED_BOMB"
-      ]
-    },
-    {
-      "dex": 570,
-      "speciesName": "Zorua",
-      "speciesId": "zorua",
-      "baseStats": {
-        "atk": 153,
-        "def": 78,
-        "hp": 120
-      },
-      "types": [
-        "dark",
-        "none"
-      ],
-      "fastMoves": [
-        "FEINT_ATTACK",
-        "SCRATCH"
-      ],
-      "chargedMoves": [
-        "AERIAL_ACE",
-        "DARK_PULSE",
-        "FOUL_PLAY"
-      ]
-    },
-    {
-      "dex": 571,
-      "speciesName": "Zoroark",
-      "speciesId": "zoroark",
-      "baseStats": {
-        "atk": 250,
-        "def": 127,
-        "hp": 155
-      },
-      "types": [
-        "dark",
-        "none"
-      ],
-      "fastMoves": [
-        "SHADOW_CLAW",
-        "SNARL"
-      ],
-      "chargedMoves": [
-        "FLAMETHROWER",
-        "FOUL_PLAY",
-        "SLUDGE_BOMB"
-      ]
-    },
-    {
-      "dex": 572,
-      "speciesName": "Minccino",
-      "speciesId": "minccino",
-      "baseStats": {
-        "atk": 98,
-        "def": 80,
-        "hp": 146
-      },
-      "types": [
-        "normal",
-        "none"
-      ],
-      "fastMoves": [
-        "CHARM",
-        "POUND"
-      ],
-      "chargedMoves": [
-        "AQUA_TAIL",
-        "SWIFT",
-        "THUNDERBOLT"
-      ]
-    },
-    {
-      "dex": 573,
-      "speciesName": "Cinccino",
-      "speciesId": "cinccino",
-      "baseStats": {
-        "atk": 198,
-        "def": 130,
-        "hp": 181
-      },
-      "types": [
-        "normal",
-        "none"
-      ],
-      "fastMoves": [
-        "CHARM",
-        "POUND"
-      ],
-      "chargedMoves": [
-        "AQUA_TAIL",
-        "HYPER_BEAM",
-        "THUNDERBOLT"
-      ]
-    },
-    {
-      "dex": 574,
-      "speciesName": "Gothita",
-      "speciesId": "gothita",
-      "baseStats": {
-        "atk": 98,
-        "def": 112,
-        "hp": 128
-      },
-      "types": [
-        "psychic",
-        "none"
-      ],
-      "fastMoves": [
-        "CONFUSION",
-        "POUND"
-      ],
-      "chargedMoves": [
-        "PSYBEAM",
-        "PSYCHIC",
-        "PSYSHOCK"
-      ]
-    },
-    {
-      "dex": 575,
-      "speciesName": "Gothorita",
-      "speciesId": "gothorita",
-      "baseStats": {
-        "atk": 137,
-        "def": 153,
-        "hp": 155
-      },
-      "types": [
-        "psychic",
-        "none"
-      ],
-      "fastMoves": [
-        "CONFUSION",
-        "POUND"
-      ],
-      "chargedMoves": [
-        "FUTURE_SIGHT",
-        "PSYBEAM",
-        "PSYCHIC"
-      ]
-    },
-    {
-      "dex": 576,
-      "speciesName": "Gothitelle",
-      "speciesId": "gothitelle",
-      "baseStats": {
-        "atk": 176,
-        "def": 205,
-        "hp": 172
-      },
-      "types": [
-        "psychic",
-        "none"
-      ],
-      "fastMoves": [
-        "CHARM",
-        "CONFUSION"
-      ],
-      "chargedMoves": [
-        "FUTURE_SIGHT",
-        "PSYCHIC",
-        "ROCK_SLIDE"
-      ]
-    },
-    {
-      "dex": 577,
-      "speciesName": "Solosis",
-      "speciesId": "solosis",
-      "baseStats": {
-        "atk": 170,
-        "def": 83,
-        "hp": 128
-      },
-      "types": [
-        "psychic",
-        "none"
-      ],
-      "fastMoves": [
-        "HIDDEN_POWER_BUG",
-        "HIDDEN_POWER_DARK",
-        "HIDDEN_POWER_DRAGON",
-        "HIDDEN_POWER_ELECTRIC",
-        "HIDDEN_POWER_FIGHTING",
-        "HIDDEN_POWER_FIRE",
-        "HIDDEN_POWER_FLYING",
-        "HIDDEN_POWER_GHOST",
-        "HIDDEN_POWER_GRASS",
-        "HIDDEN_POWER_GROUND",
-        "HIDDEN_POWER_ICE",
-        "HIDDEN_POWER_POISON",
-        "HIDDEN_POWER_PSYCHIC",
-        "HIDDEN_POWER_ROCK",
-        "HIDDEN_POWER_STEEL",
-        "HIDDEN_POWER_WATER",
-        "ZEN_HEADBUTT"
-      ],
-      "chargedMoves": [
-        "NIGHT_SHADE",
-        "PSYSHOCK",
-        "THUNDER"
-      ]
-    },
-    {
-      "dex": 578,
-      "speciesName": "Duosion",
-      "speciesId": "duosion",
-      "baseStats": {
-        "atk": 208,
-        "def": 103,
-        "hp": 163
-      },
-      "types": [
-        "psychic",
-        "none"
-      ],
-      "fastMoves": [
-        "HIDDEN_POWER_BUG",
-        "HIDDEN_POWER_DARK",
-        "HIDDEN_POWER_DRAGON",
-        "HIDDEN_POWER_ELECTRIC",
-        "HIDDEN_POWER_FIGHTING",
-        "HIDDEN_POWER_FIRE",
-        "HIDDEN_POWER_FLYING",
-        "HIDDEN_POWER_GHOST",
-        "HIDDEN_POWER_GRASS",
-        "HIDDEN_POWER_GROUND",
-        "HIDDEN_POWER_ICE",
-        "HIDDEN_POWER_POISON",
-        "HIDDEN_POWER_PSYCHIC",
-        "HIDDEN_POWER_ROCK",
-        "HIDDEN_POWER_STEEL",
-        "HIDDEN_POWER_WATER",
-        "ZEN_HEADBUTT"
-      ],
-      "chargedMoves": [
-        "NIGHT_SHADE",
-        "PSYSHOCK",
-        "THUNDER"
-      ]
-    },
-    {
-      "dex": 579,
-      "speciesName": "Reuniclus",
-      "speciesId": "reuniclus",
-      "baseStats": {
-        "atk": 214,
-        "def": 148,
-        "hp": 242
-      },
-      "types": [
-        "psychic",
-        "none"
-      ],
-      "fastMoves": [
-        "HIDDEN_POWER_BUG",
-        "HIDDEN_POWER_DARK",
-        "HIDDEN_POWER_DRAGON",
-        "HIDDEN_POWER_ELECTRIC",
-        "HIDDEN_POWER_FIGHTING",
-        "HIDDEN_POWER_FIRE",
-        "HIDDEN_POWER_FLYING",
-        "HIDDEN_POWER_GHOST",
-        "HIDDEN_POWER_GRASS",
-        "HIDDEN_POWER_GROUND",
-        "HIDDEN_POWER_ICE",
-        "HIDDEN_POWER_POISON",
-        "HIDDEN_POWER_PSYCHIC",
-        "HIDDEN_POWER_ROCK",
-        "HIDDEN_POWER_STEEL",
-        "HIDDEN_POWER_WATER",
-        "ZEN_HEADBUTT"
-      ],
-      "chargedMoves": [
-        "FUTURE_SIGHT",
-        "SHADOW_BALL",
-        "THUNDER"
-      ]
-    },
-    {
-      "dex": 580,
-      "speciesName": "Ducklett",
-      "speciesId": "ducklett",
-      "baseStats": {
-        "atk": 84,
-        "def": 96,
-        "hp": 158
-      },
-      "types": [
-        "water",
-        "flying"
-      ],
-      "fastMoves": [
-        "WATER_GUN",
-        "WING_ATTACK"
-      ],
-      "chargedMoves": [
-        "AERIAL_ACE",
-        "BRAVE_BIRD",
-        "BUBBLE_BEAM"
-      ]
-    },
-    {
-      "dex": 581,
-      "speciesName": "Swanna",
-      "speciesId": "swanna",
-      "baseStats": {
-        "atk": 182,
-        "def": 132,
-        "hp": 181
-      },
-      "types": [
-        "water",
-        "flying"
-      ],
-      "fastMoves": [
-        "AIR_SLASH",
-        "WATER_GUN"
-      ],
-      "chargedMoves": [
-        "BUBBLE_BEAM",
-        "HURRICANE",
-        "ICE_BEAM"
-      ]
-    },
-    {
-      "dex": 582,
-      "speciesName": "Vanillite",
-      "speciesId": "vanillite",
-      "baseStats": {
-        "atk": 118,
-        "def": 106,
-        "hp": 113
-      },
-      "types": [
-        "ice",
-        "none"
-      ],
-      "fastMoves": [
-        "ASTONISH",
-        "POWDER_SNOW"
-      ],
-      "chargedMoves": [
-        "ICE_BEAM",
-        "ICY_WIND",
-        "SIGNAL_BEAM"
-      ]
-    },
-    {
-      "dex": 583,
-      "speciesName": "Vanillish",
-      "speciesId": "vanillish",
-      "baseStats": {
-        "atk": 151,
-        "def": 138,
-        "hp": 139
-      },
-      "types": [
-        "ice",
-        "none"
-      ],
-      "fastMoves": [
-        "ASTONISH",
-        "FROST_BREATH"
-      ],
-      "chargedMoves": [
-        "ICE_BEAM",
-        "ICY_WIND",
-        "SIGNAL_BEAM"
-      ]
-    },
-    {
-      "dex": 584,
-      "speciesName": "Vanilluxe",
-      "speciesId": "vanilluxe",
-      "baseStats": {
-        "atk": 218,
-        "def": 184,
-        "hp": 174
-      },
-      "types": [
-        "ice",
-        "none"
-      ],
-      "fastMoves": [
-        "ASTONISH",
-        "FROST_BREATH"
-      ],
-      "chargedMoves": [
-        "BLIZZARD",
-        "FLASH_CANNON",
-        "SIGNAL_BEAM"
-      ]
-    },
-    {
-      "dex": 585,
-      "speciesName": "Deerling (Autumn)",
-      "speciesId": "deerling_autumn",
-      "baseStats": {
-        "atk": 115,
-        "def": 100,
-        "hp": 155
-      },
-      "types": [
-        "normal",
-        "grass"
-      ],
-      "fastMoves": [
-        "TACKLE",
-        "TAKE_DOWN"
-      ],
-      "chargedMoves": [
-        "ENERGY_BALL",
-        "SEED_BOMB",
-        "WILD_CHARGE"
-      ]
-    },
-    {
-      "dex": 585,
-      "speciesName": "Deerling (Spring)",
-      "speciesId": "deerling_spring",
-      "baseStats": {
-        "atk": 115,
-        "def": 100,
-        "hp": 155
-      },
-      "types": [
-        "normal",
-        "grass"
-      ],
-      "fastMoves": [
-        "TACKLE",
-        "TAKE_DOWN"
-      ],
-      "chargedMoves": [
-        "ENERGY_BALL",
-        "SEED_BOMB",
-        "WILD_CHARGE"
-      ]
-    },
-    {
-      "dex": 585,
-      "speciesName": "Deerling (Summer)",
-      "speciesId": "deerling_summer",
-      "baseStats": {
-        "atk": 115,
-        "def": 100,
-        "hp": 155
-      },
-      "types": [
-        "normal",
-        "grass"
-      ],
-      "fastMoves": [
-        "TACKLE",
-        "TAKE_DOWN"
-      ],
-      "chargedMoves": [
-        "ENERGY_BALL",
-        "SEED_BOMB",
-        "WILD_CHARGE"
-      ]
-    },
-    {
-      "dex": 585,
-      "speciesName": "Deerling (Winter)",
-      "speciesId": "deerling_winter",
-      "baseStats": {
-        "atk": 115,
-        "def": 100,
-        "hp": 155
-      },
-      "types": [
-        "normal",
-        "grass"
-      ],
-      "fastMoves": [
-        "TACKLE",
-        "TAKE_DOWN"
-      ],
-      "chargedMoves": [
-        "ENERGY_BALL",
-        "SEED_BOMB",
-        "WILD_CHARGE"
-      ]
-    },
-    {
-      "dex": 586,
-      "speciesName": "Sawsbuck (Autumn)",
-      "speciesId": "sawsbuck_autumn",
-      "baseStats": {
-        "atk": 198,
-        "def": 146,
-        "hp": 190
-      },
-      "types": [
-        "normal",
-        "grass"
-      ],
-      "fastMoves": [
-        "FEINT_ATTACK",
-        "TAKE_DOWN"
-      ],
-      "chargedMoves": [
-        "HYPER_BEAM",
-        "MEGAHORN",
-        "SOLAR_BEAM",
-        "WILD_CHARGE"
-      ]
-    },
-    {
-      "dex": 586,
-      "speciesName": "Sawsbuck (Spring)",
-      "speciesId": "sawsbuck_spring",
-      "baseStats": {
-        "atk": 198,
-        "def": 146,
-        "hp": 190
-      },
-      "types": [
-        "normal",
-        "grass"
-      ],
-      "fastMoves": [
-        "FEINT_ATTACK",
-        "TAKE_DOWN"
-      ],
-      "chargedMoves": [
-        "HYPER_BEAM",
-        "MEGAHORN",
-        "SOLAR_BEAM",
-        "WILD_CHARGE"
-      ]
-    },
-    {
-      "dex": 586,
-      "speciesName": "Sawsbuck (Summer)",
-      "speciesId": "sawsbuck_summer",
-      "baseStats": {
-        "atk": 198,
-        "def": 146,
-        "hp": 190
-      },
-      "types": [
-        "normal",
-        "grass"
-      ],
-      "fastMoves": [
-        "FEINT_ATTACK",
-        "TAKE_DOWN"
-      ],
-      "chargedMoves": [
-        "HYPER_BEAM",
-        "MEGAHORN",
-        "SOLAR_BEAM",
-        "WILD_CHARGE"
-      ]
-    },
-    {
-      "dex": 586,
-      "speciesName": "Sawsbuck (Winter)",
-      "speciesId": "sawsbuck_winter",
-      "baseStats": {
-        "atk": 198,
-        "def": 146,
-        "hp": 190
-      },
-      "types": [
-        "normal",
-        "grass"
-      ],
-      "fastMoves": [
-        "FEINT_ATTACK",
-        "TAKE_DOWN"
-      ],
-      "chargedMoves": [
-        "HYPER_BEAM",
-        "MEGAHORN",
-        "SOLAR_BEAM",
-        "WILD_CHARGE"
-      ]
-    },
-    {
-      "dex": 587,
-      "speciesName": "Emolga",
-      "speciesId": "emolga",
-      "baseStats": {
-        "atk": 158,
-        "def": 127,
-        "hp": 146
-      },
-      "types": [
-        "electric",
-        "flying"
-      ],
-      "fastMoves": [
-        "QUICK_ATTACK",
-        "THUNDER_SHOCK"
-      ],
-      "chargedMoves": [
-        "AERIAL_ACE",
-        "DISCHARGE",
-        "THUNDERBOLT"
-      ]
-    },
-    {
-      "dex": 588,
-      "speciesName": "Karrablast",
-      "speciesId": "karrablast",
-      "baseStats": {
-        "atk": 137,
-        "def": 87,
-        "hp": 137
-      },
-      "types": [
-        "bug",
-        "none"
-      ],
-      "fastMoves": [
-        "FURY_CUTTER",
-        "PECK"
-      ],
-      "chargedMoves": [
-        "AERIAL_ACE",
-        "DRILL_RUN",
-        "SIGNAL_BEAM",
-        "X_SCISSOR"
-      ]
-    },
-    {
-      "dex": 589,
-      "speciesName": "Escavalier",
-      "speciesId": "escavalier",
-      "baseStats": {
-        "atk": 223,
-        "def": 187,
-        "hp": 172
-      },
-      "types": [
-        "bug",
-        "steel"
-      ],
-      "fastMoves": [
-        "BUG_BITE",
-        "PECK"
-      ],
-      "chargedMoves": [
-        "AERIAL_ACE",
-        "DRILL_RUN",
-        "MEGAHORN",
-        "X_SCISSOR"
-      ]
-    },
-    {
-      "dex": 590,
-      "speciesName": "Foongus",
-      "speciesId": "foongus",
-      "baseStats": {
-        "atk": 97,
-        "def": 91,
-        "hp": 170
-      },
-      "types": [
-        "grass",
-        "poison"
-      ],
-      "fastMoves": [
-        "ASTONISH",
-        "FEINT_ATTACK"
-      ],
-      "chargedMoves": [
-        "BODY_SLAM",
-        "ENERGY_BALL",
-        "GRASS_KNOT"
-      ]
-    },
-    {
-      "dex": 591,
-      "speciesName": "Amoonguss",
-      "speciesId": "amoonguss",
-      "baseStats": {
-        "atk": 155,
-        "def": 139,
-        "hp": 249
-      },
-      "types": [
-        "grass",
-        "poison"
-      ],
-      "fastMoves": [
-        "ASTONISH",
-        "FEINT_ATTACK"
-      ],
-      "chargedMoves": [
-        "FOUL_PLAY",
-        "GRASS_KNOT",
-        "SLUDGE_BOMB"
-      ]
-    },
-    {
-      "dex": 592,
-      "speciesName": "Frillish",
-      "speciesId": "frillish",
-      "baseStats": {
-        "atk": 115,
-        "def": 134,
-        "hp": 146
-      },
-      "types": [
-        "water",
-        "ghost"
-      ],
-      "fastMoves": [
-        "BUBBLE",
-        "HEX"
-      ],
-      "chargedMoves": [
-        "ICE_BEAM",
-        "NIGHT_SHADE",
-        "OMINOUS_WIND"
-      ]
-    },
-    {
-      "dex": 593,
-      "speciesName": "Jellicent",
-      "speciesId": "jellicent",
-      "baseStats": {
-        "atk": 159,
-        "def": 178,
-        "hp": 225
-      },
-      "types": [
-        "water",
-        "ghost"
-      ],
-      "fastMoves": [
-        "BUBBLE",
-        "HEX"
-      ],
-      "chargedMoves": [
-        "BUBBLE_BEAM",
-        "ICE_BEAM",
-        "SHADOW_BALL"
-      ]
-    },
-    {
-      "dex": 594,
-      "speciesName": "Alomomola",
-      "speciesId": "alomomola",
-      "baseStats": {
-        "atk": 138,
-        "def": 131,
-        "hp": 338
-      },
-      "types": [
-        "water",
-        "none"
-      ],
-      "fastMoves": [
-        "HIDDEN_POWER_BUG",
-        "HIDDEN_POWER_DARK",
-        "HIDDEN_POWER_DRAGON",
-        "HIDDEN_POWER_ELECTRIC",
-        "HIDDEN_POWER_FIGHTING",
-        "HIDDEN_POWER_FIRE",
-        "HIDDEN_POWER_FLYING",
-        "HIDDEN_POWER_GHOST",
-        "HIDDEN_POWER_GRASS",
-        "HIDDEN_POWER_GROUND",
-        "HIDDEN_POWER_ICE",
-        "HIDDEN_POWER_POISON",
-        "HIDDEN_POWER_PSYCHIC",
-        "HIDDEN_POWER_ROCK",
-        "HIDDEN_POWER_STEEL",
-        "HIDDEN_POWER_WATER",
-        "WATERFALL"
-      ],
-      "chargedMoves": [
-        "BLIZZARD",
-        "HYDRO_PUMP",
-        "PSYCHIC"
-      ]
-    },
-    {
-      "dex": 595,
-      "speciesName": "Joltik",
-      "speciesId": "joltik",
-      "baseStats": {
-        "atk": 110,
-        "def": 98,
-        "hp": 137
-      },
-      "types": [
-        "bug",
-        "electric"
-      ],
-      "fastMoves": [
-        "CHARGE_BEAM",
-        "SUCKER_PUNCH"
-      ],
-      "chargedMoves": [
-        "BUG_BUZZ",
-        "CROSS_POISON",
-        "DISCHARGE"
-      ]
-    },
-    {
-      "dex": 596,
-      "speciesName": "Galvantula",
-      "speciesId": "galvantula",
-      "baseStats": {
-        "atk": 201,
-        "def": 128,
-        "hp": 172
-      },
-      "types": [
-        "bug",
-        "electric"
-      ],
-      "fastMoves": [
-        "CHARGE_BEAM",
-        "FURY_CUTTER"
-      ],
-      "chargedMoves": [
-        "BUG_BUZZ",
-        "CROSS_POISON",
-        "ENERGY_BALL",
-        "THUNDER"
-      ]
-    },
-    {
-      "dex": 597,
-      "speciesName": "Ferroseed",
-      "speciesId": "ferroseed",
-      "baseStats": {
-        "atk": 82,
-        "def": 155,
-        "hp": 127
-      },
-      "types": [
-        "grass",
-        "steel"
-      ],
-      "fastMoves": [
-        "METAL_CLAW",
-        "TACKLE"
-      ],
-      "chargedMoves": [
-        "FLASH_CANNON",
-        "GYRO_BALL",
-        "IRON_HEAD"
-      ]
-    },
-    {
-      "dex": 598,
-      "speciesName": "Ferrothorn",
-      "speciesId": "ferrothorn",
-      "baseStats": {
-        "atk": 158,
-        "def": 223,
-        "hp": 179
-      },
-      "types": [
-        "grass",
-        "steel"
-      ],
-      "fastMoves": [
-        "BULLET_SEED",
-        "METAL_CLAW"
-      ],
-      "chargedMoves": [
-        "ACID_SPRAY",
-        "FLASH_CANNON",
-        "POWER_WHIP",
-        "THUNDER"
-      ]
-    },
-    {
-      "dex": 599,
-      "speciesName": "Klink",
-      "speciesId": "klink",
-      "baseStats": {
-        "atk": 98,
-        "def": 121,
-        "hp": 120
-      },
-      "types": [
-        "steel",
-        "none"
-      ],
-      "fastMoves": [
-        "CHARGE_BEAM",
-        "VOLT_SWITCH"
-      ],
-      "chargedMoves": [
-        "DISCHARGE",
-        "VICE_GRIP",
-        "ZAP_CANNON"
-      ]
-    },
-    {
-      "dex": 600,
-      "speciesName": "Klang",
-      "speciesId": "klang",
-      "baseStats": {
-        "atk": 150,
-        "def": 174,
-        "hp": 155
-      },
-      "types": [
-        "steel",
-        "none"
-      ],
-      "fastMoves": [
-        "CHARGE_BEAM",
-        "THUNDER_SHOCK"
-      ],
-      "chargedMoves": [
-        "THUNDERBOLT",
-        "VICE_GRIP",
-        "ZAP_CANNON"
-      ]
-    },
-    {
-      "dex": 601,
-      "speciesName": "Klinklang",
-      "speciesId": "klinklang",
-      "baseStats": {
-        "atk": 199,
-        "def": 214,
-        "hp": 155
-      },
-      "types": [
-        "steel",
-        "none"
-      ],
-      "fastMoves": [
-        "CHARGE_BEAM",
-        "THUNDER_SHOCK"
-      ],
-      "chargedMoves": [
-        "FLASH_CANNON",
-        "HYPER_BEAM",
-        "ZAP_CANNON"
-      ]
-    },
-    {
-      "dex": 602,
-      "speciesName": "Tynamo",
-      "speciesId": "tynamo",
-      "baseStats": {
-        "atk": 105,
-        "def": 78,
-        "hp": 111
-      },
-      "types": [
-        "electric",
-        "none"
-      ],
-      "fastMoves": [
-        "SPARK",
-        "TACKLE"
-      ],
-      "chargedMoves": [
-        "STRUGGLE"
-      ]
-    },
-    {
-      "dex": 603,
-      "speciesName": "Eelektrik",
-      "speciesId": "eelektrik",
-      "baseStats": {
-        "atk": 156,
-        "def": 130,
-        "hp": 163
-      },
-      "types": [
-        "electric",
-        "none"
-      ],
-      "fastMoves": [
-        "ACID",
-        "SPARK"
-      ],
-      "chargedMoves": [
-        "CRUNCH",
-        "DISCHARGE",
-        "THUNDERBOLT"
-      ]
-    },
-    {
-      "dex": 604,
-      "speciesName": "Eelektross",
-      "speciesId": "eelektross",
-      "baseStats": {
-        "atk": 217,
-        "def": 152,
-        "hp": 198
-      },
-      "types": [
-        "electric",
-        "none"
-      ],
-      "fastMoves": [
-        "ACID",
-        "SPARK"
-      ],
-      "chargedMoves": [
-        "ACID_SPRAY",
-        "CRUNCH",
-        "DRAGON_CLAW",
-        "THUNDERBOLT"
-      ]
-    },
-    {
-      "dex": 605,
-      "speciesName": "Elgyem",
-      "speciesId": "elgyem",
-      "baseStats": {
-        "atk": 148,
-        "def": 100,
-        "hp": 146
-      },
-      "types": [
-        "psychic",
-        "none"
-      ],
-      "fastMoves": [
-        "ASTONISH",
-        "CONFUSION"
-      ],
-      "chargedMoves": [
-        "DARK_PULSE",
-        "PSYBEAM",
-        "PSYCHIC"
-      ]
-    },
-    {
-      "dex": 606,
-      "speciesName": "Beheeyem",
-      "speciesId": "beheeyem",
-      "baseStats": {
-        "atk": 221,
-        "def": 163,
-        "hp": 181
-      },
-      "types": [
-        "psychic",
-        "none"
-      ],
-      "fastMoves": [
-        "ASTONISH",
-        "CONFUSION"
-      ],
-      "chargedMoves": [
-        "DARK_PULSE",
-        "PSYCHIC",
-        "ROCK_SLIDE"
-      ]
-    },
-    {
-      "dex": 607,
-      "speciesName": "Litwick",
-      "speciesId": "litwick",
-      "baseStats": {
-        "atk": 108,
-        "def": 98,
-        "hp": 137
-      },
-      "types": [
-        "ghost",
-        "fire"
-      ],
-      "fastMoves": [
-        "ASTONISH",
-        "EMBER"
-      ],
-      "chargedMoves": [
-        "FLAME_BURST",
-        "FLAME_CHARGE",
-        "HEAT_WAVE"
-      ]
-    },
-    {
-      "dex": 608,
-      "speciesName": "Lampent",
-      "speciesId": "lampent",
-      "baseStats": {
-        "atk": 169,
-        "def": 115,
-        "hp": 155
-      },
-      "types": [
-        "ghost",
-        "fire"
-      ],
-      "fastMoves": [
-        "ASTONISH",
-        "EMBER"
-      ],
-      "chargedMoves": [
-        "ENERGY_BALL",
-        "FLAME_BURST",
-        "HEAT_WAVE"
-      ]
-    },
-    {
-      "dex": 609,
-      "speciesName": "Chandelure",
-      "speciesId": "chandelure",
-      "baseStats": {
-        "atk": 271,
-        "def": 182,
-        "hp": 155
-      },
-      "types": [
-        "ghost",
-        "fire"
-      ],
-      "fastMoves": [
-        "FIRE_SPIN",
-        "HEX"
-      ],
-      "chargedMoves": [
-        "ENERGY_BALL",
-        "OVERHEAT",
-        "SHADOW_BALL"
-      ]
-    },
-    {
-      "dex": 610,
-      "speciesName": "Axew",
-      "speciesId": "axew",
-      "baseStats": {
-        "atk": 154,
-        "def": 101,
-        "hp": 130
-      },
-      "types": [
-        "dragon",
-        "none"
-      ],
-      "fastMoves": [
-        "IRON_TAIL",
-        "SCRATCH"
-      ],
-      "chargedMoves": [
-        "AQUA_TAIL",
-        "DRAGON_CLAW",
-        "DRAGON_PULSE"
-      ]
-    },
-    {
-      "dex": 611,
-      "speciesName": "Fraxure",
-      "speciesId": "fraxure",
-      "baseStats": {
-        "atk": 212,
-        "def": 123,
-        "hp": 165
-      },
-      "types": [
-        "dragon",
-        "none"
-      ],
-      "fastMoves": [
-        "DRAGON_TAIL",
-        "IRON_TAIL"
-      ],
-      "chargedMoves": [
-        "AQUA_TAIL",
-        "DRAGON_CLAW",
-        "NIGHT_SLASH"
-      ]
-    },
-    {
-      "dex": 612,
-      "speciesName": "Haxorus",
-      "speciesId": "haxorus",
-      "baseStats": {
-        "atk": 284,
-        "def": 172,
-        "hp": 183
-      },
-      "types": [
-        "dragon",
-        "none"
-      ],
-      "fastMoves": [
-        "COUNTER",
-        "DRAGON_TAIL"
-      ],
-      "chargedMoves": [
-        "DRAGON_CLAW",
-        "EARTHQUAKE",
-        "NIGHT_SLASH",
-        "SURF"
-      ]
-    },
-    {
-      "dex": 613,
-      "speciesName": "Cubchoo",
-      "speciesId": "cubchoo",
-      "baseStats": {
-        "atk": 128,
-        "def": 74,
-        "hp": 146
-      },
-      "types": [
-        "ice",
-        "none"
-      ],
-      "fastMoves": [
-        "CHARM",
-        "POWDER_SNOW"
-      ],
-      "chargedMoves": [
-        "ICE_PUNCH",
-        "ICY_WIND",
-        "PLAY_ROUGH"
-      ]
-    },
-    {
-      "dex": 614,
-      "speciesName": "Beartic",
-      "speciesId": "beartic",
-      "baseStats": {
-        "atk": 233,
-        "def": 152,
-        "hp": 216
-      },
-      "types": [
-        "ice",
-        "none"
-      ],
-      "fastMoves": [
-        "CHARM",
-        "POWDER_SNOW"
-      ],
-      "chargedMoves": [
-        "ICE_PUNCH",
-        "PLAY_ROUGH",
-        "SURF"
-      ]
-    },
-    {
-      "dex": 615,
-      "speciesName": "Cryogonal",
-      "speciesId": "cryogonal",
-      "baseStats": {
-        "atk": 190,
-        "def": 218,
-        "hp": 190
-      },
-      "types": [
-        "ice",
-        "none"
-      ],
-      "fastMoves": [
-        "FROST_BREATH",
-        "ICE_SHARD"
-      ],
-      "chargedMoves": [
-        "AURORA_BEAM",
-        "NIGHT_SLASH",
-        "SOLAR_BEAM",
-        "WATER_PULSE"
-      ]
-    },
-    {
-      "dex": 616,
-      "speciesName": "Shelmet",
-      "speciesId": "shelmet",
-      "baseStats": {
-        "atk": 72,
-        "def": 140,
-        "hp": 137
-      },
-      "types": [
-        "bug",
-        "none"
-      ],
-      "fastMoves": [
-        "ACID",
-        "INFESTATION"
-      ],
-      "chargedMoves": [
-        "BODY_SLAM",
-        "BUG_BUZZ",
-        "SIGNAL_BEAM"
-      ]
-    },
-    {
-      "dex": 617,
-      "speciesName": "Accelgor",
-      "speciesId": "accelgor",
-      "baseStats": {
-        "atk": 220,
-        "def": 120,
-        "hp": 190
-      },
-      "types": [
-        "bug",
-        "none"
-      ],
-      "fastMoves": [
-        "ACID",
-        "INFESTATION"
-      ],
-      "chargedMoves": [
-        "ACID_SPRAY",
-        "BUG_BUZZ",
-        "FOCUS_BLAST",
-        "SIGNAL_BEAM"
-      ]
-    },
-    {
-      "dex": 618,
-      "speciesName": "Stunfisk",
-      "speciesId": "stunfisk",
-      "baseStats": {
-        "atk": 144,
-        "def": 171,
-        "hp": 240
-      },
-      "types": [
-        "ground",
-        "electric"
-      ],
-      "fastMoves": [
-        "MUD_SHOT",
-        "THUNDER_SHOCK"
-      ],
-      "chargedMoves": [
-        "DISCHARGE",
-        "MUD_BOMB",
-        "MUDDY_WATER"
-      ]
-    },
-    {
-      "dex": 619,
-      "speciesName": "Mienfoo",
-      "speciesId": "mienfoo",
-      "baseStats": {
-        "atk": 160,
-        "def": 98,
-        "hp": 128
-      },
-      "types": [
-        "fighting",
-        "none"
-      ],
-      "fastMoves": [
-        "LOW_KICK",
-        "POUND"
-      ],
-      "chargedMoves": [
-        "BRICK_BREAK",
-        "FOCUS_BLAST",
-        "LOW_SWEEP"
-      ]
-    },
-    {
-      "dex": 620,
-      "speciesName": "Mienshao",
-      "speciesId": "mienshao",
-      "baseStats": {
-        "atk": 258,
-        "def": 127,
-        "hp": 163
-      },
-      "types": [
-        "fighting",
-        "none"
-      ],
-      "fastMoves": [
-        "LOW_KICK",
-        "POISON_JAB"
-      ],
-      "chargedMoves": [
-        "BRICK_BREAK",
-        "GRASS_KNOT",
-        "STONE_EDGE"
-      ]
-    },
-    {
-      "dex": 621,
-      "speciesName": "Druddigon",
-      "speciesId": "druddigon",
-      "baseStats": {
-        "atk": 213,
-        "def": 170,
-        "hp": 184
-      },
-      "types": [
-        "dragon",
-        "none"
-      ],
-      "fastMoves": [
-        "BITE",
-        "DRAGON_TAIL"
-      ],
-      "chargedMoves": [
-        "DRAGON_CLAW",
-        "HYPER_BEAM",
-        "NIGHT_SLASH"
-      ]
-    },
-    {
-      "dex": 622,
-      "speciesName": "Golett",
-      "speciesId": "golett",
-      "baseStats": {
-        "atk": 127,
-        "def": 92,
-        "hp": 153
-      },
-      "types": [
-        "ground",
-        "ghost"
-      ],
-      "fastMoves": [
-        "ASTONISH",
-        "MUD_SLAP"
-      ],
-      "chargedMoves": [
-        "BRICK_BREAK",
-        "NIGHT_SHADE",
-        "SHADOW_PUNCH"
-      ]
-    },
-    {
-      "dex": 623,
-      "speciesName": "Golurk",
-      "speciesId": "golurk",
-      "baseStats": {
-        "atk": 222,
-        "def": 154,
-        "hp": 205
-      },
-      "types": [
-        "ground",
-        "ghost"
-      ],
-      "fastMoves": [
-        "ASTONISH",
-        "MUD_SLAP"
-      ],
-      "chargedMoves": [
-        "DYNAMIC_PUNCH",
-        "EARTH_POWER",
-        "SHADOW_PUNCH"
-      ]
-    },
-    {
-      "dex": 624,
-      "speciesName": "Pawniard",
-      "speciesId": "pawniard",
-      "baseStats": {
-        "atk": 154,
-        "def": 114,
-        "hp": 128
-      },
-      "types": [
-        "dark",
-        "steel"
-      ],
-      "fastMoves": [
-        "FURY_CUTTER",
-        "SCRATCH"
-      ],
-      "chargedMoves": [
-        "IRON_HEAD",
-        "NIGHT_SLASH",
-        "X_SCISSOR"
-      ]
-    },
-    {
-      "dex": 625,
-      "speciesName": "Bisharp",
-      "speciesId": "bisharp",
-      "baseStats": {
-        "atk": 232,
-        "def": 176,
-        "hp": 163
-      },
-      "types": [
-        "dark",
-        "steel"
-      ],
-      "fastMoves": [
-        "METAL_CLAW",
-        "SNARL"
-      ],
-      "chargedMoves": [
-        "DARK_PULSE",
-        "FOCUS_BLAST",
-        "IRON_HEAD",
-        "X_SCISSOR"
-      ]
-    },
-    {
-      "dex": 626,
-      "speciesName": "Bouffalant",
-      "speciesId": "bouffalant",
-      "baseStats": {
-        "atk": 195,
-        "def": 182,
-        "hp": 216
-      },
-      "types": [
-        "normal",
-        "none"
-      ],
-      "fastMoves": [
-        "MUD_SHOT",
-        "ZEN_HEADBUTT"
-      ],
-      "chargedMoves": [
-        "EARTHQUAKE",
-        "MEGAHORN",
-        "SKULL_BASH",
-        "STOMP"
-      ]
-    },
-    {
-      "dex": 627,
-      "speciesName": "Rufflet",
-      "speciesId": "rufflet",
-      "baseStats": {
-        "atk": 150,
-        "def": 97,
-        "hp": 172
-      },
-      "types": [
-        "normal",
-        "flying"
-      ],
-      "fastMoves": [
-        "PECK",
-        "WING_ATTACK"
-      ],
-      "chargedMoves": [
-        "AERIAL_ACE",
-        "BRAVE_BIRD",
-        "ROCK_TOMB"
-      ]
-    },
-    {
-      "dex": 628,
-      "speciesName": "Braviary",
-      "speciesId": "braviary",
-      "baseStats": {
-        "atk": 232,
-        "def": 152,
-        "hp": 225
-      },
-      "types": [
-        "normal",
-        "flying"
-      ],
-      "fastMoves": [
-        "AIR_SLASH",
-        "STEEL_WING"
-      ],
-      "chargedMoves": [
-        "BRAVE_BIRD",
-        "HEAT_WAVE",
-        "ROCK_SLIDE"
-      ]
-    },
-    {
-      "dex": 629,
-      "speciesName": "Vullaby",
-      "speciesId": "vullaby",
-      "baseStats": {
-        "atk": 105,
-        "def": 139,
-        "hp": 172
-      },
-      "types": [
-        "dark",
-        "flying"
-      ],
-      "fastMoves": [
-        "AIR_SLASH",
-        "FEINT_ATTACK"
-      ],
-      "chargedMoves": [
-        "BRAVE_BIRD",
-        "DARK_PULSE",
-        "FOUL_PLAY"
-      ]
-    },
-    {
-      "dex": 630,
-      "speciesName": "Mandibuzz",
-      "speciesId": "mandibuzz",
-      "baseStats": {
-        "atk": 129,
-        "def": 205,
-        "hp": 242
-      },
-      "types": [
-        "dark",
-        "flying"
-      ],
-      "fastMoves": [
-        "AIR_SLASH",
-        "SNARL"
-      ],
-      "chargedMoves": [
-        "DARK_PULSE",
-        "FOUL_PLAY",
-        "SHADOW_BALL",
-        "SKY_ATTACK"
-      ]
-    },
-    {
-      "dex": 631,
-      "speciesName": "Heatmor",
-      "speciesId": "heatmor",
-      "baseStats": {
-        "atk": 204,
-        "def": 129,
-        "hp": 198
-      },
-      "types": [
-        "fire",
-        "none"
-      ],
-      "fastMoves": [
-        "FIRE_SPIN",
-        "LICK"
-      ],
-      "chargedMoves": [
-        "FLAMETHROWER",
-        "POWER_UP_PUNCH",
-        "THUNDER_PUNCH"
-      ]
-    },
-    {
-      "dex": 632,
-      "speciesName": "Durant",
-      "speciesId": "durant",
-      "baseStats": {
-        "atk": 217,
-        "def": 188,
-        "hp": 151
-      },
-      "types": [
-        "bug",
-        "steel"
-      ],
-      "fastMoves": [
-        "BUG_BITE",
-        "METAL_CLAW"
-      ],
-      "chargedMoves": [
-        "IRON_HEAD",
-        "STONE_EDGE",
-        "X_SCISSOR"
-      ]
-    },
-    {
-      "dex": 633,
-      "speciesName": "Deino",
-      "speciesId": "deino",
-      "baseStats": {
-        "atk": 116,
-        "def": 93,
-        "hp": 141
-      },
-      "types": [
-        "dark",
-        "dragon"
-      ],
-      "fastMoves": [
-        "DRAGON_BREATH",
-        "TACKLE"
-      ],
-      "chargedMoves": [
-        "BODY_SLAM",
-        "CRUNCH",
-        "DRAGON_PULSE"
-      ]
-    },
-    {
-      "dex": 634,
-      "speciesName": "Zweilous",
-      "speciesId": "zweilous",
-      "baseStats": {
-        "atk": 159,
-        "def": 135,
-        "hp": 176
-      },
-      "types": [
-        "dark",
-        "dragon"
-      ],
-      "fastMoves": [
-        "BITE",
-        "DRAGON_BREATH"
-      ],
-      "chargedMoves": [
-        "BODY_SLAM",
-        "DARK_PULSE",
-        "DRAGON_PULSE"
-      ]
-    },
-    {
-      "dex": 635,
-      "speciesName": "Hydreigon",
-      "speciesId": "hydreigon",
-      "baseStats": {
-        "atk": 256,
-        "def": 188,
-        "hp": 211
-      },
-      "types": [
-        "dark",
-        "dragon"
-      ],
-      "fastMoves": [
-        "BITE",
-        "DRAGON_BREATH"
-      ],
-      "chargedMoves": [
-        "DARK_PULSE",
-        "DRAGON_PULSE",
-        "FLASH_CANNON"
-      ]
-    },
-    {
-      "dex": 636,
-      "speciesName": "Larvesta",
-      "speciesId": "larvesta",
-      "baseStats": {
-        "atk": 156,
-        "def": 107,
-        "hp": 146
-      },
-      "types": [
-        "bug",
-        "fire"
-      ],
-      "fastMoves": [
-        "BUG_BITE",
-        "EMBER"
-      ],
-      "chargedMoves": [
-        "BUG_BUZZ",
-        "FLAME_CHARGE",
-        "FLAME_WHEEL"
-      ]
-    },
-    {
-      "dex": 637,
-      "speciesName": "Volcarona",
-      "speciesId": "volcarona",
-      "baseStats": {
-        "atk": 264,
-        "def": 189,
-        "hp": 198
-      },
-      "types": [
-        "bug",
-        "fire"
-      ],
-      "fastMoves": [
-        "BUG_BITE",
-        "FIRE_SPIN"
-      ],
-      "chargedMoves": [
-        "BUG_BUZZ",
-        "HURRICANE",
-        "OVERHEAT",
-        "SOLAR_BEAM"
-      ]
-    },
-    {
-      "dex": 638,
-      "speciesName": "Cobalion",
-      "speciesId": "cobalion",
-      "baseStats": {
-        "atk": 192,
-        "def": 229,
-        "hp": 209
-      },
-      "types": [
-        "steel",
-        "fighting"
-      ],
-      "fastMoves": [
-        "METAL_CLAW",
-        "ZEN_HEADBUTT"
-      ],
-      "chargedMoves": [
-        "CLOSE_COMBAT",
-        "IRON_HEAD",
-        "STONE_EDGE"
-      ]
-    },
-    {
-      "dex": 639,
-      "speciesName": "Terrakion",
-      "speciesId": "terrakion",
-      "baseStats": {
-        "atk": 260,
-        "def": 192,
-        "hp": 209
-      },
-      "types": [
-        "rock",
-        "fighting"
-      ],
-      "fastMoves": [
-        "SMACK_DOWN",
-        "ZEN_HEADBUTT"
-      ],
-      "chargedMoves": [
-        "CLOSE_COMBAT",
-        "EARTHQUAKE",
-        "ROCK_SLIDE"
-      ]
-    },
-    {
-      "dex": 640,
-      "speciesName": "Virizion",
-      "speciesId": "virizion",
-      "baseStats": {
-        "atk": 192,
-        "def": 229,
-        "hp": 209
-      },
-      "types": [
-        "grass",
-        "fighting"
-      ],
-      "fastMoves": [
-        "QUICK_ATTACK",
-        "ZEN_HEADBUTT"
-      ],
-      "chargedMoves": [
-        "CLOSE_COMBAT",
-        "LEAF_BLADE",
-        "STONE_EDGE"
-      ]
-    },
-    {
-      "dex": 641,
-      "speciesName": "Tornadus (Therian)",
-      "speciesId": "tornadus_therian",
-      "baseStats": {
-        "atk": 238,
-        "def": 189,
-        "hp": 188
-      },
-      "types": [
-        "flying",
-        "none"
-      ],
-      "fastMoves": [
-        "AIR_SLASH",
-        "BITE"
-      ],
-      "chargedMoves": [
-        "DARK_PULSE",
-        "GRASS_KNOT",
-        "HURRICANE",
-        "HYPER_BEAM"
-      ]
-    },
-    {
-      "dex": 642,
-      "speciesName": "Thundurus (Therian)",
-      "speciesId": "thundurus_therian",
-      "baseStats": {
-        "atk": 295,
-        "def": 161,
-        "hp": 188
-      },
-      "types": [
-        "electric",
-        "flying"
-      ],
-      "fastMoves": [
-        "ASTONISH",
-        "THUNDER_SHOCK"
-      ],
-      "chargedMoves": [
-        "BRICK_BREAK",
-        "CRUNCH",
-        "THUNDER",
-        "THUNDER_PUNCH"
-      ]
-    },
-    {
-      "dex": 643,
-      "speciesName": "Reshiram",
-      "speciesId": "reshiram",
-      "baseStats": {
-        "atk": 275,
-        "def": 211,
-        "hp": 205
-      },
-      "types": [
-        "dragon",
-        "fire"
-      ],
-      "fastMoves": [
-        "DRAGON_BREATH",
-        "FIRE_FANG"
-      ],
-      "chargedMoves": [
-        "CRUNCH",
-        "DRACO_METEOR",
-        "OVERHEAT",
-        "STONE_EDGE"
-      ]
-    },
-    {
       "dex": 644,
       "speciesName": "Zekrom",
       "speciesId": "zekrom",
@@ -20451,6 +14019,30 @@
         "FLASH_CANNON",
         "OUTRAGE",
         "WILD_CHARGE"
+      ]
+    },
+    {
+      "dex": 645,
+      "speciesName": "Landorus (Incarnate)",
+      "speciesId": "landorus_incarnate",
+      "baseStats": {
+        "atk": 261,
+        "def": 182,
+        "hp": 205
+      },
+      "types": [
+        "ground",
+        "flying"
+      ],
+      "fastMoves": [
+        "MUD_SHOT",
+        "ROCK_THROW"
+      ],
+      "chargedMoves": [
+        "EARTH_POWER",
+        "FOCUS_BLAST",
+        "OUTRAGE",
+        "ROCK_SLIDE"
       ]
     },
     {
@@ -20527,6 +14119,30 @@
     },
     {
       "dex": 647,
+      "speciesName": "Keldeo (Ordinary)",
+      "speciesId": "keldeo_ordinary",
+      "baseStats": {
+        "atk": 260,
+        "def": 192,
+        "hp": 209
+      },
+      "types": [
+        "water",
+        "fighting"
+      ],
+      "fastMoves": [
+        "LOW_KICK",
+        "POISON_JAB"
+      ],
+      "chargedMoves": [
+        "AQUA_JET",
+        "CLOSE_COMBAT",
+        "HYDRO_PUMP",
+        "X_SCISSOR"
+      ]
+    },
+    {
+      "dex": 647,
       "speciesName": "Keldeo (Resolute)",
       "speciesId": "keldeo_resolute",
       "baseStats": {
@@ -20547,6 +14163,30 @@
         "CLOSE_COMBAT",
         "HYDRO_PUMP",
         "X_SCISSOR"
+      ]
+    },
+    {
+      "dex": 648,
+      "speciesName": "Meloetta (Aria)",
+      "speciesId": "meloetta_aria",
+      "baseStats": {
+        "atk": 250,
+        "def": 225,
+        "hp": 225
+      },
+      "types": [
+        "normal",
+        "psychic"
+      ],
+      "fastMoves": [
+        "CONFUSION",
+        "QUICK_ATTACK"
+      ],
+      "chargedMoves": [
+        "DAZZLING_GLEAM",
+        "HYPER_BEAM",
+        "PSYSHOCK",
+        "THUNDERBOLT"
       ]
     },
     {
@@ -20741,7 +14381,7 @@
       "power": 6,
       "energy": 0,
       "energyGain": 5,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "ACID_SPRAY",
@@ -20749,7 +14389,8 @@
       "type": "poison",
       "power": 20,
       "energy": 50,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "AERIAL_ACE",
@@ -20757,7 +14398,8 @@
       "type": "flying",
       "power": 55,
       "energy": 45,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "AIR_CUTTER",
@@ -20765,7 +14407,8 @@
       "type": "flying",
       "power": 60,
       "energy": 55,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "AIR_SLASH",
@@ -20774,7 +14417,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 9,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "ANCIENT_POWER",
@@ -20782,7 +14425,8 @@
       "type": "rock",
       "power": 70,
       "energy": 45,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "AQUA_JET",
@@ -20790,7 +14434,8 @@
       "type": "water",
       "power": 45,
       "energy": 45,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "AQUA_TAIL",
@@ -20798,7 +14443,8 @@
       "type": "water",
       "power": 50,
       "energy": 35,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "ASTONISH",
@@ -20807,7 +14453,7 @@
       "power": 5,
       "energy": 0,
       "energyGain": 9,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "AURORA_BEAM",
@@ -20815,7 +14461,8 @@
       "type": "ice",
       "power": 80,
       "energy": 60,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "AVALANCHE",
@@ -20823,7 +14470,8 @@
       "type": "ice",
       "power": 90,
       "energy": 45,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "BITE",
@@ -20831,7 +14479,8 @@
       "type": "dark",
       "power": 4,
       "energy": 0,
-      "energyGain": 2
+      "energyGain": 2,
+      "cooldown": 500
     },
     {
       "moveId": "BLAST_BURN",
@@ -20839,7 +14488,8 @@
       "type": "fire",
       "power": 110,
       "energy": 50,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "BLAZE_KICK",
@@ -20847,7 +14497,8 @@
       "type": "fire",
       "power": 55,
       "energy": 40,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "BLIZZARD",
@@ -20855,7 +14506,8 @@
       "type": "ice",
       "power": 130,
       "energy": 75,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "BODY_SLAM",
@@ -20863,7 +14515,8 @@
       "type": "normal",
       "power": 60,
       "energy": 35,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "BONE_CLUB",
@@ -20871,7 +14524,8 @@
       "type": "ground",
       "power": 40,
       "energy": 35,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "BRAVE_BIRD",
@@ -20879,7 +14533,8 @@
       "type": "flying",
       "power": 90,
       "energy": 55,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "BRICK_BREAK",
@@ -20887,7 +14542,8 @@
       "type": "fighting",
       "power": 40,
       "energy": 35,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "BRINE",
@@ -20895,7 +14551,8 @@
       "type": "water",
       "power": 60,
       "energy": 50,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "BUBBLE",
@@ -20904,7 +14561,7 @@
       "power": 8,
       "energy": 0,
       "energyGain": 11,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "BUBBLE_BEAM",
@@ -20912,7 +14569,8 @@
       "type": "water",
       "power": 45,
       "energy": 40,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "BUG_BITE",
@@ -20920,7 +14578,8 @@
       "type": "bug",
       "power": 3,
       "energy": 0,
-      "energyGain": 3
+      "energyGain": 3,
+      "cooldown": 500
     },
     {
       "moveId": "BUG_BUZZ",
@@ -20928,7 +14587,8 @@
       "type": "bug",
       "power": 90,
       "energy": 60,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "BULLDOZE",
@@ -20936,7 +14596,8 @@
       "type": "ground",
       "power": 80,
       "energy": 60,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "BULLET_PUNCH",
@@ -20945,7 +14606,7 @@
       "power": 6,
       "energy": 0,
       "energyGain": 7,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "BULLET_SEED",
@@ -20954,7 +14615,7 @@
       "power": 5,
       "energy": 0,
       "energyGain": 11,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "CHARGE_BEAM",
@@ -20963,7 +14624,7 @@
       "power": 5,
       "energy": 0,
       "energyGain": 11,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "CHARM",
@@ -20972,7 +14633,7 @@
       "power": 16,
       "energy": 0,
       "energyGain": 6,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "CLOSE_COMBAT",
@@ -20980,7 +14641,8 @@
       "type": "fighting",
       "power": 100,
       "energy": 60,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "CONFUSION",
@@ -20989,7 +14651,7 @@
       "power": 16,
       "energy": 0,
       "energyGain": 12,
-      "cooldown": 4000
+      "cooldown": 2000
     },
     {
       "moveId": "COUNTER",
@@ -20998,7 +14660,7 @@
       "power": 8,
       "energy": 0,
       "energyGain": 7,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "CRABHAMMER",
@@ -21006,7 +14668,8 @@
       "type": "water",
       "power": 75,
       "energy": 50,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "CROSS_CHOP",
@@ -21014,7 +14677,8 @@
       "type": "fighting",
       "power": 50,
       "energy": 35,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "CROSS_POISON",
@@ -21022,7 +14686,8 @@
       "type": "poison",
       "power": 40,
       "energy": 35,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "CRUNCH",
@@ -21030,7 +14695,8 @@
       "type": "dark",
       "power": 70,
       "energy": 45,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "CUT",
@@ -21038,7 +14704,8 @@
       "type": "normal",
       "power": 3,
       "energy": 0,
-      "energyGain": 2
+      "energyGain": 2,
+      "cooldown": 500
     },
     {
       "moveId": "DARK_PULSE",
@@ -21046,7 +14713,8 @@
       "type": "dark",
       "power": 80,
       "energy": 50,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "DAZZLING_GLEAM",
@@ -21054,7 +14722,8 @@
       "type": "fairy",
       "power": 110,
       "energy": 70,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "DIG",
@@ -21062,7 +14731,8 @@
       "type": "ground",
       "power": 100,
       "energy": 80,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "DISARMING_VOICE",
@@ -21070,7 +14740,8 @@
       "type": "fairy",
       "power": 70,
       "energy": 45,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "DISCHARGE",
@@ -21078,7 +14749,8 @@
       "type": "electric",
       "power": 65,
       "energy": 45,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "DOOM_DESIRE",
@@ -21086,7 +14758,8 @@
       "type": "steel",
       "power": 75,
       "energy": 40,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "DRACO_METEOR",
@@ -21094,7 +14767,8 @@
       "type": "dragon",
       "power": 150,
       "energy": 75,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "DRAGON_BREATH",
@@ -21102,7 +14776,8 @@
       "type": "dragon",
       "power": 4,
       "energy": 0,
-      "energyGain": 3
+      "energyGain": 3,
+      "cooldown": 500
     },
     {
       "moveId": "DRAGON_CLAW",
@@ -21110,7 +14785,8 @@
       "type": "dragon",
       "power": 50,
       "energy": 35,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "DRAGON_PULSE",
@@ -21118,7 +14794,8 @@
       "type": "dragon",
       "power": 90,
       "energy": 60,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "DRAGON_TAIL",
@@ -21127,7 +14804,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 10,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "DRAINING_KISS",
@@ -21135,7 +14812,8 @@
       "type": "fairy",
       "power": 60,
       "energy": 55,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "DRILL_PECK",
@@ -21143,7 +14821,8 @@
       "type": "flying",
       "power": 60,
       "energy": 40,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "DRILL_RUN",
@@ -21151,7 +14830,8 @@
       "type": "ground",
       "power": 80,
       "energy": 55,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "DYNAMIC_PUNCH",
@@ -21159,7 +14839,8 @@
       "type": "fighting",
       "power": 90,
       "energy": 50,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "EARTH_POWER",
@@ -21167,7 +14848,8 @@
       "type": "ground",
       "power": 90,
       "energy": 55,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "EARTHQUAKE",
@@ -21175,7 +14857,8 @@
       "type": "ground",
       "power": 120,
       "energy": 65,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "EMBER",
@@ -21184,7 +14867,7 @@
       "power": 6,
       "energy": 0,
       "energyGain": 6,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "ENERGY_BALL",
@@ -21192,7 +14875,8 @@
       "type": "grass",
       "power": 90,
       "energy": 60,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "EXTRASENSORY",
@@ -21201,7 +14885,7 @@
       "power": 8,
       "energy": 0,
       "energyGain": 10,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "FEINT_ATTACK",
@@ -21210,7 +14894,7 @@
       "power": 6,
       "energy": 0,
       "energyGain": 6,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "FIRE_BLAST",
@@ -21218,7 +14902,8 @@
       "type": "fire",
       "power": 140,
       "energy": 80,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "FIRE_FANG",
@@ -21227,7 +14912,7 @@
       "power": 7,
       "energy": 0,
       "energyGain": 5,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "FIRE_PUNCH",
@@ -21235,7 +14920,8 @@
       "type": "fire",
       "power": 55,
       "energy": 40,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "FIRE_SPIN",
@@ -21244,7 +14930,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 10,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "FLAME_BURST",
@@ -21252,7 +14938,8 @@
       "type": "fire",
       "power": 70,
       "energy": 55,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "FLAME_CHARGE",
@@ -21260,7 +14947,8 @@
       "type": "fire",
       "power": 70,
       "energy": 50,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "FLAME_WHEEL",
@@ -21268,7 +14956,8 @@
       "type": "fire",
       "power": 60,
       "energy": 55,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "FLAMETHROWER",
@@ -21276,7 +14965,8 @@
       "type": "fire",
       "power": 90,
       "energy": 55,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "FLASH_CANNON",
@@ -21284,7 +14974,8 @@
       "type": "steel",
       "power": 110,
       "energy": 65,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "FOCUS_BLAST",
@@ -21292,7 +14983,8 @@
       "type": "fighting",
       "power": 150,
       "energy": 75,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "FOUL_PLAY",
@@ -21300,7 +14992,8 @@
       "type": "dark",
       "power": 70,
       "energy": 45,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "FRENZY_PLANT",
@@ -21308,7 +15001,8 @@
       "type": "grass",
       "power": 100,
       "energy": 45,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "FROST_BREATH",
@@ -21317,7 +15011,7 @@
       "power": 7,
       "energy": 0,
       "energyGain": 5,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "FRUSTRATION",
@@ -21325,7 +15019,8 @@
       "type": "normal",
       "power": 10,
       "energy": 40,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "FURY_CUTTER",
@@ -21333,7 +15028,8 @@
       "type": "bug",
       "power": 2,
       "energy": 0,
-      "energyGain": 4
+      "energyGain": 4,
+      "cooldown": 500
     },
     {
       "moveId": "FUTURE_SIGHT",
@@ -21341,7 +15037,8 @@
       "type": "psychic",
       "power": 120,
       "energy": 65,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "GIGA_DRAIN",
@@ -21349,7 +15046,8 @@
       "type": "grass",
       "power": 50,
       "energy": 80,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "GRASS_KNOT",
@@ -21357,7 +15055,8 @@
       "type": "grass",
       "power": 90,
       "energy": 50,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "GUNK_SHOT",
@@ -21365,7 +15064,8 @@
       "type": "poison",
       "power": 130,
       "energy": 75,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "GYRO_BALL",
@@ -21373,7 +15073,8 @@
       "type": "steel",
       "power": 80,
       "energy": 60,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "HEART_STAMP",
@@ -21381,7 +15082,8 @@
       "type": "psychic",
       "power": 40,
       "energy": 40,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "HEAT_WAVE",
@@ -21389,7 +15091,8 @@
       "type": "fire",
       "power": 95,
       "energy": 75,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "HEAVY_SLAM",
@@ -21397,7 +15100,8 @@
       "type": "steel",
       "power": 70,
       "energy": 50,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "HEX",
@@ -21406,7 +15110,7 @@
       "power": 6,
       "energy": 0,
       "energyGain": 11,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "HIDDEN_POWER_BUG",
@@ -21415,7 +15119,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "HIDDEN_POWER_DARK",
@@ -21424,7 +15128,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "HIDDEN_POWER_DRAGON",
@@ -21433,7 +15137,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "HIDDEN_POWER_ELECTRIC",
@@ -21442,7 +15146,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "HIDDEN_POWER_FIGHTING",
@@ -21451,7 +15155,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "HIDDEN_POWER_FIRE",
@@ -21460,7 +15164,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "HIDDEN_POWER_FLYING",
@@ -21469,7 +15173,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "HIDDEN_POWER_GHOST",
@@ -21478,7 +15182,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "HIDDEN_POWER_GRASS",
@@ -21487,7 +15191,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "HIDDEN_POWER_GROUND",
@@ -21496,7 +15200,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "HIDDEN_POWER_ICE",
@@ -21505,7 +15209,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "HIDDEN_POWER_POISON",
@@ -21514,7 +15218,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "HIDDEN_POWER_PSYCHIC",
@@ -21523,7 +15227,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "HIDDEN_POWER_ROCK",
@@ -21532,7 +15236,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "HIDDEN_POWER_STEEL",
@@ -21541,7 +15245,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "HIDDEN_POWER_WATER",
@@ -21550,7 +15254,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "HORN_ATTACK",
@@ -21558,7 +15262,8 @@
       "type": "normal",
       "power": 40,
       "energy": 35,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "HURRICANE",
@@ -21566,7 +15271,8 @@
       "type": "flying",
       "power": 110,
       "energy": 65,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "HYDRO_CANNON",
@@ -21574,7 +15280,8 @@
       "type": "water",
       "power": 90,
       "energy": 40,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "HYDRO_PUMP",
@@ -21582,7 +15289,8 @@
       "type": "water",
       "power": 130,
       "energy": 75,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "HYDRO_PUMP_BLASTOISE",
@@ -21590,7 +15298,8 @@
       "type": "water",
       "power": 90,
       "energy": 80,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "HYPER_BEAM",
@@ -21598,7 +15307,8 @@
       "type": "normal",
       "power": 150,
       "energy": 80,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "HYPER_FANG",
@@ -21606,7 +15316,8 @@
       "type": "normal",
       "power": 80,
       "energy": 50,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "ICE_BEAM",
@@ -21614,7 +15325,8 @@
       "type": "ice",
       "power": 90,
       "energy": 55,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "ICE_PUNCH",
@@ -21622,7 +15334,8 @@
       "type": "ice",
       "power": 55,
       "energy": 40,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "ICE_SHARD",
@@ -21631,7 +15344,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 10,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "ICY_WIND",
@@ -21639,7 +15352,8 @@
       "type": "ice",
       "power": 60,
       "energy": 45,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "INFESTATION",
@@ -21648,7 +15362,7 @@
       "power": 6,
       "energy": 0,
       "energyGain": 11,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "IRON_HEAD",
@@ -21656,7 +15370,8 @@
       "type": "steel",
       "power": 70,
       "energy": 50,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "IRON_TAIL",
@@ -21665,7 +15380,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 6,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "KARATE_CHOP",
@@ -21674,7 +15389,7 @@
       "power": 5,
       "energy": 0,
       "energyGain": 7,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "LAST_RESORT",
@@ -21682,7 +15397,8 @@
       "type": "normal",
       "power": 90,
       "energy": 55,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "LEAF_BLADE",
@@ -21690,7 +15406,8 @@
       "type": "grass",
       "power": 70,
       "energy": 35,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "LEAF_TORNADO",
@@ -21698,7 +15415,8 @@
       "type": "grass",
       "power": 45,
       "energy": 40,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "LICK",
@@ -21706,7 +15424,8 @@
       "type": "ghost",
       "power": 3,
       "energy": 0,
-      "energyGain": 3
+      "energyGain": 3,
+      "cooldown": 500
     },
     {
       "moveId": "LOW_KICK",
@@ -21715,7 +15434,7 @@
       "power": 4,
       "energy": 0,
       "energyGain": 5,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "LOW_SWEEP",
@@ -21723,7 +15442,8 @@
       "type": "fighting",
       "power": 40,
       "energy": 40,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "MAGNET_BOMB",
@@ -21731,7 +15451,8 @@
       "type": "steel",
       "power": 70,
       "energy": 45,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "MEGA_DRAIN",
@@ -21739,7 +15460,8 @@
       "type": "grass",
       "power": 25,
       "energy": 55,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "MEGAHORN",
@@ -21747,7 +15469,8 @@
       "type": "bug",
       "power": 90,
       "energy": 55,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "METAL_CLAW",
@@ -21756,7 +15479,7 @@
       "power": 5,
       "energy": 0,
       "energyGain": 6,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "METEOR_MASH",
@@ -21764,7 +15487,8 @@
       "type": "steel",
       "power": 100,
       "energy": 50,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "MIRROR_COAT",
@@ -21772,7 +15496,8 @@
       "type": "psychic",
       "power": 60,
       "energy": 55,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "MOONBLAST",
@@ -21780,7 +15505,8 @@
       "type": "fairy",
       "power": 130,
       "energy": 70,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "MUD_BOMB",
@@ -21788,7 +15514,8 @@
       "type": "ground",
       "power": 55,
       "energy": 40,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "MUD_SHOT",
@@ -21797,7 +15524,7 @@
       "power": 3,
       "energy": 0,
       "energyGain": 9,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "MUD_SLAP",
@@ -21806,7 +15533,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "MUDDY_WATER",
@@ -21814,7 +15541,8 @@
       "type": "water",
       "power": 35,
       "energy": 35,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "NIGHT_SHADE",
@@ -21822,7 +15550,8 @@
       "type": "ghost",
       "power": 60,
       "energy": 55,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "NIGHT_SLASH",
@@ -21830,7 +15559,8 @@
       "type": "dark",
       "power": 50,
       "energy": 40,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "OMINOUS_WIND",
@@ -21838,7 +15568,8 @@
       "type": "ghost",
       "power": 50,
       "energy": 40,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "ORIGIN_PULSE",
@@ -21846,7 +15577,8 @@
       "type": "water",
       "power": 130,
       "energy": 60,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "OUTRAGE",
@@ -21854,7 +15586,8 @@
       "type": "dragon",
       "power": 110,
       "energy": 60,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "OVERHEAT",
@@ -21862,7 +15595,8 @@
       "type": "fire",
       "power": 150,
       "energy": 80,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "PARABOLIC_CHARGE",
@@ -21870,7 +15604,8 @@
       "type": "electric",
       "power": 25,
       "energy": 55,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "PECK",
@@ -21879,7 +15614,7 @@
       "power": 6,
       "energy": 0,
       "energyGain": 5,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "PETAL_BLIZZARD",
@@ -21887,7 +15622,8 @@
       "type": "grass",
       "power": 110,
       "energy": 65,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "PLAY_ROUGH",
@@ -21895,7 +15631,8 @@
       "type": "fairy",
       "power": 90,
       "energy": 60,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "POISON_FANG",
@@ -21903,7 +15640,8 @@
       "type": "poison",
       "power": 40,
       "energy": 35,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "POISON_JAB",
@@ -21912,7 +15650,7 @@
       "power": 6,
       "energy": 0,
       "energyGain": 7,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "POISON_STING",
@@ -21921,7 +15659,7 @@
       "power": 3,
       "energy": 0,
       "energyGain": 6,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "POUND",
@@ -21930,7 +15668,7 @@
       "power": 5,
       "energy": 0,
       "energyGain": 4,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "POWDER_SNOW",
@@ -21939,7 +15677,7 @@
       "power": 4,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "POWER_GEM",
@@ -21947,7 +15685,8 @@
       "type": "rock",
       "power": 80,
       "energy": 60,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "POWER_UP_PUNCH",
@@ -21955,7 +15694,8 @@
       "type": "fighting",
       "power": 40,
       "energy": 35,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "POWER_WHIP",
@@ -21963,7 +15703,8 @@
       "type": "grass",
       "power": 90,
       "energy": 50,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "PRECIPICE_BLADES",
@@ -21971,7 +15712,8 @@
       "type": "ground",
       "power": 130,
       "energy": 60,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "PRESENT",
@@ -21980,7 +15722,7 @@
       "power": 3,
       "energy": 0,
       "energyGain": 12,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "PSYBEAM",
@@ -21988,7 +15730,8 @@
       "type": "psychic",
       "power": 70,
       "energy": 60,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "PSYCHIC",
@@ -21996,7 +15739,8 @@
       "type": "psychic",
       "power": 100,
       "energy": 70,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "PSYCHO_BOOST",
@@ -22004,7 +15748,8 @@
       "type": "psychic",
       "power": 70,
       "energy": 40,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "PSYCHO_CUT",
@@ -22013,7 +15758,7 @@
       "power": 3,
       "energy": 0,
       "energyGain": 9,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "PSYSHOCK",
@@ -22021,7 +15766,8 @@
       "type": "psychic",
       "power": 70,
       "energy": 45,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "PSYSTRIKE",
@@ -22029,7 +15775,8 @@
       "type": "psychic",
       "power": 100,
       "energy": 55,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "QUICK_ATTACK",
@@ -22038,7 +15785,7 @@
       "power": 5,
       "energy": 0,
       "energyGain": 7,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "RAZOR_LEAF",
@@ -22047,7 +15794,7 @@
       "power": 11,
       "energy": 0,
       "energyGain": 4,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "REST",
@@ -22055,7 +15802,8 @@
       "type": "normal",
       "power": 50,
       "energy": 35,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "RETURN",
@@ -22063,7 +15811,8 @@
       "type": "normal",
       "power": 50,
       "energy": 40,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "ROCK_BLAST",
@@ -22071,7 +15820,8 @@
       "type": "rock",
       "power": 50,
       "energy": 40,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "ROCK_SLIDE",
@@ -22079,7 +15829,8 @@
       "type": "rock",
       "power": 80,
       "energy": 45,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "ROCK_SMASH",
@@ -22088,7 +15839,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 7,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "ROCK_THROW",
@@ -22097,7 +15848,7 @@
       "power": 8,
       "energy": 0,
       "energyGain": 5,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "ROCK_TOMB",
@@ -22105,7 +15856,8 @@
       "type": "rock",
       "power": 70,
       "energy": 60,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "SAND_TOMB",
@@ -22113,7 +15865,8 @@
       "type": "ground",
       "power": 80,
       "energy": 60,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "SCALD",
@@ -22121,7 +15874,8 @@
       "type": "water",
       "power": 80,
       "energy": 60,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "SCALD_BLASTOISE",
@@ -22129,7 +15883,8 @@
       "type": "water",
       "power": 50,
       "energy": 80,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "SCRATCH",
@@ -22137,7 +15892,8 @@
       "type": "normal",
       "power": 4,
       "energy": 0,
-      "energyGain": 2
+      "energyGain": 2,
+      "cooldown": 500
     },
     {
       "moveId": "SEED_BOMB",
@@ -22145,7 +15901,8 @@
       "type": "grass",
       "power": 55,
       "energy": 40,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "SHADOW_BALL",
@@ -22153,7 +15910,8 @@
       "type": "ghost",
       "power": 100,
       "energy": 55,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "SHADOW_CLAW",
@@ -22162,7 +15920,7 @@
       "power": 6,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "SHADOW_PUNCH",
@@ -22170,7 +15928,8 @@
       "type": "ghost",
       "power": 40,
       "energy": 35,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "SHADOW_SNEAK",
@@ -22178,7 +15937,8 @@
       "type": "ghost",
       "power": 50,
       "energy": 45,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "SIGNAL_BEAM",
@@ -22186,7 +15946,8 @@
       "type": "bug",
       "power": 75,
       "energy": 55,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "SILVER_WIND",
@@ -22194,7 +15955,8 @@
       "type": "bug",
       "power": 70,
       "energy": 45,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "SKULL_BASH",
@@ -22202,7 +15964,8 @@
       "type": "normal",
       "power": 130,
       "energy": 75,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "SKY_ATTACK",
@@ -22210,7 +15973,8 @@
       "type": "flying",
       "power": 80,
       "energy": 45,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "SLUDGE",
@@ -22218,7 +15982,8 @@
       "type": "poison",
       "power": 50,
       "energy": 40,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "SLUDGE_BOMB",
@@ -22226,7 +15991,8 @@
       "type": "poison",
       "power": 80,
       "energy": 50,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "SLUDGE_WAVE",
@@ -22234,7 +16000,8 @@
       "type": "poison",
       "power": 110,
       "energy": 65,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "SMACK_DOWN",
@@ -22243,7 +16010,7 @@
       "power": 12,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "SNARL",
@@ -22252,7 +16019,7 @@
       "power": 8,
       "energy": 0,
       "energyGain": 10,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "SOLAR_BEAM",
@@ -22260,7 +16027,8 @@
       "type": "grass",
       "power": 150,
       "energy": 80,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "SPARK",
@@ -22269,7 +16037,7 @@
       "power": 4,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "SPLASH",
@@ -22278,7 +16046,7 @@
       "power": 0,
       "energy": 0,
       "energyGain": 12,
-      "cooldown": 4000
+      "cooldown": 2000
     },
     {
       "moveId": "STEEL_WING",
@@ -22287,7 +16055,7 @@
       "power": 7,
       "energy": 0,
       "energyGain": 5,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "STOMP",
@@ -22295,7 +16063,8 @@
       "type": "normal",
       "power": 55,
       "energy": 40,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "STONE_EDGE",
@@ -22303,7 +16072,8 @@
       "type": "rock",
       "power": 100,
       "energy": 55,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "STRUGGLE",
@@ -22311,7 +16081,8 @@
       "type": "normal",
       "power": 35,
       "energy": 100,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "STRUGGLE_BUG",
@@ -22320,7 +16091,7 @@
       "power": 9,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "SUBMISSION",
@@ -22328,7 +16099,8 @@
       "type": "fighting",
       "power": 60,
       "energy": 50,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "SUCKER_PUNCH",
@@ -22337,7 +16109,7 @@
       "power": 5,
       "energy": 0,
       "energyGain": 7,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "SURF",
@@ -22345,7 +16117,8 @@
       "type": "water",
       "power": 65,
       "energy": 40,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "SWIFT",
@@ -22353,7 +16126,8 @@
       "type": "normal",
       "power": 60,
       "energy": 55,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "SYNCHRONOISE",
@@ -22361,7 +16135,8 @@
       "type": "psychic",
       "power": 80,
       "energy": 50,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "TACKLE",
@@ -22369,7 +16144,8 @@
       "type": "normal",
       "power": 3,
       "energy": 0,
-      "energyGain": 2
+      "energyGain": 2,
+      "cooldown": 500
     },
     {
       "moveId": "TAKE_DOWN",
@@ -22378,7 +16154,7 @@
       "power": 5,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "THUNDER",
@@ -22386,7 +16162,8 @@
       "type": "electric",
       "power": 100,
       "energy": 60,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "THUNDER_PUNCH",
@@ -22394,7 +16171,8 @@
       "type": "electric",
       "power": 55,
       "energy": 40,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "THUNDER_SHOCK",
@@ -22403,7 +16181,7 @@
       "power": 3,
       "energy": 0,
       "energyGain": 9,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "THUNDERBOLT",
@@ -22411,7 +16189,8 @@
       "type": "electric",
       "power": 90,
       "energy": 55,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "TRANSFORM",
@@ -22420,7 +16199,7 @@
       "power": 0,
       "energy": 0,
       "energyGain": 0,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "TWISTER",
@@ -22428,7 +16207,8 @@
       "type": "dragon",
       "power": 45,
       "energy": 45,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "VICE_GRIP",
@@ -22436,7 +16216,8 @@
       "type": "normal",
       "power": 40,
       "energy": 40,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "VINE_WHIP",
@@ -22445,7 +16226,7 @@
       "power": 5,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "VOLT_SWITCH",
@@ -22454,7 +16235,7 @@
       "power": 12,
       "energy": 0,
       "energyGain": 10,
-      "cooldown": 5000
+      "cooldown": 2500
     },
     {
       "moveId": "WATER_GUN",
@@ -22462,7 +16243,8 @@
       "type": "water",
       "power": 3,
       "energy": 0,
-      "energyGain": 3
+      "energyGain": 3,
+      "cooldown": 500
     },
     {
       "moveId": "WATER_GUN_FAST_BLASTOISE",
@@ -22471,7 +16253,7 @@
       "power": 6,
       "energy": 0,
       "energyGain": 4,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "WATER_PULSE",
@@ -22479,7 +16261,8 @@
       "type": "water",
       "power": 70,
       "energy": 60,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "WATERFALL",
@@ -22488,7 +16271,7 @@
       "power": 12,
       "energy": 0,
       "energyGain": 8,
-      "cooldown": 3000
+      "cooldown": 1500
     },
     {
       "moveId": "WEATHER_BALL_FIRE",
@@ -22496,7 +16279,8 @@
       "type": "fire",
       "power": 60,
       "energy": 35,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "WEATHER_BALL_ICE",
@@ -22504,7 +16288,8 @@
       "type": "ice",
       "power": 60,
       "energy": 35,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "WEATHER_BALL_ROCK",
@@ -22512,7 +16297,8 @@
       "type": "normal",
       "power": 60,
       "energy": 35,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "WEATHER_BALL_WATER",
@@ -22520,7 +16306,8 @@
       "type": "water",
       "power": 60,
       "energy": 35,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "WILD_CHARGE",
@@ -22528,7 +16315,8 @@
       "type": "electric",
       "power": 90,
       "energy": 50,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "WING_ATTACK",
@@ -22537,7 +16325,7 @@
       "power": 5,
       "energy": 0,
       "energyGain": 7,
-      "cooldown": 2000
+      "cooldown": 1000
     },
     {
       "moveId": "WRAP",
@@ -22545,7 +16333,8 @@
       "type": "normal",
       "power": 60,
       "energy": 45,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "WRAP_GREEN",
@@ -22553,7 +16342,8 @@
       "type": "normal",
       "power": 25,
       "energy": 45,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "WRAP_PINK",
@@ -22561,7 +16351,8 @@
       "type": "normal",
       "power": 25,
       "energy": 45,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "X_SCISSOR",
@@ -22569,7 +16360,8 @@
       "type": "bug",
       "power": 45,
       "energy": 35,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "YAWN",
@@ -22578,7 +16370,7 @@
       "power": 0,
       "energy": 0,
       "energyGain": 12,
-      "cooldown": 4000
+      "cooldown": 2000
     },
     {
       "moveId": "ZAP_CANNON",
@@ -22586,7 +16378,8 @@
       "type": "electric",
       "power": 150,
       "energy": 80,
-      "energyGain": 0
+      "energyGain": 0,
+      "cooldown": 500
     },
     {
       "moveId": "ZEN_HEADBUTT",
@@ -22595,7 +16388,7 @@
       "power": 8,
       "energy": 0,
       "energyGain": 6,
-      "cooldown": 3000
+      "cooldown": 1500
     }
   ]
 }

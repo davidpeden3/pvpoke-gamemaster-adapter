@@ -25,7 +25,7 @@ namespace PvPoke.FileManagement.PokemonGo
 		public static string GameMasterJsonPath => Path.Combine(DataPath, "gameMaster.json");
 		public static string CupsJsonPath => Path.Combine(DataPath, "cups.json");
 		public static string LegacyMovesJsonPath => Path.Combine(DataPath, "legacyMoves.json");
-		public static string OptionsJsonPath => Path.Combine(DataPath, "options.json");
+		public static string SettingsJsonPath => Path.Combine(DataPath, "settings.json");
 		public static string ActualPvPokeGameMasterJsonPath => Path.Combine(DataPath, "actualPvPokeGameMaster.json");
 		public static string GeneratedPvPokeGameMasterJsonPath => Path.Combine(DataPath, "generatedPvPokeGameMaster.json");
 

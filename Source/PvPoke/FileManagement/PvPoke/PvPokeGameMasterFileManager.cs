@@ -54,7 +54,7 @@ namespace PvPoke.FileManagement.PvPoke
 				NullValueHandling = NullValueHandling.Ignore
 			};
 
-			public dynamic Options { get; set; }
+			public dynamic Settings { get; set; }
 			public dynamic Cups { get; set; }
 			public IEnumerable<PokemonProperty> Pokemon { get; set; }
 			public IEnumerable<MovesProperty> Moves { get; set; }
