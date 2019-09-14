@@ -3,12 +3,18 @@
     {
       "speciesId": "bulbasaur",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "ivysaur",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "venusaur",
@@ -20,7 +26,10 @@
     {
       "speciesId": "charmander",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "charmeleon",
@@ -36,25 +45,35 @@
         "WING_ATTACK"
       ],
       "legacyChargeMoves": [
+        "BLAST_BURN",
         "FLAMETHROWER",
-        "BLAST_BURN"
+        "RETURN",
+        "FRUSTRATION"
       ]
     },
     {
       "speciesId": "squirtle",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "wartortle",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "blastoise",
       "legacyFastMoves": [],
       "legacyChargeMoves": [
-        "HYDRO_CANNON"
+        "HYDRO_CANNON",
+        "RETURN",
+        "FRUSTRATION"
       ]
     },
     {
@@ -113,12 +132,23 @@
     {
       "speciesId": "rattata",
       "legacyFastMoves": [],
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
+    },
+    {
+      "speciesId": "rattata_alolan",
+      "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
     {
       "speciesId": "raticate",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "raticate_alolan",
@@ -183,6 +213,11 @@
       ]
     },
     {
+      "speciesId": "sandshrew_alolan",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
       "speciesId": "sandslash",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
@@ -242,6 +277,11 @@
       "legacyChargeMoves": []
     },
     {
+      "speciesId": "vulpix_alolan",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
       "speciesId": "ninetales",
       "legacyFastMoves": [
         "EMBER"
@@ -260,8 +300,8 @@
       "speciesId": "jigglypuff",
       "legacyFastMoves": [],
       "legacyChargeMoves": [
-        "PLAY_ROUGH",
-        "BODY_SLAM"
+        "BODY_SLAM",
+        "PLAY_ROUGH"
       ]
     },
     {
@@ -273,30 +313,43 @@
       "speciesId": "zubat",
       "legacyFastMoves": [],
       "legacyChargeMoves": [
-        "SLUDGE_BOMB"
+        "SLUDGE_BOMB",
+        "RETURN",
+        "FRUSTRATION"
       ]
     },
     {
       "speciesId": "golbat",
       "legacyFastMoves": [],
       "legacyChargeMoves": [
-        "OMINOUS_WIND"
+        "OMINOUS_WIND",
+        "RETURN",
+        "FRUSTRATION"
       ]
     },
     {
       "speciesId": "oddish",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "gloom",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "vileplume",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "paras",
@@ -313,7 +366,10 @@
     {
       "speciesId": "venonat",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "venomoth",
@@ -321,7 +377,9 @@
         "BUG_BITE"
       ],
       "legacyChargeMoves": [
-        "POISON_FANG"
+        "POISON_FANG",
+        "RETURN",
+        "FRUSTRATION"
       ]
     },
     {
@@ -329,6 +387,11 @@
       "legacyFastMoves": [
         "MUD_SHOT"
       ],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "diglett_alolan",
+      "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
     {
@@ -351,6 +414,11 @@
       ]
     },
     {
+      "speciesId": "meowth_alolan",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
       "speciesId": "persian",
       "legacyFastMoves": [],
       "legacyChargeMoves": [
@@ -365,12 +433,18 @@
     {
       "speciesId": "psyduck",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "golduck",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "mankey",
@@ -389,7 +463,10 @@
     {
       "speciesId": "growlithe",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "arcanine",
@@ -398,19 +475,26 @@
       ],
       "legacyChargeMoves": [
         "BULLDOZE",
-        "FLAMETHROWER"
+        "FLAMETHROWER",
+        "RETURN",
+        "FRUSTRATION"
       ]
     },
     {
       "speciesId": "poliwag",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "poliwhirl",
       "legacyFastMoves": [],
       "legacyChargeMoves": [
-        "SCALD"
+        "SCALD",
+        "RETURN",
+        "FRUSTRATION"
       ]
     },
     {
@@ -419,25 +503,35 @@
         "MUD_SHOT"
       ],
       "legacyChargeMoves": [
-        "SUBMISSION"
+        "SUBMISSION",
+        "RETURN",
+        "FRUSTRATION"
       ]
     },
     {
       "speciesId": "abra",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "kadabra",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "alakazam",
       "legacyFastMoves": [],
       "legacyChargeMoves": [
         "DAZZLING_GLEAM",
-        "PSYCHIC"
+        "PSYCHIC",
+        "RETURN",
+        "FRUSTRATION"
       ]
     },
     {
@@ -494,6 +588,11 @@
     },
     {
       "speciesId": "geodude",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "geodude_alolan",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
@@ -608,7 +707,10 @@
       "legacyFastMoves": [
         "ACID"
       ],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "grimer_alolan",
@@ -623,7 +725,10 @@
         "ACID",
         "LICK"
       ],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "muk_alolan",
@@ -664,13 +769,13 @@
     {
       "speciesId": "gengar",
       "legacyFastMoves": [
-        "SHADOW_CLAW",
-        "LICK"
+        "LICK",
+        "SHADOW_CLAW"
       ],
       "legacyChargeMoves": [
-        "SLUDGE_WAVE",
         "DARK_PULSE",
-        "PSYCHIC"
+        "PSYCHIC",
+        "SLUDGE_WAVE"
       ]
     },
     {
@@ -684,14 +789,19 @@
     {
       "speciesId": "drowzee",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "hypno",
       "legacyFastMoves": [],
       "legacyChargeMoves": [
         "PSYSHOCK",
-        "SHADOW_BALL"
+        "SHADOW_BALL",
+        "RETURN",
+        "FRUSTRATION"
       ]
     },
     {
@@ -741,12 +851,18 @@
     {
       "speciesId": "cubone",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "marowak",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "marowak_alolan",
@@ -757,8 +873,8 @@
       "speciesId": "hitmonlee",
       "legacyFastMoves": [],
       "legacyChargeMoves": [
-        "STOMP",
-        "BRICK_BREAK"
+        "BRICK_BREAK",
+        "STOMP"
       ]
     },
     {
@@ -767,7 +883,9 @@
         "ROCK_SMASH"
       ],
       "legacyChargeMoves": [
-        "BRICK_BREAK"
+        "BRICK_BREAK",
+        "RETURN",
+        "FRUSTRATION"
       ]
     },
     {
@@ -846,8 +964,8 @@
         "POISON_JAB"
       ],
       "legacyChargeMoves": [
-        "ICY_WIND",
-        "DRILL_RUN"
+        "DRILL_RUN",
+        "ICY_WIND"
       ]
     },
     {
@@ -878,7 +996,9 @@
         "STEEL_WING"
       ],
       "legacyChargeMoves": [
-        "BUG_BUZZ"
+        "BUG_BUZZ",
+        "RETURN",
+        "FRUSTRATION"
       ]
     },
     {
@@ -917,7 +1037,10 @@
     {
       "speciesId": "magikarp",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "gyarados",
@@ -927,7 +1050,9 @@
       ],
       "legacyChargeMoves": [
         "DRAGON_PULSE",
-        "TWISTER"
+        "TWISTER",
+        "RETURN",
+        "FRUSTRATION"
       ]
     },
     {
@@ -936,9 +1061,14 @@
         "ICE_SHARD"
       ],
       "legacyChargeMoves": [
-        "ICE_BEAM",
-        "DRAGON_PULSE"
+        "DRAGON_PULSE",
+        "ICE_BEAM"
       ]
+    },
+    {
+      "speciesId": "ditto",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
     },
     {
       "speciesId": "eevee",
@@ -987,8 +1117,8 @@
       "speciesId": "omanyte",
       "legacyFastMoves": [],
       "legacyChargeMoves": [
-        "ROCK_TOMB",
-        "BRINE"
+        "BRINE",
+        "ROCK_TOMB"
       ]
     },
     {
@@ -1021,7 +1151,10 @@
       "speciesId": "snorlax",
       "legacyFastMoves": [],
       "legacyChargeMoves": [
-        "BODY_SLAM"
+        "BODY_SLAM",
+        "SKULL_BASH",
+        "RETURN",
+        "FRUSTRATION"
       ]
     },
     {
@@ -1036,9 +1169,7 @@
       "legacyFastMoves": [
         "THUNDER_SHOCK"
       ],
-      "legacyChargeMoves": [
-        "DISCHARGE"
-      ]
+      "legacyChargeMoves": []
     },
     {
       "speciesId": "moltres",
@@ -1052,12 +1183,18 @@
     {
       "speciesId": "dratini",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "dragonair",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "dragonite",
@@ -1065,18 +1202,26 @@
         "DRAGON_BREATH"
       ],
       "legacyChargeMoves": [
+        "DRACO_METEOR",
         "DRAGON_CLAW",
         "DRAGON_PULSE",
-        "DRACO_METEOR"
+        "RETURN",
+        "FRUSTRATION"
       ]
     },
     {
       "speciesId": "mewtwo",
       "legacyFastMoves": [],
       "legacyChargeMoves": [
+        "HYPER_BEAM",
         "SHADOW_BALL",
-        "HYPER_BEAM"
+        "PSYSTRIKE"
       ]
+    },
+    {
+      "speciesId": "mewtwo_armored",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
     },
     {
       "speciesId": "mew",
@@ -1101,13 +1246,6 @@
       ]
     },
     {
-      "speciesId": "typhlosion",
-      "legacyFastMoves": [],
-      "legacyChargeMoves": [
-        "BLAST_BURN"
-      ]
-    },
-    {
       "speciesId": "cyndaquil",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
@@ -1116,6 +1254,13 @@
       "speciesId": "quilava",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "typhlosion",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": [
+        "BLAST_BURN"
+      ]
     },
     {
       "speciesId": "totodile",
@@ -1179,7 +1324,10 @@
     {
       "speciesId": "crobat",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "chinchou",
@@ -1202,8 +1350,8 @@
       "speciesId": "cleffa",
       "legacyFastMoves": [],
       "legacyChargeMoves": [
-        "PSYCHIC",
-        "BODY_SLAM"
+        "BODY_SLAM",
+        "PSYCHIC"
       ]
     },
     {
@@ -1258,7 +1406,10 @@
     {
       "speciesId": "bellossom",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "marill",
@@ -1279,7 +1430,9 @@
       "speciesId": "politoed",
       "legacyFastMoves": [],
       "legacyChargeMoves": [
-        "EARTHQUAKE"
+        "EARTHQUAKE",
+        "RETURN",
+        "FRUSTRATION"
       ]
     },
     {
@@ -1414,7 +1567,10 @@
     {
       "speciesId": "scizor",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "shuckle",
@@ -1497,12 +1653,18 @@
     {
       "speciesId": "houndour",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "houndoom",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "kingdra",
@@ -1590,41 +1752,50 @@
     {
       "speciesId": "suicune",
       "legacyFastMoves": [
-        "HIDDEN_POWER_FIGHTING",
-        "HIDDEN_POWER_FLYING",
-        "HIDDEN_POWER_POISON",
-        "HIDDEN_POWER_GROUND",
-        "HIDDEN_POWER_ROCK",
         "HIDDEN_POWER_BUG",
-        "HIDDEN_POWER_GHOST",
-        "HIDDEN_POWER_STEEL",
-        "HIDDEN_POWER_FIRE",
-        "HIDDEN_POWER_WATER",
-        "HIDDEN_POWER_GRASS",
-        "HIDDEN_POWER_ELECTRIC",
-        "HIDDEN_POWER_PSYCHIC",
-        "HIDDEN_POWER_ICE",
+        "HIDDEN_POWER_DARK",
         "HIDDEN_POWER_DRAGON",
-        "HIDDEN_POWER_DARK"
+        "HIDDEN_POWER_ELECTRIC",
+        "HIDDEN_POWER_FIGHTING",
+        "HIDDEN_POWER_FIRE",
+        "HIDDEN_POWER_FLYING",
+        "HIDDEN_POWER_GHOST",
+        "HIDDEN_POWER_GRASS",
+        "HIDDEN_POWER_GROUND",
+        "HIDDEN_POWER_ICE",
+        "HIDDEN_POWER_POISON",
+        "HIDDEN_POWER_PSYCHIC",
+        "HIDDEN_POWER_ROCK",
+        "HIDDEN_POWER_STEEL",
+        "HIDDEN_POWER_WATER"
       ],
       "legacyChargeMoves": []
     },
     {
       "speciesId": "larvitar",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "pupitar",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "tyranitar",
       "legacyFastMoves": [
         "SMACK_DOWN"
       ],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "lugia",
@@ -1670,7 +1841,8 @@
       "speciesId": "blaziken",
       "legacyFastMoves": [],
       "legacyChargeMoves": [
-        "STONE_EDGE"
+        "STONE_EDGE",
+        "BLAST_BURN"
       ]
     },
     {
@@ -1786,17 +1958,27 @@
     {
       "speciesId": "ralts",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "kirlia",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "gardevoir",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "SYNCHRONOISE",
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "surskit",
@@ -1873,6 +2055,11 @@
       "legacyChargeMoves": []
     },
     {
+      "speciesId": "hariyama",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
       "speciesId": "azurill",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
@@ -1909,11 +2096,6 @@
     },
     {
       "speciesId": "lairon",
-      "legacyFastMoves": [],
-      "legacyChargeMoves": []
-    },
-    {
-      "speciesId": "hariyama",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
@@ -2148,17 +2330,17 @@
       "legacyChargeMoves": []
     },
     {
+      "speciesId": "castform_rainy",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
       "speciesId": "castform_snowy",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
     {
       "speciesId": "castform_sunny",
-      "legacyFastMoves": [],
-      "legacyChargeMoves": []
-    },
-    {
-      "speciesId": "castform_rainy",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
@@ -2330,6 +2512,11 @@
       "legacyChargeMoves": []
     },
     {
+      "speciesId": "jirachi",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
       "speciesId": "deoxys",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
@@ -2350,12 +2537,32 @@
       "legacyChargeMoves": []
     },
     {
+      "speciesId": "turtwig",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
+    },
+    {
       "speciesId": "grotle",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "torterra",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": [
+        "RETURN",
+        "FRUSTRATION",
+        "FRENZY_PLANT"
+      ]
+    },
+    {
+      "speciesId": "chimchar",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
@@ -2370,6 +2577,11 @@
       "legacyChargeMoves": []
     },
     {
+      "speciesId": "piplup",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
       "speciesId": "prinplup",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
@@ -2380,7 +2592,22 @@
       "legacyChargeMoves": []
     },
     {
+      "speciesId": "starly",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "staravia",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
       "speciesId": "staraptor",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "bidoof",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
@@ -2390,12 +2617,17 @@
       "legacyChargeMoves": []
     },
     {
-      "speciesId": "drifblim",
+      "speciesId": "kricketot",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
     {
       "speciesId": "kricketune",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "shinx",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
@@ -2410,12 +2642,157 @@
       "legacyChargeMoves": []
     },
     {
+      "speciesId": "budew",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
       "speciesId": "roserade",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
     {
+      "speciesId": "cranidos",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "rampardos",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "shieldon",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "bastiodon",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "burmy_plant",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "burmy_sandy",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "burmy_trash",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "wormadam_plant",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "wormadam_sandy",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "wormadam_trash",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "mothim",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "combee",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "vespiquen",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "pachirisu",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "buizel",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
       "speciesId": "floatzel",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "cherubi",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": [
+        "POWER_WHIP"
+      ]
+    },
+    {
+      "speciesId": "cherrim_overcast",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": [
+        "POWER_WHIP"
+      ]
+    },
+    {
+      "speciesId": "cherrim_sunny",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": [
+        "POWER_WHIP"
+      ]
+    },
+    {
+      "speciesId": "shellos_east_sea",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "shellos_west_sea",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "gastrodon_east_sea",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": [
+        "EARTHQUAKE"
+      ]
+    },
+    {
+      "speciesId": "gastrodon_west_sea",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": [
+        "EARTHQUAKE"
+      ]
+    },
+    {
+      "speciesId": "ambipom",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "drifloon",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "drifblim",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "buneary",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
@@ -2435,7 +2812,22 @@
       "legacyChargeMoves": []
     },
     {
+      "speciesId": "glameow",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "purugly",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
       "speciesId": "chingling",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "stunky",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
@@ -2445,12 +2837,42 @@
       "legacyChargeMoves": []
     },
     {
+      "speciesId": "bronzor",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
       "speciesId": "bronzong",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
     {
+      "speciesId": "bonsly",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "mime_jr",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "happiny",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "chatot",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
       "speciesId": "spiritomb",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "gible",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
@@ -2470,12 +2892,37 @@
       "legacyChargeMoves": []
     },
     {
+      "speciesId": "riolu",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
       "speciesId": "lucario",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
     {
+      "speciesId": "hippopotas",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "hippowdon",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "skorupi",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
       "speciesId": "drapion",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "croagunk",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
@@ -2490,12 +2937,22 @@
       "legacyChargeMoves": []
     },
     {
+      "speciesId": "finneon",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
       "speciesId": "lumineon",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
     {
       "speciesId": "mantyke",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "snover",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
@@ -2555,6 +3012,11 @@
       "legacyChargeMoves": []
     },
     {
+      "speciesId": "glaceon",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
       "speciesId": "gliscor",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
@@ -2572,7 +3034,11 @@
     {
       "speciesId": "gallade",
       "legacyFastMoves": [],
-      "legacyChargeMoves": []
+      "legacyChargeMoves": [
+        "SYNCHRONOISE",
+        "RETURN",
+        "FRUSTRATION"
+      ]
     },
     {
       "speciesId": "probopass",
@@ -2586,6 +3052,51 @@
     },
     {
       "speciesId": "froslass",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "rotom",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "rotom_fan",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "rotom_frost",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "rotom_heat",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "rotom_mow",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "rotom_wash",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "uxie",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "mesprit",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "azelf",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
@@ -2605,7 +3116,7 @@
       "legacyChargeMoves": []
     },
     {
-      "speciesId": "giratina_origin",
+      "speciesId": "regigigas",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
@@ -2615,12 +3126,1037 @@
       "legacyChargeMoves": []
     },
     {
+      "speciesId": "giratina_origin",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
       "speciesId": "cresselia",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
     {
+      "speciesId": "phione",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "manaphy",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
       "speciesId": "darkrai",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "shaymin_land",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "shaymin_sky",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "arceus",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "arceus_bug",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "arceus_dark",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "arceus_dragon",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "arceus_electric",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "arceus_fairy",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "arceus_fighting",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "arceus_fire",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "arceus_flying",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "arceus_ghost",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "arceus_grass",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "arceus_ground",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "arceus_ice",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "arceus_poison",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "arceus_psychic",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "arceus_rock",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "arceus_steel",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "arceus_water",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "victini",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "snivy",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "servine",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "serperior",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "tepig",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "pignite",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "emboar",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "oshawott",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "dewott",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "samurott",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "patrat",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "watchog",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "lillipup",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "herdier",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "stoutland",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "purrloin",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "liepard",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "pansage",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "simisage",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "pansear",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "simisear",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "panpour",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "simipour",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "munna",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "musharna",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "pidove",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "tranquill",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "unfezant",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "blitzle",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "zebstrika",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "roggenrola",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "boldore",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "gigalith",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "woobat",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "swoobat",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "drilbur",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "excadrill",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "audino",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "timburr",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "gurdurr",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "conkeldurr",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "tympole",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "palpitoad",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "seismitoad",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "throh",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "sawk",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "sewaddle",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "swadloon",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "leavanny",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "venipede",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "whirlipede",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "scolipede",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "cottonee",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "whimsicott",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "petilil",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "lilligant",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "basculin",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "basculin_blue_striped",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "basculin_red_striped",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "sandile",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "krokorok",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "krookodile",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "darumaka",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "darmanitan_standard",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "darmanitan_standard",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "darmanitan_zen",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "maractus",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "dwebble",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "crustle",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "scraggy",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "scrafty",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "sigilyph",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "yamask",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "cofagrigus",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "tirtouga",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "carracosta",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "archen",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "archeops",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "trubbish",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "garbodor",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "zorua",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "zoroark",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "minccino",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "cinccino",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "gothita",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "gothorita",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "gothitelle",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "solosis",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "duosion",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "reuniclus",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "ducklett",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "swanna",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "vanillite",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "vanillish",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "vanilluxe",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "deerling",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "deerling_autumn",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "deerling_spring",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "deerling_summer",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "deerling_winter",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "sawsbuck",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "sawsbuck_autumn",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "sawsbuck_spring",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "sawsbuck_summer",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "sawsbuck_winter",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "emolga",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "karrablast",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "escavalier",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "foongus",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "amoonguss",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "frillish",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "jellicent",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "alomomola",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "joltik",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "galvantula",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "ferroseed",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "ferrothorn",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "klink",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "klang",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "klinklang",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "tynamo",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "eelektrik",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "eelektross",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "elgyem",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "beheeyem",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "litwick",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "lampent",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "chandelure",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "axew",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "fraxure",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "haxorus",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "cubchoo",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "beartic",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "cryogonal",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "shelmet",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "accelgor",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "stunfisk",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "mienfoo",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "mienshao",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "druddigon",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "golett",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "golurk",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "pawniard",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "bisharp",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "bouffalant",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "rufflet",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "braviary",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "vullaby",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "mandibuzz",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "heatmor",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "durant",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "deino",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "zweilous",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "hydreigon",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "larvesta",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "volcarona",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "cobalion",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "terrakion",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "virizion",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "tornadus_incarnate",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "tornadus_incarnate",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "tornadus_therian",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "thundurus_incarnate",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "thundurus_incarnate",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "thundurus_therian",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "reshiram",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "zekrom",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "landorus_incarnate",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "landorus_therian",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "kyurem_black",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "kyurem",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "kyurem_white",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "keldeo_ordinary",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "keldeo_resolute",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "meloetta_aria",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "meloetta_pirouette",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "genesect",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "genesect_burn",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "genesect_chill",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "genesect_douse",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "genesect_shock",
+      "legacyFastMoves": [],
+      "legacyChargeMoves": []
+    },
+    {
+      "speciesId": "meltan",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
