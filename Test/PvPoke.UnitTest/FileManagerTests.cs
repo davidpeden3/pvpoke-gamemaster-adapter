@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -59,13 +58,13 @@ namespace PvPoke.UnitTest
 		public async Task GeneratePvpokeGameMaster()
 		{
 			//await PokemonGoGameMasterFileManager.FetchAndSaveFileAsync();
-			var json = await PokemonGoGameMasterFileManager.ReadFileAsync();
+			var json = await PokemonGoGameMasterFileManager.ReadFileAsync(PokemonGoGameMasterFileManager.GameMasterJsonPath);
 			dynamic gameMaster = JsonConvert.DeserializeObject<dynamic>(json);
 
-			var optionsJson = await FileManager.ReadFileAsync(Path.Combine(AppContext.BaseDirectory, "Data", "options.json"));
+			var optionsJson = await FileManager.ReadFileAsync(PokemonGoGameMasterFileManager.OptionsJsonPath);
 			var options = FileManager.LoadFile<dynamic>(optionsJson);
 
-			var cupsJson = await FileManager.ReadFileAsync(Path.Combine(AppContext.BaseDirectory, "Data", "cups.json"));
+			var cupsJson = await FileManager.ReadFileAsync(PokemonGoGameMasterFileManager.CupsJsonPath);
 			var cups = FileManager.LoadFile<dynamic>(cupsJson);
 
 			var gameMasterFile = new PvPokeGameMasterFileManager.GameMasterFile
@@ -76,13 +75,15 @@ namespace PvPoke.UnitTest
 				Moves = GameMasterFileAdapter.AdaptMoves(gameMaster)
 			};
 
-			_output.WriteLine(JsonConvert.SerializeObject(gameMasterFile, _jsonSerializerSettings));
+			string gameMasterJson = JsonConvert.SerializeObject(gameMasterFile, _jsonSerializerSettings);
+			await FileManager.SaveFileAsync(gameMasterJson, PokemonGoGameMasterFileManager.GeneratedPvPokeGameMasterJsonPath);
+			_output.WriteLine(gameMasterJson);
 		}
 
 		[Fact]
 		public async Task CreateLegacyMovesConfiguration()
 		{
-			var json = await PokemonGoGameMasterFileManager.ReadFileAsync();
+			var json = await PokemonGoGameMasterFileManager.ReadFileAsync(PokemonGoGameMasterFileManager.GameMasterJsonPath);
 			dynamic gameMaster = JsonConvert.DeserializeObject<dynamic>(json);
 			var regex = new Regex(@"^COMBAT_V\d+_MOVE_");
 			var templates = ((IEnumerable<dynamic>)gameMaster.itemTemplates).Where(t => regex.IsMatch((string)t.templateId));
@@ -168,25 +169,25 @@ namespace PvPoke.UnitTest
 					{
 						Atk = template.pokemonSettings.stats.baseAttack,
 						Def = template.pokemonSettings.stats.baseDefense,
-						Hp = template.pokemonSettings.stats.baseStamina,
+						Hp = template.pokemonSettings.stats.baseStamina
 					},
 					Types = new List<string>
 					{
 						FormatType((string)template.pokemonSettings.type),
 						FormatType((string)template.pokemonSettings.type2)
 					},
-					FastMoves = new List<string>(((IEnumerable<string>)template.pokemonSettings.quickMoves.ToObject<IEnumerable<string>>()).Select(GenerateMoveId).Distinct().OrderBy(m => m)),
-					ChargedMoves = new List<string>(((IEnumerable<string>)template.pokemonSettings.cinematicMoves.ToObject<IEnumerable<string>>()).Select(GenerateMoveId).Distinct().OrderBy(m => m)),
+					FastMoves = template.pokemonSettings.quickMoves != null ? new List<string>(((IEnumerable<string>)template.pokemonSettings.quickMoves.ToObject<IEnumerable<string>>()).Select(GenerateMoveId).Distinct().OrderBy(m => m)) : new List<string>(),
+					ChargedMoves = template.pokemonSettings.cinematicMoves != null ? new List<string>(((IEnumerable<string>)template.pokemonSettings.cinematicMoves.ToObject<IEnumerable<string>>()).Select(GenerateMoveId).Distinct().OrderBy(m => m)) : new List<string>(),
 					LegacyMoves = new List<string>()
 				};
 
-				pokemon.Add(speciesId, pokemonProperty);
+				pokemon[speciesId] = pokemonProperty;
 			}
 
 			RemoveGenericFormPokemon(pokemon);
 			RenameNormalFormPokemon(pokemon);
 
-			var legacyMovesJson = await FileManager.ReadFileAsync(Path.Combine(AppContext.BaseDirectory, "Data", "legacyMoves.json"));
+			var legacyMovesJson = await FileManager.ReadFileAsync(PokemonGoGameMasterFileManager.LegacyMovesJsonPath);
 			var legacyMoves = FileManager.LoadFile<LegacyMoveCollection>(legacyMovesJson);
 
 			foreach (LegacyMoveCollection.PokemonWithLegacyMoves pokemonWithLegacyMoves in legacyMoves.Pokemon)

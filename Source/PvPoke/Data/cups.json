@@ -1,15 +1,157 @@
-{
-  "all": [],
-  "boulder": [
-    "rock",
-    "steel",
-    "fighting",
-    "ground"
-  ],
-  "twilight": [
-    "dark",
-    "poison",
-    "fairy",
-    "ghost"
-  ]
-}
+[
+  {
+    "name": "all",
+    "title": "All Pokemon",
+    "include": [],
+    "exclude": []
+  }, {
+    "name": "custom",
+    "title": "Custom",
+    "include": [],
+    "exclude": []
+  }, {
+    "name": "boulder",
+    "title": "Boulder Cup",
+    "include": [
+      {
+        "filterType": "type",
+        "values": ["rock", "steel", "fighting", "ground"]
+      }
+    ],
+    "exclude": []
+  }, {
+    "name": "twilight",
+    "title": "Twilight Cup",
+    "include": [
+      {
+        "filterType": "type",
+        "values": ["dark", "poison", "fairy", "ghost"]
+      }
+    ],
+    "exclude": []
+  }, {
+    "name": "tempest",
+    "title": "Tempest Cup",
+    "include": [
+      {
+        "filterType": "type",
+        "values": ["electric", "ice", "flying", "ground"]
+      }
+    ],
+    "exclude": []
+  }, {
+    "name": "kingdom",
+    "title": "Kingdom Cup",
+    "include": [
+      {
+        "filterType": "type",
+        "values": ["fire", "ice", "dragon", "steel"]
+      }
+    ],
+    "exclude": []
+  }, {
+    "name": "nightmare",
+    "title": "Nightmare Cup",
+    "include": [
+      {
+        "filterType": "type",
+        "values": ["psychic", "dark", "fighting"]
+      }
+    ],
+    "exclude": [
+      {
+        "filterType": "tag",
+        "values": ["mythical", "legendary"]
+      }, {
+        "filterType": "id",
+        "values": ["medicham", "sableye"]
+      }
+    ]
+  }, {
+    "name": "regionals-1",
+    "title": "Season 1 Regionals",
+    "include": [
+      {
+        "filterType": "type",
+        "values": [
+          "rock", "steel", "fighting", "ground", "dark", "poison", "fairy", "ghost", "electric", "ice", "flying",
+          "fire", "dragon"
+        ]
+      }
+    ],
+    "exclude": []
+  }, {
+    "name": "championships-1",
+    "title": "Season 1 Championships",
+    "include": [],
+    "exclude": [
+      {
+        "filterType": "tag",
+        "values": ["mythical", "legendary"]
+      }
+    ]
+  }, {
+    "name": "rainbow",
+    "title": "Rainbow Cup",
+    "include": [
+      {
+        "filterType": "type",
+        "values": ["fire", "water", "electric", "grass", "bug"]
+      }, {
+        "filterType": "dex",
+        "values": [1, 251]
+      }
+    ],
+    "exclude": [
+      {
+        "filterType": "tag",
+        "values": ["alolan"]
+      }
+    ]
+  }, {
+    "name": "jungle",
+    "title": "Jungle Cup",
+    "include": [
+      {
+        "filterType": "type",
+        "values": ["normal", "grass", "bug", "electric"]
+      }
+    ],
+    "exclude": [
+      {
+        "filterType": "id",
+        "values": ["tropius", "wormadam_trash", "wormadam_sandy", "wormadam_plant", "mothim"]
+      }
+    ]
+  }, {
+    "name": "safari",
+    "title": "Safari Cup",
+    "restrictedPicks": 2,
+    "include": [
+      {
+        "filterType": "type",
+        "values": ["grass", "ground", "rock", "bug", "normal", "poison", "flying", "water"]
+      }, {
+        "filterType": "dex",
+        "values": [1, 493]
+      }
+    ],
+    "exclude": []
+  }, {
+    "name": "fantasy",
+    "title": "Fantasy Cup",
+    "restrictedPicks": 1,
+    "include": [
+      {
+        "filterType": "type",
+        "values": ["bug", "dark", "fighting", "poison", "fairy", "ghost", "psychic"]
+      }
+    ],
+    "exclude": []
+  }, {
+    "name": "cliffhanger",
+    "title": "Cliffhanger",
+    "include": [],
+    "exclude": []
+  }
+]

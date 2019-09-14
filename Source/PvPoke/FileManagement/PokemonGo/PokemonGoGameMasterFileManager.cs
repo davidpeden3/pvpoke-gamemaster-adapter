@@ -12,7 +12,22 @@ namespace PvPoke.FileManagement.PokemonGo
 		private static readonly string _gameMasterVersionUri = "https://raw.githubusercontent.com/pokemongo-dev-contrib/pokemongo-game-master/master/versions/latest-version.txt";
 		private static readonly string _gameMasterJsonUri = "https://raw.githubusercontent.com/pokemongo-dev-contrib/pokemongo-game-master/master/versions/latest/GAME_MASTER.json";
 
-		private static string GameMasterJsonPath => Path.Combine(AppContext.BaseDirectory.Substring(0, AppContext.BaseDirectory.LastIndexOf("bin", StringComparison.Ordinal)), "Data", "gameMaster.json");
+		private static string DataPath
+		{
+			get
+			{
+				const string rootFolder = "pvpoke-gamemaster-adapter";
+				var path = AppContext.BaseDirectory.Substring(0, AppContext.BaseDirectory.LastIndexOf(rootFolder, StringComparison.Ordinal) + rootFolder.Length);
+				return Path.Combine(path, "Source", "PvPoke", "Data");
+			}
+		}
+
+		public static string GameMasterJsonPath => Path.Combine(DataPath, "gameMaster.json");
+		public static string CupsJsonPath => Path.Combine(DataPath, "cups.json");
+		public static string LegacyMovesJsonPath => Path.Combine(DataPath, "legacyMoves.json");
+		public static string OptionsJsonPath => Path.Combine(DataPath, "options.json");
+		public static string ActualPvPokeGameMasterJsonPath => Path.Combine(DataPath, "actualPvPokeGameMaster.json");
+		public static string GeneratedPvPokeGameMasterJsonPath => Path.Combine(DataPath, "generatedPvPokeGameMaster.json");
 
 		public static bool FileExists()
 		{
@@ -25,9 +40,9 @@ namespace PvPoke.FileManagement.PokemonGo
 			return Convert.ToInt64(await FileManager.FetchFileAsync(_gameMasterVersionUri));
 		}
 
-		public static async Task<string> ReadFileAsync()
+		public static async Task<string> ReadFileAsync(string filePath)
 		{
-			return await FileManager.ReadFileAsync(GameMasterJsonPath);
+			return await FileManager.ReadFileAsync(filePath);
 		}
 
 		public static GameMasterFile LoadFile(string json)
