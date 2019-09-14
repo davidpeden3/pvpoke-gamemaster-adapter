@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using CsvHelper;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
@@ -139,9 +140,52 @@ namespace PvPoke.UnitTest
 
 			_output.WriteLine(JsonConvert.SerializeObject(legacyMoveCollection, _jsonSerializerSettings));
 		}
-	}
 
-	public static class GameMasterFileAdapter
+        [Fact]
+        public async Task GenerateFastMovesCsv()
+        {
+            var pvpokeJson = await PvPokeGameMasterFileManager.ReadFileAsync();
+            var pvpokeGameMaster = JsonConvert.DeserializeObject<PvPokeGameMasterFileManager.GameMasterFile>(pvpokeJson);
+
+            using (var writer = new StringWriter())
+            using (var csv = new CsvWriter(writer))
+            {
+                var fastMoves = pvpokeGameMaster.Moves.Where(m => m.EnergyGain > 0).Select(m => new
+                {
+                    Move = m.Name,
+                    m.Power,
+                    m.EnergyGain,
+                    Turns = m.Cooldown / 500,
+                    Type = m.Type.ToUpperFirstCharacter()
+                });
+                csv.WriteRecords(fastMoves);
+                _output.WriteLine(writer.ToString());
+            }
+        }
+
+        [Fact]
+        public async Task GenerateChargeMovesCsv()
+        {
+            var pvpokeJson = await PvPokeGameMasterFileManager.ReadFileAsync();
+            var pvpokeGameMaster = JsonConvert.DeserializeObject<PvPokeGameMasterFileManager.GameMasterFile>(pvpokeJson);
+
+            using (var writer = new StringWriter())
+            using (var csv = new CsvWriter(writer))
+            {
+                var chargeMoves = pvpokeGameMaster.Moves.Where(m => m.Energy > 0).Select(m => new
+                {
+                    Move = m.Name,
+                    m.Power,
+                    m.Energy,
+                    Type = m.Type.ToUpperFirstCharacter()
+                });
+                csv.WriteRecords(chargeMoves);
+                _output.WriteLine(writer.ToString());
+            }
+        }
+    }
+
+    public static class GameMasterFileAdapter
 	{
 		private static readonly IEnumerable<string> _hiddenPowers = new List<string>
 		{
@@ -297,18 +341,6 @@ namespace PvPoke.UnitTest
 
 			switch (speciesId)
 			{
-				case "NIDORAN_MALE":
-					speciesId = "NIDORAN♂";
-					break;
-				case "NIDORAN_FEMALE":
-					speciesId = "NIDORAN♀";
-					break;
-				case "FARFETCHD":
-					speciesId = "FARFETCH'D";
-					break;
-				case "MR_MIME":
-					speciesId = "MR. MIME";
-					break;
 				case string s when s.EndsWith("ALOLA"):
 					speciesId += "N";
 					break;
@@ -325,12 +357,21 @@ namespace PvPoke.UnitTest
 				case "porygon_z":
 					speciesId = speciesId.Replace('_', '-');
 					break;
-				case "mr. mime":
+				case "mr_mime":
 					speciesId = "Mr. Mime";
 					break;
+                case "nidoran_male":
+                    speciesId = "Nidoran♂";
+                    break;
+                case "nidoran_female":
+                    speciesId = "Nidoran♀";
+                    break;
+                case "farfetchd":
+                    speciesId = "Farfetch'd";
+                    break;
 			}
 
-			if (speciesId.IndexOf('_') >= 0)
+            if (speciesId.IndexOf('_') >= 0)
 			{
 				var parts = speciesId.Split('_').Select(part => part.ToUpperFirstCharacter()).ToArray();
 				return $"{parts[0]} ({parts[1]})";
@@ -368,7 +409,7 @@ namespace PvPoke.UnitTest
 			{
 				string moveId = GenerateMoveId((string)template.combatMove.uniqueId);
 				int? energyDelta = template.combatMove.energyDelta;
-				int? turnCount = Int32.TryParse((string)template.combatMove.durationTurns, out int i) ? i : (int?)null;
+				int turnCount = Int32.TryParse((string)template.combatMove.durationTurns, out int i) ? i : 0;
 
 				moves.Add(new PvPokeGameMasterFileManager.GameMasterFile.MovesProperty
 				{
@@ -378,7 +419,7 @@ namespace PvPoke.UnitTest
 					Power = (int?)template.combatMove.power ?? 0,
 					Energy = energyDelta != null ? (energyDelta < 0 ? Math.Abs((int)energyDelta) : 0) : 0,
 					EnergyGain = (int)(energyDelta != null ? (energyDelta > 0 ? energyDelta : 0) : 0),
-					Cooldown = (turnCount + 1) * 500 * 2 // the additional * 2 is because of a bug in pvpoke where it expects the duration to be twice as long as it should be -- this operand can be removed if/when that bug is fixed
+					Cooldown = (turnCount + 1) * 500
 				});
 			}
 
@@ -451,4 +492,5 @@ namespace PvPoke.UnitTest
 			public List<string> LegacyChargeMoves { get; set; } = new List<string>();
 		}
 	}
+
 }

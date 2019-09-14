@@ -193,7 +193,7 @@
       "legacyChargeMoves": []
     },
     {
-      "speciesId": "nidoran♀",
+      "speciesId": "nidoran_female",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
@@ -208,7 +208,7 @@
       "legacyChargeMoves": []
     },
     {
-      "speciesId": "nidoran♂",
+      "speciesId": "nidoran_male",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
@@ -564,7 +564,7 @@
       ]
     },
     {
-      "speciesId": "farfetch'd",
+      "speciesId": "farfetchd",
       "legacyFastMoves": [
         "CUT"
       ],
@@ -868,7 +868,7 @@
       ]
     },
     {
-      "speciesId": "mr. mime",
+      "speciesId": "mr_mime",
       "legacyFastMoves": [],
       "legacyChargeMoves": []
     },
