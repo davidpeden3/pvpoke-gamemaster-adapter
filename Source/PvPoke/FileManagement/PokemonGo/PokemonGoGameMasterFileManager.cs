@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
 
 namespace PvPoke.FileManagement.PokemonGo
 {
@@ -27,8 +26,6 @@ namespace PvPoke.FileManagement.PokemonGo
 		public static string LegacyMovesJsonPath => Path.Combine(DataPath, "legacyMoves.json");
 		public static string DefaultIVsJsonPath => Path.Combine(DataPath, "defaultIVs.json");
 		public static string SettingsJsonPath => Path.Combine(DataPath, "settings.json");
-		public static string ActualPvPokeGameMasterJsonPath => Path.Combine(DataPath, "actualPvPokeGameMaster.json");
-		public static string GeneratedPvPokeGameMasterJsonPath => Path.Combine(DataPath, "generatedPvPokeGameMaster.json");
 		public static string MissingPokemonFromGameMasterPath => Path.Combine(DataPath, "MissingPokemonFromGameMaster");
 
 		public static bool FileExists()
@@ -61,12 +58,6 @@ namespace PvPoke.FileManagement.PokemonGo
 
 		public class GameMasterFile
 		{
-			private static readonly JsonSerializerSettings _jsonSerializerSettings = new JsonSerializerSettings
-			{
-				ContractResolver = new CamelCasePropertyNamesContractResolver(),
-				NullValueHandling = NullValueHandling.Ignore
-			};
-
 			public IEnumerable<ItemTemplatesProperty> ItemTemplates { get; set; }
 			public long TimeStampMs { get; set; }
 
@@ -249,7 +240,7 @@ namespace PvPoke.FileManagement.PokemonGo
 
 			public string ToJson()
 			{
-				return JsonConvert.SerializeObject(this, Formatting.Indented, _jsonSerializerSettings);
+				return JsonConvert.SerializeObject(this, Formatting.Indented, GlobalJsonSerializerSettings.Shared);
 			}
 		}
 	}

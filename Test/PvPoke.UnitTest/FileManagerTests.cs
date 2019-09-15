@@ -6,8 +6,6 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using CsvHelper;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using Newtonsoft.Json.Serialization;
 using PvPoke.FileManagement;
 using PvPoke.FileManagement.PokemonGo;
 using PvPoke.FileManagement.PvPoke;
@@ -18,13 +16,6 @@ namespace PvPoke.UnitTest
 {
 	public class FileManagerTests
 	{
-		private static readonly JsonSerializerSettings _jsonSerializerSettings = new JsonSerializerSettings
-		{
-			ContractResolver = new CamelCasePropertyNamesContractResolver(),
-			Formatting = Formatting.Indented,
-			NullValueHandling = NullValueHandling.Ignore
-		};
-
 		private readonly ITestOutputHelper _output;
 
 		public FileManagerTests(ITestOutputHelper output)
@@ -32,16 +23,21 @@ namespace PvPoke.UnitTest
 			_output = output;
 		}
 
-		[Fact(Skip = "Refresh PvPoke game master")]
-		public async Task FormatJsonFiles()
+		[Fact]
+		public async Task RefreshAllFiles()
 		{
+			await PokemonGoGameMasterFileManager.FetchAndSaveFileAsync();
 			await PvPokeGameMasterFileManager.FetchAndSaveFileAsync();
+			await GenerateLegacyMovesJson();
+			await GenerateDefaultIVsJson();
+			await GeneratePvpokeGameMasterJson();
 
 			foreach (string filePath in Directory.EnumerateFiles(PokemonGoGameMasterFileManager.DataPath).Where(f => f.EndsWith(".json")))
 			{
 				var json = await FileManager.ReadFileAsync(filePath);
-				string jsonFormatted = JToken.Parse(json).ToString(Formatting.Indented);
-				await FileManager.SaveFileAsync(jsonFormatted, filePath);
+				var jsonObject = JsonConvert.DeserializeObject<dynamic>(json);
+				var formattedJson = JsonConvert.SerializeObject(jsonObject, GlobalJsonSerializerSettings.Shared);
+				await FileManager.SaveFileAsync(formattedJson, filePath);
 			}
 		}
 
@@ -87,8 +83,8 @@ namespace PvPoke.UnitTest
 				Moves = GameMasterFileAdapter.AdaptMoves(gameMaster)
 			};
 
-			string gameMasterJson = JsonConvert.SerializeObject(gameMasterFile, _jsonSerializerSettings);
-			await FileManager.SaveFileAsync(gameMasterJson, PokemonGoGameMasterFileManager.GeneratedPvPokeGameMasterJsonPath);
+			string gameMasterJson = JsonConvert.SerializeObject(gameMasterFile, GlobalJsonSerializerSettings.Shared);
+			await FileManager.SaveFileAsync(gameMasterJson, PvPokeGameMasterFileManager.GeneratedPvPokeGameMasterJsonPath);
 			_output.WriteLine(gameMasterJson);
 		}
 
@@ -134,7 +130,7 @@ namespace PvPoke.UnitTest
 				legacyMoveCollection.Pokemon.Add(pokemonWithLegacyMoves);
 			}
 
-			string legacyMovesJson = JsonConvert.SerializeObject(legacyMoveCollection, _jsonSerializerSettings);
+			string legacyMovesJson = JsonConvert.SerializeObject(legacyMoveCollection, GlobalJsonSerializerSettings.Shared);
 			await FileManager.SaveFileAsync(legacyMovesJson, PokemonGoGameMasterFileManager.LegacyMovesJsonPath);
 			_output.WriteLine(legacyMovesJson);
 		}
@@ -158,7 +154,7 @@ namespace PvPoke.UnitTest
 				}
 			}
 
-			string defaultIVsJson = JsonConvert.SerializeObject(pokemonDefaultIVs, _jsonSerializerSettings);
+			string defaultIVsJson = JsonConvert.SerializeObject(pokemonDefaultIVs, GlobalJsonSerializerSettings.Shared);
 			await FileManager.SaveFileAsync(defaultIVsJson, PokemonGoGameMasterFileManager.DefaultIVsJsonPath);
 			_output.WriteLine(defaultIVsJson);
 		}

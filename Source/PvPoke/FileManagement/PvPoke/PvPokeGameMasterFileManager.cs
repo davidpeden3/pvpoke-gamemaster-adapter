@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
 
 namespace PvPoke.FileManagement.PvPoke
 {
@@ -48,12 +47,6 @@ namespace PvPoke.FileManagement.PvPoke
 
 		public class GameMasterFile
 		{
-			private static readonly JsonSerializerSettings _jsonSerializerSettings = new JsonSerializerSettings
-			{
-				ContractResolver = new CamelCasePropertyNamesContractResolver(),
-				NullValueHandling = NullValueHandling.Ignore
-			};
-
 			public dynamic Settings { get; set; }
 			public dynamic Cups { get; set; }
 			public IEnumerable<PokemonProperty> Pokemon { get; set; }
@@ -92,7 +85,7 @@ namespace PvPoke.FileManagement.PvPoke
 
 			public string ToJson()
 			{
-				return JsonConvert.SerializeObject(this, Formatting.Indented, _jsonSerializerSettings);
+				return JsonConvert.SerializeObject(this, Formatting.Indented, GlobalJsonSerializerSettings.Shared);
 			}
 		}
 	}
