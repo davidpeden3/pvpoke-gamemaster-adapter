@@ -70,7 +70,6 @@ namespace PvPoke
 
 			RemoveSubtypePokemon(pokemon, "_shadow");
 			RemoveSubtypePokemon(pokemon, "_purified");
-			//RemoveSubtypePokemon(pokemon, "_normal");
 			RemoveBaseTypeIfNormalTypeExists(pokemon);
 
 			RenameNormalFormPokemon(pokemon);
