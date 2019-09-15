@@ -39,7 +39,7 @@ namespace PvPoke.FileManagement.PvPoke
 			return await FileManager.LoadFileAsync<GameMasterFile>(filePath);
 		}
 
-        public static async Task<GameMasterFile> FetchAndSaveFileAsync()
+		public static async Task<GameMasterFile> FetchAndSaveFileAsync()
 		{
 			string json = await FileManager.FetchFileAsync(_pvpokeGameMasterJsonUri);
 			await FileManager.SaveFileAsync(json, ActualPvPokeGameMasterJsonPath);
@@ -69,9 +69,9 @@ namespace PvPoke.FileManagement.PvPoke
 				public List<string> FastMoves { get; set; }
 				public List<string> ChargedMoves { get; set; }
 				public List<string> LegacyMoves { get; set; }
-				public Dictionary<string, List<decimal>> DefaultIVs { get; set; }
+				public Dictionary<string, List<decimal>> DefaultIVs { get; set; } = new Dictionary<string, List<decimal>>();
 
-                public class BaseStatsProperty
+				public class BaseStatsProperty
 				{
 					public int Atk { get; set; }
 					public int Def { get; set; }

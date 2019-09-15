@@ -93,6 +93,16 @@ namespace PvPoke
 			ExpandHiddenPower(pokemon.Values);
 			PruneEmptyLegacyMoves(pokemon);
 
+			var defaultIVs = await FileManager.LoadFileAsync<DefaultIVsCollection>(PokemonGoGameMasterFileManager.DefaultIVsJsonPath);
+
+			foreach (KeyValuePair<string, Dictionary<string, List<decimal>>> leagueSet in defaultIVs.Pokemon)
+			{
+				foreach (KeyValuePair<string, List<decimal>> stats in leagueSet.Value)
+				{
+					pokemon[leagueSet.Key].DefaultIVs[stats.Key] = stats.Value;
+				}
+			}
+
 			return pokemon.Values.OrderBy(p => p.Dex).ThenBy(p => p.SpeciesId);
 		}
 

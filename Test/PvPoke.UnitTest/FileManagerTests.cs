@@ -149,10 +149,12 @@ namespace PvPoke.UnitTest
 
 			foreach (PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty pokemon in pvpokeGameMaster.Pokemon)
 			{
-				pokemonDefaultIVs.Pokemon[pokemon.SpeciesId] = new Dictionary<string, List<decimal>>();
+				string speciesId = pokemon.SpeciesId.Replace("_normal", String.Empty);
+				pokemonDefaultIVs.Pokemon[speciesId] = new Dictionary<string, List<decimal>>();
+
 				foreach (KeyValuePair<string, List<decimal>> pokemonDefaultIV in pokemon.DefaultIVs)
 				{
-					pokemonDefaultIVs.Pokemon[pokemon.SpeciesId][pokemonDefaultIV.Key] = pokemon.DefaultIVs[pokemonDefaultIV.Key];
+					pokemonDefaultIVs.Pokemon[speciesId][pokemonDefaultIV.Key] = pokemon.DefaultIVs[pokemonDefaultIV.Key];
 				}
 			}
 
