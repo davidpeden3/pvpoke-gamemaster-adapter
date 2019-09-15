@@ -30,7 +30,7 @@ namespace PvPoke.UnitTest
 			await PvPokeGameMasterFileManager.FetchAndSaveFileAsync();
 			await GenerateLegacyMovesJson();
 			await GenerateDefaultIVsJson();
-			await GeneratePvpokeGameMasterJson();
+			await GeneratePvPokeGameMasterJson();
 
 			foreach (string filePath in Directory.EnumerateFiles(PokemonGoGameMasterFileManager.DataPath).Where(f => f.EndsWith(".json")))
 			{
@@ -66,7 +66,7 @@ namespace PvPoke.UnitTest
 
 		//[Fact(Skip = "Assert that we can round trip the raw json")]
 		[Fact]
-		public async Task GeneratePvpokeGameMasterJson()
+		public async Task GeneratePvPokeGameMasterJson()
 		{
 			//await PokemonGoGameMasterFileManager.FetchAndSaveFileAsync();
 			var json = await PokemonGoGameMasterFileManager.ReadFileAsync(PokemonGoGameMasterFileManager.GameMasterJsonPath);
