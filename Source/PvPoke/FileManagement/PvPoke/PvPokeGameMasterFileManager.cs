@@ -69,8 +69,9 @@ namespace PvPoke.FileManagement.PvPoke
 				public List<string> FastMoves { get; set; }
 				public List<string> ChargedMoves { get; set; }
 				public List<string> LegacyMoves { get; set; }
+				public Dictionary<string, List<decimal>> DefaultIVs { get; set; }
 
-				public class BaseStatsProperty
+                public class BaseStatsProperty
 				{
 					public int Atk { get; set; }
 					public int Def { get; set; }

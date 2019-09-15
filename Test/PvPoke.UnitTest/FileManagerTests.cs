@@ -144,6 +144,28 @@ namespace PvPoke.UnitTest
 		}
 
 		[Fact]
+		public async Task GenerateDefaultIVsJson()
+		{
+			var pvpokeJson = await PvPokeGameMasterFileManager.ReadFileAsync(PvPokeGameMasterFileManager.ActualPvPokeGameMasterJsonPath);
+			var pvpokeGameMaster = JsonConvert.DeserializeObject<PvPokeGameMasterFileManager.GameMasterFile>(pvpokeJson);
+
+			var pokemonDefaultIVs = new DefaultIVsCollection();
+
+			foreach (PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty pokemon in pvpokeGameMaster.Pokemon)
+			{
+				pokemonDefaultIVs.Pokemon[pokemon.SpeciesId] = new Dictionary<string, List<decimal>>();
+				foreach (KeyValuePair<string, List<decimal>> pokemonDefaultIV in pokemon.DefaultIVs)
+				{
+					pokemonDefaultIVs.Pokemon[pokemon.SpeciesId][pokemonDefaultIV.Key] = pokemon.DefaultIVs[pokemonDefaultIV.Key];
+				}
+			}
+
+			string defaultIVsJson = JsonConvert.SerializeObject(pokemonDefaultIVs, _jsonSerializerSettings);
+			await FileManager.SaveFileAsync(defaultIVsJson, PokemonGoGameMasterFileManager.DefaultIVsJsonPath);
+			_output.WriteLine(defaultIVsJson);
+		}
+
+		[Fact]
 		public async Task GenerateFastMovesCsv()
 		{
 			var pvpokeJson = await PvPokeGameMasterFileManager.ReadFileAsync(PvPokeGameMasterFileManager.GeneratedPvPokeGameMasterJsonPath);
