@@ -48,8 +48,7 @@ namespace PvPoke.UnitTest
 		[Fact]
 		public async Task RoundTripPvPokeJson()
 		{
-			var json = await PvPokeGameMasterFileManager.ReadFileAsync(PvPokeGameMasterFileManager.GeneratedPvPokeGameMasterJsonPath);
-			PvPokeGameMasterFileManager.GameMasterFile file = PvPokeGameMasterFileManager.LoadFile(json);
+			PvPokeGameMasterFileManager.GameMasterFile file = await PvPokeGameMasterFileManager.LoadFileAsync(PvPokeGameMasterFileManager.GeneratedPvPokeGameMasterJsonPath);
 
 			foreach (var pokemonProperty in file.Pokemon)
 			{
@@ -77,11 +76,8 @@ namespace PvPoke.UnitTest
 			var json = await PokemonGoGameMasterFileManager.ReadFileAsync(PokemonGoGameMasterFileManager.GameMasterJsonPath);
 			dynamic gameMaster = JsonConvert.DeserializeObject<dynamic>(json);
 
-			var settingsJson = await FileManager.ReadFileAsync(PokemonGoGameMasterFileManager.SettingsJsonPath);
-			var settings = FileManager.LoadFile<dynamic>(settingsJson);
-
-			var cupsJson = await FileManager.ReadFileAsync(PokemonGoGameMasterFileManager.CupsJsonPath);
-			var cups = FileManager.LoadFile<dynamic>(cupsJson);
+			var settings = await FileManager.LoadFileAsync<dynamic>(PokemonGoGameMasterFileManager.SettingsJsonPath);
+			var cups = await FileManager.LoadFileAsync<dynamic>(PokemonGoGameMasterFileManager.CupsJsonPath);
 
 			var gameMasterFile = new PvPokeGameMasterFileManager.GameMasterFile
 			{

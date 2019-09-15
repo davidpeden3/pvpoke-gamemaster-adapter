@@ -34,16 +34,16 @@ namespace PvPoke.FileManagement.PvPoke
 			return await FileManager.ReadFileAsync(filePath);
 		}
 
-		public static GameMasterFile LoadFile(string json)
+		public static async Task<GameMasterFile> LoadFileAsync(string filePath)
 		{
-			return FileManager.LoadFile<GameMasterFile>(json);
+			return await FileManager.LoadFileAsync<GameMasterFile>(filePath);
 		}
 
-		public static async Task<GameMasterFile> FetchAndSaveFileAsync()
+        public static async Task<GameMasterFile> FetchAndSaveFileAsync()
 		{
 			string json = await FileManager.FetchFileAsync(_pvpokeGameMasterJsonUri);
 			await FileManager.SaveFileAsync(json, ActualPvPokeGameMasterJsonPath);
-			return FileManager.LoadFile<GameMasterFile>(json);
+			return await FileManager.LoadFileAsync<GameMasterFile>(ActualPvPokeGameMasterJsonPath);
 		}
 
 		public class GameMasterFile

@@ -75,8 +75,7 @@ namespace PvPoke
 			RenameNormalFormPokemon(pokemon);
 			await AddMissingPokemonAsync(pokemon);
 
-			var legacyMovesJson = await FileManager.ReadFileAsync(PokemonGoGameMasterFileManager.LegacyMovesJsonPath);
-			var legacyMoves = FileManager.LoadFile<LegacyMoveCollection>(legacyMovesJson);
+			var legacyMoves = await FileManager.LoadFileAsync<LegacyMoveCollection>(PokemonGoGameMasterFileManager.LegacyMovesJsonPath);
 
 			foreach (LegacyMoveCollection.PokemonWithLegacyMoves pokemonWithLegacyMoves in legacyMoves.Pokemon)
 			{
@@ -162,8 +161,7 @@ namespace PvPoke
 		{
 			foreach (var filePath in Directory.EnumerateFiles(PokemonGoGameMasterFileManager.MissingPokemonFromGameMasterPath))
 			{
-				var json = await FileManager.ReadFileAsync(filePath);
-				var missingPokemon = FileManager.LoadFile<PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty>(json);
+				var missingPokemon = await FileManager.LoadFileAsync<PvPokeGameMasterFileManager.GameMasterFile.PokemonProperty>(filePath);
 
 				if (!pokemon.ContainsKey(missingPokemon.SpeciesId))
 				{
